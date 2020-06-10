@@ -1,0 +1,96 @@
+:root {
+  // Colors
+  --dark: #0D1219;
+  --dark-secondary: #1B293C;
+  --dark-blue: #084177;
+  --link: #06CDFF;
+  --link-active: #FFAC41;
+  --white: #FFF;
+  --black: #000;
+  --grey: #868E95;
+  --text: #C2CCD7;
+  --text-secondary: #C4C4C4;
+
+  // Fonts
+  --font-72: 4.5rem;
+  --font-48: 3rem;
+  --font-40: 2.5rem;
+  --font-36: 2.25rem;
+  --font-32: 2rem;
+  --font-28: 1.75rem;
+  --font-24: 1.5rem;
+  --font-20: 1.25rem;
+  --font-16: 1rem;
+  --font-12: 0.75rem;
+
+  // Spacing
+  --s-0_25: 0.25rem;
+  --s-0_5: 0.5rem;
+  --s-0_75: 0.75rem;
+  --s-1: 1rem;
+  --s-1_25: 1.25rem;
+  --s-1_5: 1.5rem;
+  --s-1_75: 1.75rem;
+  --s-2: 2rem;
+  --s-2_25: 2.25rem;
+  --s-2_5: 2.5rem;
+  --s-2_75: 2.75rem;
+  --s-3: 3rem;
+  --s-3_25: 3.25rem;
+  --s-3_5: 3.5rem;
+  --s-3_75: 3.75rem;
+  --s-4: 4rem;
+  --s-4_25: 4.25rem;
+  --s-4_5: 4.5rem;
+  --s-4_75: 4.75rem;
+  --s-5: 5rem;
+}
+
+// Themes
+#theme-dark {
+  background-color: var(--dark);
+  color: var(--text);
+}
+
+#theme-light {
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+
+@media (prefers-color-scheme: dark) {
+  #theme-system {
+    background-color: var(--dark);
+    color: var(--text);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  #theme-system {
+    background-color: var(--white);
+    color: var(--dark);
+  }
+}
+
+.theme-switch-wrapper {
+  margin: var(--s-0_25);
+  padding: var(--s-0_5);
+  font-size: var(--font-20);
+  span {
+    cursor: pointer;
+    margin: 0 var(--s-0_5);
+    padding: 0 var(--s-0_5);
+  }
+}
+
+// General
+a {
+  color: var(--link);
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:active, &.active {
+    color: var(--link-active);
+  }
+}
