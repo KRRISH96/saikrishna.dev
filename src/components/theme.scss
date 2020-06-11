@@ -98,8 +98,9 @@ body {
 }
 
 .theme-switch-wrapper {
-  margin: var(--s-0_25) 0;
+  margin: var(--s-0_25);
   font-size: var(--font-20);
+  background-color: var(--bg-secondary);
   display: inline-flex;
   border: 1px solid var(--color);
   border-radius: 1rem;
@@ -107,8 +108,8 @@ body {
   justify-content: center;
   flex-direction: column;
   position: fixed;
-  right: 0;
-  top: 100px;
+  right: 0.5rem;
+  top: 10rem;
   overflow: hidden;
   .theme-icon {
     cursor: pointer;
