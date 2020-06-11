@@ -10,12 +10,13 @@ const THEMES = Object.freeze({
 const THEME_PREFERENCE_KEY = 'theme-preference';
 
 function Theme() {
-  const [theme, setTheme] = useState(THEMES.auto);
+  const defaultTheme = THEMES.auto;
+  const [theme, setTheme] = useState(defaultTheme);
 
   useEffect(() => {
     const themeFromLocalStorage = localStorage.getItem(THEME_PREFERENCE_KEY);
 
-    if (!!themeFromLocalStorage && themeFromLocalStorage !== THEMES.auto) {
+    if (!!themeFromLocalStorage && themeFromLocalStorage !== defaultTheme) {
       setTheme(themeFromLocalStorage)
     }
   }, [])
