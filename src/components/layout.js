@@ -13,7 +13,7 @@ import Header from "./header";
 import "./layout.scss";
 import Theme from "./theme";
 
-const Layout = ({ children, hideHeader }) => {
+const Layout = ({ children, isHomePage }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,7 +26,7 @@ const Layout = ({ children, hideHeader }) => {
 
   return (
     <>
-      {!hideHeader && <Header siteTitle={data.site.siteMetadata.title} />}
+      {!isHomePage && <Header siteTitle={data.site.siteMetadata.title} />}
       <div
         style={{
           margin: `0 auto`,
@@ -35,7 +35,7 @@ const Layout = ({ children, hideHeader }) => {
         }}
       >
         <main>
-          <div className="moon"></div>
+          <div className={`moon ${!isHomePage ? 'small' : ''}`}></div>
           {children}
           <Theme />
         </main>
@@ -51,11 +51,11 @@ const Layout = ({ children, hideHeader }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-  hideHeader: PropTypes.bool,
+  isHomePage: PropTypes.bool,
 };
 
 Layout.defaultProps = {
-  hideHeader: false,
+  isHomePage: false,
 };
 
 export default Layout;
