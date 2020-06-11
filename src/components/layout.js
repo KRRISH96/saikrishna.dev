@@ -35,6 +35,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>
+          <div className="moon"></div>
           {children}
           <Theme />
         </main>

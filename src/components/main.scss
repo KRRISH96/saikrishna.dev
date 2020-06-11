@@ -1,0 +1,17 @@
+.moon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  left: 6.25%;
+  right: 79.86%;
+  top: 10%;
+  bottom: 67.78%;
+  background: var(--planet-bg);
+  box-shadow: 0px 0px 50px var(--planet-shadow);
+  &.small {
+    width: 140px;
+    height: 140px;
+    box-shadow: 0px 0px 35px var(--planet-shadow);
+  }
+}

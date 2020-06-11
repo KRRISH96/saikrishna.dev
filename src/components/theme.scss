@@ -12,6 +12,10 @@
   --grey: #868E95;
   --greyish: #C2CCD7;
   --greyish-secondary: #C4C4C4;
+  --moon: rgba(196, 196, 196, 0.7);
+  --moon-shadow: rgba(255, 255, 255, 0.75);
+  --sun: rgba(255, 191, 0, 0.5);
+  --sun-shadow: rgba(255, 193, 7, 1);
 
   // Theme defaults - defauted to dark theme
   --bg: var(--dark);
@@ -23,6 +27,9 @@
 
   --link: var(--skyblue);
   --link-active: var(--orange);
+
+  --planet-bg: var(--moon);
+  --planet-shadow: var(--moon-shadow);
 
   // Fonts
   --font-72: 4.5rem;
@@ -68,6 +75,8 @@
   --color: var(--dark);
   --color-invert: var(--white);
   --color-secondary: var(--dark-secondary);
+  --planet-bg: var(--sun);
+  --planet-shadow: var(--sun-shadow);
 }
 
 @media (prefers-color-scheme: light) {
@@ -78,6 +87,8 @@
     --color: var(--dark);
     --color-invert: var(--white);
     --color-secondary: var(--dark-secondary);
+    --planet-bg: var(--sun);
+    --planet-shadow: var(--sun-shadow);
   }
 }
 
