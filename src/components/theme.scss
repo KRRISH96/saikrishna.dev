@@ -3,13 +3,26 @@
   --dark: #0D1219;
   --dark-secondary: #1B293C;
   --dark-blue: #084177;
-  --link: #06CDFF;
-  --link-active: #FFAC41;
+  --skyblue: #06CDFF;
+  --orange: #FF9000;
   --white: #FFF;
+  --white-secondary: #EEE;
   --black: #000;
+  --black-secondary: rgba(0,0,0,0.8);
   --grey: #868E95;
-  --text: #C2CCD7;
-  --text-secondary: #C4C4C4;
+  --greyish: #C2CCD7;
+  --greyish-secondary: #C4C4C4;
+
+  // Theme defaults - defauted to dark theme
+  --bg: var(--dark);
+  --bg-invert: var(--white);
+  --bg-secondary: var(--dark-secondary);
+  --color: var(--greyish);
+  --color-invert: var(--dark);
+  --color-secondary: var(--greyish-secondary);
+
+  --link: var(--skyblue);
+  --link-active: var(--orange);
 
   // Fonts
   --font-72: 4.5rem;
@@ -47,28 +60,40 @@
 }
 
 // Themes
-#theme-dark {
-  background-color: var(--dark);
-  color: var(--text);
-}
-
+// Dark specific styles aren't necessary as theme is defaulted to dark
 #theme-light {
-  background-color: var(--white);
-  color: var(--dark);
-}
-
-
-@media (prefers-color-scheme: dark) {
-  #theme-system {
-    background-color: var(--dark);
-    color: var(--text);
-  }
+  --bg: var(--white);
+  --bg-invert: var(--dark);
+  --bg-secondary: var(--white-secondary);
+  --color: var(--dark);
+  --color-invert: var(--white);
+  --color-secondary: var(--dark-secondary);
 }
 
 @media (prefers-color-scheme: light) {
   #theme-system {
-    background-color: var(--white);
-    color: var(--dark);
+    --bg: var(--white);
+    --bg-invert: var(--dark);
+    --bg-secondary: var(--white-secondary);
+    --color: var(--dark);
+    --color-invert: var(--white);
+    --color-secondary: var(--dark-secondary);
+  }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--color) !important;
+  transition: background-color 0.2s linear;
+  a {
+    color: var(--link);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active, &.active {
+      color: var(--link-active);
+    }
   }
 }
 
@@ -76,7 +101,7 @@
   margin: var(--s-0_25) 0;
   font-size: var(--font-20);
   display: inline-flex;
-  border: 1px solid var(--text);
+  border: 1px solid var(--color);
   border-radius: 1rem;
   align-items: center;
   justify-content: center;
@@ -89,20 +114,8 @@
     cursor: pointer;
     padding: var(--s-0_75);
     &.active {
-      background-color: var(--link-active);
-      color: var(--white)
+      background-color: var(--bg-invert);
+      color: var(--color-invert)
     }
-  }
-}
-
-// General
-a {
-  color: var(--link);
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-  &:active, &.active {
-    color: var(--link-active);
   }
 }
