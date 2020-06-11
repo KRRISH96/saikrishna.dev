@@ -30,5 +30,5 @@ export function grretByTimeOfDay() {
       greeting = "Good Evening";
       break;
   }
-  return greeting;
+  return `${greeting},`;
 }
