@@ -7,7 +7,7 @@ const THEMES = Object.freeze({
   system: "system",
   auto: "auto",
 });
-const THEME_PREFERENCE_KEY = 'theme-preference';
+const THEME_PREFERENCE_KEY = "theme-preference";
 
 function Theme() {
   const defaultTheme = THEMES.auto;
@@ -17,15 +17,15 @@ function Theme() {
     const themeFromLocalStorage = localStorage.getItem(THEME_PREFERENCE_KEY);
 
     if (!!themeFromLocalStorage && themeFromLocalStorage !== defaultTheme) {
-      setTheme(themeFromLocalStorage)
+      setTheme(themeFromLocalStorage);
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
-    switchTheme(theme)
+    switchTheme(theme);
   }, [theme]);
 
-  const switchTheme = (themePreference) => {
+  const switchTheme = themePreference => {
     let themeToApply = themePreference;
 
     if (themePreference === THEMES.auto) {
