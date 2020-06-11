@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { FaSun, FaMoon, FaCog, FaGlobeAmericas } from "react-icons/fa";
-
-const THEMES = Object.freeze({
-  dark: "dark",
-  light: "light",
-  system: "system",
-  auto: "auto",
-});
-const THEME_PREFERENCE_KEY = "theme-preference";
+import { THEME_PREFERENCE_KEY, THEMES } from "../helpers/constants";
+import { isDayTime } from "../helpers/utils";
 
 function Theme() {
-  const defaultTheme = localStorage.getItem(THEME_PREFERENCE_KEY) || THEMES.auto;
+  const defaultTheme =
+    localStorage.getItem(THEME_PREFERENCE_KEY) || THEMES.auto;
   const [theme, setTheme] = useState(defaultTheme);
 
   useEffect(() => {
@@ -21,10 +16,7 @@ function Theme() {
     let themeToApply = themePreference;
 
     if (themePreference === THEMES.auto) {
-      const hourOfTheDay = new Date().getHours();
-      // Light mode from 7am to 6:59pm
-      themeToApply =
-        hourOfTheDay > 6 && hourOfTheDay < 19 ? THEMES.light : THEMES.dark;
+      themeToApply = isDayTime() ? THEMES.light : THEMES.dark;
     }
 
     document.body.setAttribute("data-theme", themePreference);
