@@ -73,13 +73,25 @@
 }
 
 .theme-switch-wrapper {
-  margin: var(--s-0_25);
-  padding: var(--s-0_5);
+  margin: var(--s-0_25) 0;
   font-size: var(--font-20);
-  span {
+  display: inline-flex;
+  border: 1px solid var(--text);
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 100px;
+  overflow: hidden;
+  .theme-icon {
     cursor: pointer;
-    margin: 0 var(--s-0_5);
-    padding: 0 var(--s-0_5);
+    padding: var(--s-0_75);
+    &.active {
+      background-color: var(--link-active);
+      color: var(--white)
+    }
   }
 }
 

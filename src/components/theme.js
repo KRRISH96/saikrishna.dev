@@ -39,20 +39,22 @@ function Theme() {
     localStorage.setItem(THEME_PREFERENCE_KEY, themePreference);
   }
 
+  const ThemeIcon = ({children, themePreference}) => <span className={`theme-icon ${theme === themePreference ? 'active' : ''}`} onClick={() => setTheme(themePreference)}>{children}</span>
+
   return (
     <div className="theme-switch-wrapper">
-      <span onClick={() => setTheme(THEMES.light)}>
+      <ThemeIcon themePreference={THEMES.light}>
         <FaSun />
-      </span>
-      <span onClick={() => setTheme(THEMES.dark)}>
+      </ThemeIcon>
+      <ThemeIcon themePreference={THEMES.dark}>
         <FaMoon />
-      </span>
-      <span onClick={() => setTheme(THEMES.system)}>
+      </ThemeIcon>
+      <ThemeIcon themePreference={THEMES.system}>
         <FaCog />
-      </span>
-      <span onClick={() => setTheme(THEMES.auto)}>
+      </ThemeIcon>
+      <ThemeIcon themePreference={THEMES.auto}>
         <FaGlobeAmericas />
-      </span>
+      </ThemeIcon>
     </div>
   );
 }
