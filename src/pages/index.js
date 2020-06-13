@@ -8,8 +8,11 @@ import { grretByTimeOfDay } from "../helpers/utils";
 const IndexPage = () => (
   <Layout isHomePage>
     <SEO title="Home" />
-    <h1>{grretByTimeOfDay()}</h1>
-    <p>Welcome to your new Gatsby site.</p>
+    <div className="home-page">
+      <p className="greeting">{grretByTimeOfDay()}</p>
+      <h1 className="intro">I'm Sai</h1>
+      <p className="tagline">A Self-Taught and Passionate Frontend Engineer</p>
+    </div>
   </Layout>
 );
 

@@ -1,3 +1,19 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: var(--s-1_25);
+}
+
+
+p {
+  color: var(--text);
+}
+
+footer {
+  height: 3rem;
+  text-align: center;
+}
+
 .moon {
   width: 200px;
   height: 200px;
@@ -16,7 +32,23 @@
   }
 }
 
-footer {
-  position: fixed;
-  bottom: 1rem;
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--s-1);
+  height: calc(100vh - 5.5rem); // 2*1.25 top/bottom container padding + 3rem footer height
+  text-align: center;
+  .greeting {
+    color: var(--orange);
+    font-size: var(--font-20);
+  }
+  .intro {
+    font-size: var(--font-72)
+  }
+  .tagline {
+    color: var(--color-secondary);
+    font-size: var(--font-24);
+  }
 }
