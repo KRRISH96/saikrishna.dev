@@ -35,14 +35,13 @@ const Layout = ({ children, isHomePage }) => {
         }}
       >
         <main>
-          <div className={`moon ${!isHomePage ? 'small' : ''}`}></div>
+          <div className={`moon ${!isHomePage ? "small" : ""}`}></div>
           {children}
           <Theme />
         </main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()}, Made with ❤️ by Sai Krishna Prasad
+          Kandula.
         </footer>
       </div>
     </>
