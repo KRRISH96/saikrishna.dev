@@ -30,6 +30,13 @@ const Layout = ({ children, isHomePage }) => {
       <div className="container">
         <main>
           <div className={`moon ${!isHomePage ? "small" : ""}`}></div>
+          <div className="stars">
+            {Array(7)
+              .fill()
+              .map((_e, i) => (
+                <span className="star" key={`star-${i}`}></span>
+              ))}
+          </div>
           {children}
           <Theme />
         </main>

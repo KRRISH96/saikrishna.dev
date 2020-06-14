@@ -32,6 +32,109 @@ footer {
   }
 }
 
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background: transparent;
+  transform: rotateZ(45deg);
+  .star {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    display: inline-block;
+    background: linear-gradient(-45deg, var(--planet-bg), rgba(0,0,255, 0));
+    width: 0;
+    height: 0.1rem;
+    animation: spawn 4s ease-out infinite, shoot 4s ease-in infinite;
+    &::before, &::after {
+      position: absolute;
+      content: '';
+      top: calc(50% - 1px);
+      right: 0;
+      height: 1px;
+      background: linear-gradient(-45deg, rgba(0, 0, 255, 0), var(--color), rgba(0, 0, 255, 0));
+      border-radius: 100%;
+      transform: translateX(50%) rotateZ(45deg);
+      animation: shine 4s ease-in-out infinite;
+    }
+    &::after {
+      transform: translateX(50%) rotateZ(-45deg);
+    }
+    &:nth-child(2) {
+      top: 15%;
+      left: 2%;
+      animation-delay: 2s;
+      &::before, &::after {
+        animation-delay: 2s;
+      }
+    }
+    &:nth-child(3) {
+      top: 110%;
+      right: 20%;
+      animation-delay: 1s;
+      &::before, &::after {
+        animation-delay: 1s;
+      }
+    }
+    &:nth-child(4) {
+      top: 80%;
+      left: 10%;
+      animation-delay: 3s;
+      &::before, &::after {
+        animation-delay: 3s;
+      }
+    }
+    &:nth-child(5) {
+      bottom: 20%;
+      right: 60%;
+      animation-delay: 5.5s;
+      &::before, &::after {
+        animation-delay: 5.5s;
+      }
+    }
+  }
+
+}
+
+@keyframes spawn {
+  0% {
+    width: 0;
+  }
+  33% {
+    width: 6rem;
+  }
+  100% {
+    width: 6rem;
+  }
+}
+
+@keyframes shoot {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200rem);
+  }
+}
+
+@keyframes shine {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+}
+
 .home-page {
   display: flex;
   flex-direction: column;
