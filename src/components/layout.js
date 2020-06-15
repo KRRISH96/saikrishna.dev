@@ -31,7 +31,7 @@ const Layout = ({ children, isHomePage }) => {
         <main>
           <div className={`moon ${!isHomePage ? "small" : ""}`}></div>
           <div className="stars">
-            {Array(7)
+            {Array(10)
               .fill()
               .map((_e, i) => (
                 <span className="star" key={`star-${i}`}></span>

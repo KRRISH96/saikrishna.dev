@@ -25,6 +25,7 @@ footer {
   bottom: 67.78%;
   background: var(--planet-bg);
   box-shadow: 0px 0px 50px var(--planet-shadow);
+  z-index: -999;
   &.small {
     width: 140px;
     height: 140px;
@@ -42,16 +43,13 @@ footer {
   height: 100vh;
   pointer-events: none;
   background: transparent;
-  transform: rotateZ(45deg);
+  z-index: -999;
   .star {
     position: absolute;
-    top: 50%;
-    left: 20%;
     display: inline-block;
     background: linear-gradient(-45deg, var(--planet-bg), rgba(0,0,255, 0));
     width: 0;
     height: 0.1rem;
-    animation: spawn 4s ease-out infinite, shoot 4s ease-in infinite;
     &::before, &::after {
       position: absolute;
       content: '';
@@ -61,77 +59,100 @@ footer {
       background: linear-gradient(-45deg, rgba(0, 0, 255, 0), var(--color), rgba(0, 0, 255, 0));
       border-radius: 100%;
       transform: translateX(50%) rotateZ(45deg);
-      animation: shine 4s ease-in-out infinite;
+      animation: shine 3s ease-in-out infinite;
     }
     &::after {
       transform: translateX(50%) rotateZ(-45deg);
     }
+    &:nth-child(1) {
+      top: 50%;
+      left: 20%;
+    }
     &:nth-child(2) {
-      top: 15%;
-      left: 2%;
+      top: 90%;
+      left: 10%;
       animation-delay: 2s;
       &::before, &::after {
         animation-delay: 2s;
       }
     }
     &:nth-child(3) {
-      top: 110%;
-      right: 20%;
+      top: 90%;
+      right: 30%;
       animation-delay: 1s;
       &::before, &::after {
         animation-delay: 1s;
       }
     }
     &:nth-child(4) {
-      top: 80%;
-      left: 10%;
+      top: 50%;
+      left: 50%;
       animation-delay: 3s;
       &::before, &::after {
         animation-delay: 3s;
       }
     }
     &:nth-child(5) {
-      bottom: 20%;
-      right: 60%;
+      bottom: 30%;
+      right: 10%;
       animation-delay: 5.5s;
       &::before, &::after {
         animation-delay: 5.5s;
+      }
+    }
+    &:nth-child(6) {
+      top: 65%;
+      right: 65%;
+      animation-delay: 2.5s;
+      &::before, &::after {
+        animation-delay: 2.5s;
+      }
+    }
+    &:nth-child(7) {
+      bottom: 90%;
+      right: 90%;
+      animation-delay: 4s;
+      &::before, &::after {
+        animation-delay: 4s;
+      }
+    }
+    &:nth-child(8) {
+      top: 5%;
+      right: 5%;
+      animation-delay: 2s;
+      &::before, &::after {
+        animation-delay: 2s;
+      }
+    }
+    &:nth-child(9) {
+      top: 25%;
+      right: 30%;
+      animation-delay: 4s;
+      &::before, &::after {
+        animation-delay: 4s;
+      }
+    }
+    &:nth-child(10) {
+      top: 15%;
+      left: 45%;
+      animation-delay: 6s;
+      &::before, &::after {
+        animation-delay: 6s;
       }
     }
   }
 
 }
 
-@keyframes spawn {
-  0% {
-    width: 0;
-  }
-  33% {
-    width: 6rem;
-  }
-  100% {
-    width: 6rem;
-  }
-}
-
-@keyframes shoot {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(200rem);
-  }
-}
-
 @keyframes shine {
   0% {
-    width: 0;
+    width: 0.01rem;
   }
   50% {
-    width: 30px;
+    width: 1rem;
   }
   100% {
-    width: 0;
+    width: 0.01rem;
   }
 }
 
@@ -148,7 +169,8 @@ footer {
     font-size: var(--font-20);
   }
   .intro {
-    font-size: var(--font-72)
+    font-size: var(--font-72);
+    text-shadow: 0 0 2rem var(--skyblue);
   }
   .tagline {
     color: var(--color-secondary);
