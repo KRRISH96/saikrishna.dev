@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { grretByTimeOfDay } from "../helpers/utils";
+import Navigation from "../components/navigation";
 
 const IndexPage = () => (
   <Layout isHomePage>
@@ -12,6 +12,7 @@ const IndexPage = () => (
       <p className="greeting">{grretByTimeOfDay()}</p>
       <h1 className="intro">I'm Sai</h1>
       <p className="tagline">A Self-Taught and Passionate Frontend Engineer</p>
+      <Navigation isHomePage />
     </div>
   </Layout>
 );

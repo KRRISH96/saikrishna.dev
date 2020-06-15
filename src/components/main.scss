@@ -189,3 +189,15 @@ footer {
     font-size: var(--font-20);
   }
 }
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: capitalize;
+  list-style-type: none;
+  margin: var(--s-1);
+  li {
+    padding: var(--s-0_5) var(--s-1);
+  }
+}

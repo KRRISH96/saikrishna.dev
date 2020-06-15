@@ -14,3 +14,10 @@ export const HOUR_FROM_TIME_OF_DAY = Object.freeze({
   night: 19,
   midNight: 0,
 });
+
+export const APP_ROUTES = Object.freeze({
+  about: '/about',
+  projects: '/projects',
+  blogs: '/blogs',
+  contact: '/contact',
+});
