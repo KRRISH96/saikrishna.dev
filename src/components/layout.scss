@@ -1,8 +1,9 @@
 @import 'theme.scss';
 @import 'main.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto Mono', monospace, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -188,7 +189,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 16px georgia, serif;
+  font: 16px 'Roboto Mono', monospace, georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -203,7 +204,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'Roboto Mono', monospace, georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
