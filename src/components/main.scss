@@ -1,3 +1,5 @@
+@import '_mixins.scss';
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -15,21 +17,31 @@ footer {
 }
 
 .moon {
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   border-radius: 50%;
   position: absolute;
   left: 6.25%;
   right: 79.86%;
-  top: 10%;
+  top: 7%;
   bottom: 67.78%;
   background: var(--planet-bg);
   box-shadow: 0px 0px 50px var(--planet-shadow);
   z-index: -999;
   &.small {
-    width: 140px;
-    height: 140px;
+    width: 8.5rem;
+    height: 8.5rem;
     box-shadow: 0px 0px 35px var(--planet-shadow);
+  }
+}
+@include break-point(tablet-portrait-up) {
+  .moon {
+    width: 8rem;
+    height: 8rem;
+    &.small {
+      width: 6rem;
+      height: 6rem;
+    }
   }
 }
 
