@@ -48,8 +48,6 @@ footer {
     position: absolute;
     display: inline-block;
     background: linear-gradient(-45deg, var(--planet-bg), rgba(0,0,255, 0));
-    width: 0;
-    height: 0.1rem;
     &::before, &::after {
       position: absolute;
       content: '';

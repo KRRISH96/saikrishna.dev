@@ -77,6 +77,9 @@
   --color-secondary: var(--dark-secondary);
   --planet-bg: var(--sun);
   --planet-shadow: var(--sun-shadow);
+  .stars {
+    visibility: hidden;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -89,6 +92,9 @@
     --color-secondary: var(--dark-secondary);
     --planet-bg: var(--sun);
     --planet-shadow: var(--sun-shadow);
+    .stars {
+      visibility: hidden;
+    }
   }
 }
 
