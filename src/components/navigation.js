@@ -4,15 +4,17 @@ import { Link } from "gatsby";
 import { APP_ROUTES } from "../helpers/constants";
 
 const Navigation = ({ isHomePage }) => (
-  <ul className={`navigation ${!isHomePage ? "top-nav" : ""}`}>
-    {Object.keys(APP_ROUTES).map(route => (
-      <li key={route}>
-        <Link to={APP_ROUTES[route]} activeClassName="active">
-          {route}
-        </Link>
-      </li>
-    ))}
-  </ul>
+  <nav>
+    <ul className={`navigation ${!isHomePage ? "top-nav" : ""}`}>
+      {Object.keys(APP_ROUTES).map(route => (
+        <li key={route}>
+          <Link to={APP_ROUTES[route]} activeClassName="active">
+            {route}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  </nav>
 );
 
 Navigation.propTypes = {
