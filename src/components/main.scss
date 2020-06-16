@@ -209,3 +209,15 @@ footer {
     padding: var(--s-0_5) var(--s-1);
   }
 }
+
+.about-page {
+ .profile-image-container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   .profile-image {
+     border-radius: 25%;
+     border: 0.1rem solid var(--color-secondary);
+   }
+ }
+}
