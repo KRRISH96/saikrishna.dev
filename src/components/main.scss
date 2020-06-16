@@ -3,16 +3,22 @@
 .container {
   margin: 0 auto;
   max-width: 1279px;
-  padding: var(--s-1_25);
 }
 
+header, footer {
+  height: 4rem;
+}
+
+main {
+  padding: var(--s-1_25);
+  min-height: calc(100vh - 8rem); // (2*4rem) footer + header height
+}
 
 p {
   color: var(--text);
 }
 
 footer {
-  height: 3rem;
   text-align: center;
 }
 
@@ -171,8 +177,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: var(--s-1);
-  height: calc(100vh - 5.5rem); // 2*1.25 top/bottom container padding + 3rem footer height
+  height: calc(100vh - 6.5rem); // 2*1.25 top/bottom main padding + 4rem footer height
   text-align: center;
   .greeting {
     color: var(--orange);
@@ -196,7 +201,7 @@ footer {
   align-items: center;
   text-transform: capitalize;
   list-style-type: none;
-  margin: var(--s-1);
+  padding: var(--s-1);
   &.top-nav {
     justify-content: flex-end;
   }
