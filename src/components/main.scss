@@ -197,6 +197,9 @@ footer {
   text-transform: capitalize;
   list-style-type: none;
   margin: var(--s-1);
+  &.top-nav {
+    justify-content: flex-end;
+  }
   li {
     padding: var(--s-0_5) var(--s-1);
   }

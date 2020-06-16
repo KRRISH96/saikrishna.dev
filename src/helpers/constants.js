@@ -16,8 +16,8 @@ export const HOUR_FROM_TIME_OF_DAY = Object.freeze({
 });
 
 export const APP_ROUTES = Object.freeze({
-  about: '/about',
-  projects: '/projects',
-  blogs: '/blogs',
-  contact: '/contact',
+  about: "/about",
+  projects: "/projects",
+  blogs: "/blogs",
+  contact: "/contact",
 });

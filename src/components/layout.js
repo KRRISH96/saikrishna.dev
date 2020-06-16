@@ -9,9 +9,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header";
-import "./layout.scss";
 import Theme from "./theme";
+import Navigation from "./navigation";
+import "./layout.scss";
 
 const Layout = ({ children, isHomePage }) => {
   const data = useStaticQuery(graphql`
@@ -25,27 +25,29 @@ const Layout = ({ children, isHomePage }) => {
   `);
 
   return (
-    <>
-      {!isHomePage && <Header siteTitle={data.site.siteMetadata.title} />}
-      <div className="container">
-        <main>
-          <div className={`moon ${!isHomePage ? "small" : ""}`}></div>
-          <div className="stars">
-            {Array(10)
-              .fill()
-              .map((_e, i) => (
-                <span className="star" key={`star-${i}`}></span>
-              ))}
-          </div>
-          {children}
-          <Theme />
-        </main>
-        <footer>
-          © {new Date().getFullYear()}, Made with ❤️ by Sai Krishna Prasad
-          Kandula.
-        </footer>
-      </div>
-    </>
+    <div className="container">
+      {!isHomePage && (
+        <header>
+          <Navigation />
+        </header>
+      )}
+      <main>
+        <div className={`moon ${!isHomePage ? "small" : ""}`}></div>
+        <div className="stars">
+          {Array(10)
+            .fill()
+            .map((_e, i) => (
+              <span className="star" key={`star-${i}`}></span>
+            ))}
+        </div>
+        {children}
+        <Theme />
+      </main>
+      <footer>
+        © {new Date().getFullYear()}, Made with ❤️ by Sai Krishna Prasad
+        Kandula.
+      </footer>
+    </div>
   );
 };
 
