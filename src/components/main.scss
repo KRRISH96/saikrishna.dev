@@ -1,4 +1,8 @@
 @import 'mixins';
+$planet-size: 12.5rem;
+$planet-size-small: 8.5rem;
+$planet-size-tablet: 8rem;
+$planet-size-tablet-small: 6rem;
 
 .container {
   margin: 0 auto;
@@ -34,30 +38,50 @@ footer {
   text-align: center;
 }
 
-.moon {
-  width: 12.5rem;
-  height: 12.5rem;
-  border-radius: 50%;
+%planet-position {
   position: absolute;
   top: 6%;
   left: 3%;
+}
+
+.planet {
+  @extend %planet-position;
+  width: $planet-size;
+  height: $planet-size;
+  border-radius: 50%;
   background: var(--planet-bg);
   box-shadow: 0px 0px 50px var(--planet-shadow);
   z-index: -999;
   &.small {
-    width: 8.5rem;
-    height: 8.5rem;
+    width: $planet-size-small;
+    height: $planet-size-small;
     box-shadow: 0px 0px 35px var(--planet-shadow);
   }
 }
+
+.rocket {
+  @extend %flex-ai-c-jc-c;
+  @extend %planet-position;
+  color: var(--dark-blue);
+  transform: rotate(-90deg);
+  font-size: var(--font-32);
+  width: $planet-size-small;
+  height: $planet-size-small;
+  border-radius: 50%;
+}
+
 @include break-point-down(tablet-portrait) {
-  .moon {
-    width: 8rem;
-    height: 8rem;
+  .planet {
+    width: $planet-size-tablet;
+    height: $planet-size-tablet;
     &.small {
-      width: 6rem;
-      height: 6rem;
+      width: $planet-size-tablet-small;
+      height: $planet-size-tablet-small;
     }
+  }
+  .rocket {
+    width: $planet-size-tablet-small;
+    height: $planet-size-tablet-small;
   }
 }
 

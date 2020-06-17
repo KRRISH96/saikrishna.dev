@@ -11,17 +11,20 @@ import PropTypes from "prop-types";
 import Theme from "./theme";
 import Navigation from "./navigation";
 import "./layout.scss";
+import { FaRocket } from "react-icons/fa";
+import { Link } from "gatsby";
 
 const Layout = ({ children, isHomePage }) => (
   <>
     {!isHomePage && (
       <header>
+      <Link to="/" className="rocket"><FaRocket /></Link>
         <Navigation />
       </header>
     )}
     <div className="container">
       <main>
-        <div className={`moon ${!isHomePage ? "small" : ""}`}></div>
+        <div className={`planet ${!isHomePage ? "small" : ""}`}></div>
         <div className="stars">
           {Array(10)
             .fill()
