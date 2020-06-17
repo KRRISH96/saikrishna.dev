@@ -12,6 +12,8 @@
   --grey: #868E95;
   --greyish: #C2CCD7;
   --greyish-secondary: #C4C4C4;
+  --pink: #9C27B0;
+  --violet: #323EDD;
   --moon: rgba(196, 196, 196, 0.7);
   --moon-shadow: rgba(255, 255, 255, 0.75);
   --sun: rgba(255, 191, 0, 0.5);
@@ -68,7 +70,7 @@
 
 // Themes
 // Dark specific styles aren't necessary as theme is defaulted to dark
-#theme-light {
+@mixin light-theme {
   --bg: var(--white);
   --bg-invert: var(--dark);
   --bg-secondary: var(--white-secondary);
@@ -77,24 +79,20 @@
   --color-secondary: var(--dark-secondary);
   --planet-bg: var(--sun);
   --planet-shadow: var(--sun-shadow);
+  --link: var(--violet);
+  --link-active: var(--pink);
   .stars {
     visibility: hidden;
   }
 }
 
+#theme-light {
+  @include light-theme;
+}
+
 @media (prefers-color-scheme: light) {
   #theme-system {
-    --bg: var(--white);
-    --bg-invert: var(--dark);
-    --bg-secondary: var(--white-secondary);
-    --color: var(--dark);
-    --color-invert: var(--white);
-    --color-secondary: var(--dark-secondary);
-    --planet-bg: var(--sun);
-    --planet-shadow: var(--sun-shadow);
-    .stars {
-      visibility: hidden;
-    }
+    @include light-theme;
   }
 }
 
