@@ -30,16 +30,15 @@ const AboutPage = () => {
           />
         </div>
         <p>
-          I'm Sai Krishna Prasad, Frontend Engineer based out of Tirupathi,
-          India. I started programming back in Febrauray 2018 to come out of a
+          I'm Sai Krishna Prasad, Frontend Engineer from India. I started programming back in February 2018 to come out of a
           month-long depression I was in, due to a failed attempt in pursuing my
-          childhood dream. Since then I didn't turn back,
+          childhood dream. Since then I didn't look back. If I can do it, you can too!
         </p>
         <p>
-          Cycling and cooking are my best friends while not coding. I also enjoy
-          listening to pleasant music on Spotify. Watching documentaries and
-          listening podcasts are another source of knowledge apart from reading
-          articles and exploring the internet.
+          I architect and develop Web Applications using ReactJs, JavaScript, Ruby on Rails, HTML, CSS, SASS and various other add-on tools and libraries. Pixel perfect technical implementations is what fuels me. My knowledge resources include documentaries, podcasts, articles and mother google!
+        </p>
+        <p>
+          Cycling and cooking are my best friends while not coding.
         </p>
         <br />
         <ul>
