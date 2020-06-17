@@ -31,6 +31,7 @@ ul {
 footer {
   @extend %flex-ai-c-jc-c;
   padding: var(--s-1_25);
+  text-align: center;
 }
 
 .moon {
@@ -187,14 +188,14 @@ footer {
   height: calc(100vh - 6.5rem); // 2*1.25 top/bottom main padding + 4rem footer height
   text-align: center;
   .greeting {
-    color: var(--orange);
+    color: var(--link-active);
     font-size: var(--font-20);
     font-style: italic;
     font-weight: bold;
   }
   .intro {
     font-size: var(--font-72);
-    text-shadow: 0 0 2rem var(--skyblue);
+    text-shadow: 0 0 2rem var(--link);
   }
   .tagline {
     color: var(--color-secondary);
