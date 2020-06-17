@@ -40,7 +40,7 @@ footer {
     box-shadow: 0px 0px 35px var(--planet-shadow);
   }
 }
-@include break-point(tablet-portrait-up) {
+@include break-point-down(tablet-portrait) {
   .moon {
     width: 8rem;
     height: 8rem;
@@ -207,6 +207,13 @@ footer {
   }
   li {
     padding: var(--s-0_5) var(--s-1);
+  }
+}
+
+@include break-point-up(tablet-portrait) {
+  .page-title {
+    margin-left: var(--s-2_5);
+    margin-top: var(--s-1);
   }
 }
 
