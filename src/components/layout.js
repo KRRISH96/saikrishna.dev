@@ -13,24 +13,14 @@ import Theme from "./theme";
 import Navigation from "./navigation";
 import "./layout.scss";
 
-const Layout = ({ children, isHomePage }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
-  return (
+const Layout = ({ children, isHomePage }) => (
+  <>
+    {!isHomePage && (
+      <header>
+        <Navigation />
+      </header>
+    )}
     <div className="container">
-      {!isHomePage && (
-        <header>
-          <Navigation />
-        </header>
-      )}
       <main>
         <div className={`moon ${!isHomePage ? "small" : ""}`}></div>
         <div className="stars">
@@ -43,13 +33,12 @@ const Layout = ({ children, isHomePage }) => {
         {children}
         <Theme />
       </main>
-      <footer>
-        © {new Date().getFullYear()}, Made with ❤️ by Sai Krishna Prasad
-        Kandula.
-      </footer>
     </div>
-  );
-};
+    <footer>
+      © {new Date().getFullYear()}, Made with ❤️ by Sai Krishna Prasad Kandula.
+    </footer>
+  </>
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
