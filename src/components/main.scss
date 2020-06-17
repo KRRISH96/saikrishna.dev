@@ -211,6 +211,9 @@ footer {
   &.top-nav {
     justify-content: flex-end;
     margin: 0;
+    @include break-point-down(phone-only) {
+      justify-content: center;
+    }
   }
   li {
     padding: var(--s-0_5) var(--s-1);
