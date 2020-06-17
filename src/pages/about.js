@@ -21,7 +21,12 @@ const AboutPage = () => {
     <Layout>
       <SEO title="About" />
       <div className="about-page">
-        <h1 className="page-title">Namaste 🙏🏼</h1>
+        <h1 className="page-title">
+          Namaste{" "}
+          <span role="img" aria-label="hello">
+            &nbsp;🙏🏼&nbsp;
+          </span>
+        </h1>
         <div className="profile-image-container">
           <Img
             fixed={data.profileImage.childImageSharp.fixed}
@@ -30,26 +35,38 @@ const AboutPage = () => {
           />
         </div>
         <p>
-          I'm Sai Krishna Prasad, Frontend Engineer from India. I started programming back in February 2018 to come out of a
-          month-long depression I was in, due to a failed attempt in pursuing my
-          childhood dream. Since then I didn't look back. If I can do it, you can too!
+          I'm Sai Krishna Prasad, Frontend Engineer from India. I started
+          programming back in February 2018 to come out of a month-long
+          depression I was in, due to a failed attempt in pursuing my childhood
+          dream. Since then I didn't look back. If I can do it, you can too!
         </p>
         <p>
-          I architect and develop Web Applications using ReactJs, JavaScript, Ruby on Rails, HTML, CSS, SASS and various other add-on tools and libraries. Pixel perfect technical implementations is what fuels me. My knowledge resources include documentaries, podcasts, articles and mother google!
+          I architect and develop Web Applications using ReactJs, JavaScript,
+          Ruby on Rails, HTML, CSS, SASS and various other add-on tools and
+          libraries. Pixel perfect technical implementations is what fuels me.
+          My knowledge resources include documentaries, podcasts, articles and
+          mother google!
         </p>
-        <p>
-          Cycling and cooking are my best friends while not coding.
-        </p>
+        <p>Cycling and cooking are my best friends while not coding.</p>
         <br />
         <ul>
           <li>
-            <Link to={APP_ROUTES.contact}>🤗 Say Hello!</Link>
+            <span role="img" aria-label="contact">
+              🤗&nbsp;
+            </span>
+            <Link to={APP_ROUTES.contact}>Say Hello!</Link>
           </li>
           <li>
-            <Link to={APP_ROUTES.blogs}>📝 Blogs</Link>
+            <span role="img" aria-label="blog posts">
+              📝&nbsp;
+            </span>
+            <Link to={APP_ROUTES.blogs}>Blogs</Link>
           </li>
           <li>
-            <Link to={APP_ROUTES.projects}>💻 Projects</Link>
+            <span role="img" aria-label="projects">
+              💻&nbsp;
+            </span>
+            <Link to={APP_ROUTES.projects}>Projects</Link>
           </li>
         </ul>
       </div>

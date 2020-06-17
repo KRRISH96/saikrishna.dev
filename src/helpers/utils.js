@@ -13,7 +13,7 @@ export function isDayTime() {
 
 export function grretByTimeOfDay() {
   const hourOfTheDay = getCurrentHours();
-  let greeting = "Hello";
+  let greeting;
   switch (true) {
     // 12am to 11:59am
     case hourOfTheDay >= HOUR_FROM_TIME_OF_DAY.midNight &&
@@ -28,6 +28,9 @@ export function grretByTimeOfDay() {
     // 5pm to rest of day
     case hourOfTheDay >= HOUR_FROM_TIME_OF_DAY.evening:
       greeting = "Good Evening";
+      break;
+    default:
+      greeting = "Hello";
       break;
   }
   return `${greeting},`;

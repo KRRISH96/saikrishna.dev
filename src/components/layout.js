@@ -35,7 +35,7 @@ const Layout = ({ children, isHomePage }) => (
       </main>
     </div>
     <footer>
-      © {new Date().getFullYear()}, Made with ❤️ by Sai Krishna Prasad Kandula.
+      © {new Date().getFullYear()}, Made with<span role="img" aria-label="heart">&nbsp;❤️&nbsp;</span>by Sai Krishna Prasad Kandula.
     </footer>
   </>
 );
