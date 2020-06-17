@@ -2,7 +2,13 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1279px;
+  max-width: 1200px;
+}
+
+%flex-ai-c-jc-c {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
 
 header, footer {
@@ -18,8 +24,13 @@ p {
   color: var(--text);
 }
 
+ul {
+  list-style-type: none;
+}
+
 footer {
-  text-align: center;
+  @extend %flex-ai-c-jc-c;
+  padding: var(--s-1_25);
 }
 
 .moon {
@@ -173,10 +184,8 @@ footer {
 }
 
 .home-page {
-  display: flex;
+  @extend %flex-ai-c-jc-c;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: calc(100vh - 6.5rem); // 2*1.25 top/bottom main padding + 4rem footer height
   text-align: center;
   .greeting {
@@ -196,32 +205,28 @@ footer {
 }
 
 .navigation {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  margin-left: 0;
+  @extend %flex-ai-c-jc-c;
   text-transform: capitalize;
-  list-style-type: none;
   padding: var(--s-1);
   &.top-nav {
     justify-content: flex-end;
+    margin: 0;
   }
   li {
     padding: var(--s-0_5) var(--s-1);
   }
 }
 
-@include break-point-up(tablet-portrait) {
-  .page-title {
-    margin-left: var(--s-2_5);
-    margin-top: var(--s-1);
-  }
+.page-title {
+  margin-top: var(--s-2);
+  @extend %flex-ai-c-jc-c;
 }
 
 .about-page {
- .profile-image-container {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  .profile-image-container {
+    @extend %flex-ai-c-jc-c;
+    margin: var(--s-2) var(--s-1);
    .profile-image {
      border-radius: 25%;
      border: 0.1rem solid var(--color-secondary);
