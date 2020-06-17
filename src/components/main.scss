@@ -226,8 +226,12 @@ footer {
     @extend %flex-ai-c-jc-c;
     margin: var(--s-2) var(--s-1);
    .profile-image {
-     border-radius: 25%;
+     border-radius: 50%;
      border: 0.1rem solid var(--color-secondary);
    }
- }
+  }
+  p {
+    text-align: justify;
+    line-height: 1.75rem;
+  }
 }
