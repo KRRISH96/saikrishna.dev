@@ -7,7 +7,7 @@ function Theme() {
   const defaultTheme =
     isWindowAvailable() && localStorage.getItem(THEME_PREFERENCE_KEY)
       ? localStorage.getItem(THEME_PREFERENCE_KEY)
-      : THEMES.auto;
+      : THEMES.dark;
   const [theme, setTheme] = useState(defaultTheme);
 
   useEffect(() => {
