@@ -35,3 +35,7 @@ export function grretByTimeOfDay() {
   }
   return `${greeting},`;
 }
+
+export function isWindowAvailable() {
+  return typeof window !== "undefined";
+}

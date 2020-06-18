@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { FaSun, FaMoon, FaCog, FaGlobeAmericas } from "react-icons/fa";
 import { THEME_PREFERENCE_KEY, THEMES } from "../helpers/constants";
-import { isDayTime } from "../helpers/utils";
+import { isDayTime, isWindowAvailable } from "../helpers/utils";
 
 function Theme() {
   const defaultTheme =
-    localStorage.getItem(THEME_PREFERENCE_KEY) || THEMES.auto;
+    isWindowAvailable() && localStorage.getItem(THEME_PREFERENCE_KEY)
+      ? localStorage.getItem(THEME_PREFERENCE_KEY)
+      : THEMES.auto;
   const [theme, setTheme] = useState(defaultTheme);
 
   useEffect(() => {
@@ -21,7 +23,8 @@ function Theme() {
 
     document.body.setAttribute("data-theme", themePreference);
     document.body.setAttribute("id", `theme-${themeToApply}`);
-    localStorage.setItem(THEME_PREFERENCE_KEY, themePreference);
+    isWindowAvailable() &&
+      localStorage.setItem(THEME_PREFERENCE_KEY, themePreference);
   };
 
   const ThemeIcon = ({ children, themePreference, ...props }) => (
