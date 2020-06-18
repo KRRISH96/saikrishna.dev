@@ -1,7 +1,13 @@
 import { HOUR_FROM_TIME_OF_DAY } from "./constants";
+/**
+ * @returns {Number} current hour of the day
+ */
 export function getCurrentHours() {
   return new Date().getHours();
 }
+/**
+ * @returns {Boolean} if the current time is day or not from pre defined hours range
+ */
 export function isDayTime() {
   const hourOfTheDay = getCurrentHours();
   // 7am to 6:59pm
@@ -11,6 +17,9 @@ export function isDayTime() {
   );
 }
 
+/**
+ * @returns {String} Greeting by hour of the day or Hello
+ */
 export function grretByTimeOfDay() {
   const hourOfTheDay = getCurrentHours();
   let greeting;
@@ -36,6 +45,9 @@ export function grretByTimeOfDay() {
   return `${greeting},`;
 }
 
+/**
+ * @returns {Boolean} check if window object is present or not
+ */
 export function isWindowAvailable() {
   return typeof window !== "undefined";
 }
