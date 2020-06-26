@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaSun, FaMoon, FaCog, FaGlobeAmericas } from "react-icons/fa";
+import { FaSun, FaMoon, FaCog, FaRegClock } from "react-icons/fa";
 import { THEME_PREFERENCE_KEY, THEMES } from "../helpers/constants";
 import { isDayTime, isWindowAvailable } from "../helpers/utils";
 
@@ -52,7 +52,7 @@ function Theme() {
         themePreference={THEMES.auto}
         title="Light during Day(7am-7pm) and Dark during Night"
       >
-        <FaGlobeAmericas />
+        <FaRegClock />
       </ThemeIcon>
     </div>
   );
