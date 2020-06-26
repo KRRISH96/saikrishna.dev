@@ -16,7 +16,7 @@ $planet-size-tablet-small: 6rem;
 }
 
 header, footer {
-  height: 4rem;
+  height: 5rem;
 }
 
 main {
@@ -33,7 +33,6 @@ ul {
 }
 
 footer {
-  @extend %flex-ai-c-jc-c;
   padding: var(--s-1_25);
   text-align: center;
 }
@@ -209,7 +208,7 @@ footer {
 .home-page {
   @extend %flex-ai-c-jc-c;
   flex-direction: column;
-  height: calc(100vh - 6.5rem); // 2*1.25 top/bottom main padding + 4rem footer height
+  height: calc(100vh - 7.5rem); // 2*1.25 top/bottom main padding + 5rem footer height
   text-align: center;
   .greeting {
     color: var(--link-active);
