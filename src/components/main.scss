@@ -144,17 +144,17 @@ footer {
     &:nth-child(5) {
       bottom: 30%;
       right: 10%;
-      animation-delay: 5.5s;
+      animation-delay: 5s;
       &::before, &::after {
-        animation-delay: 5.5s;
+        animation-delay: 5s;
       }
     }
     &:nth-child(6) {
       top: 65%;
       right: 65%;
-      animation-delay: 2.5s;
+      animation-delay: 4s;
       &::before, &::after {
-        animation-delay: 2.5s;
+        animation-delay: 4s;
       }
     }
     &:nth-child(7) {
