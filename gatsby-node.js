@@ -3,5 +3,23 @@
  *
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
+const projects = require("./src/data/projects.json");
 
-// You can delete this file if you're not using it
+exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
+  projects.forEach(project => {
+    const { name, description, imageSrc, links, tags } = project;
+    const node = {
+      id: createNodeId(`Pokemon-${name}`),
+      name,
+      description,
+      imageSrc,
+      links,
+      tags,
+      internal: {
+        type: "Project",
+        contentDigest: createContentDigest(project),
+      },
+    };
+    actions.createNode(node);
+  });
+};

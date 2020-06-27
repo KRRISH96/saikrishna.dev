@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Mentor",
+    "description": "A Multiple Service Platform. Mentor has everything you need to keep customers happy and coming back",
+    "imageSrc": "",
+    "links": {
+      "live": "https://www.mentorhq.com",
+      "github": null
+    },
+    "tags": ["react", "ruby on rails", "javascript", "sass"]
+  },
+  {
+    "name": "Render Smooth Image React",
+    "description": "An open-sourced React component to render images smoothly",
+    "imageSrc": "",
+    "links": {
+      "live": "https://www.npmjs.com/package/render-smooth-image-react",
+      "github": "https://github.com/KRRISH96/render-smooth-image-react"
+    },
+    "tags": ["react", "npm", "javascript", "sass"]
+  },
+  {
+    "name": "TV Show Tracker",
+    "description": "One stop app for all your favourite TV shows.",
+    "imageSrc": "",
+    "links": {
+      "live": "https://tvshowtracker.herokuapp.com/",
+      "github": null
+    },
+    "tags": ["react", "typescript", "node", "sass"]
+  }
+]
