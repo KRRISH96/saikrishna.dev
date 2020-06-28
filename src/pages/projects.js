@@ -5,8 +5,30 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 const ProjectsPage = ({data}) => {
+  const projects = useStaticQuery(graphql`
+    query {
+      allProject {
+        nodes {
+          id
+          name
+          description
+          links {
+            live
+            github
+          }
+          tags
+          image {
+            childImageSharp {
+              fluid(maxWidth: 384) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
   
-console.log(data)
   return (
     <Layout>
       <SEO title="Projects" />
@@ -18,30 +40,5 @@ console.log(data)
     </Layout>
   );
 };
-
-
-export const projects = useStaticQuery(graphql`
-  query {
-    allProject {
-      nodes {
-        id
-        name
-        description
-        links {
-          live
-          github
-        }
-        tags
-        image {
-          childImageSharp {
-            fluid(maxWidth: 384) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`);
 
 export default ProjectsPage;
