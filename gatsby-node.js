@@ -8,9 +8,9 @@ const projects = require("./src/data/projects.json");
 
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
   projects.forEach(project => {
-    const { name: projectName, description, imageSrc, links, tags } = project;
-    const {name, ext} = path.parse(imageSrc);
-    const absolutePath = `${__dirname}/src/images/${imageSrc}`;
+    const { name: projectName, description, image, links, tags } = project;
+    const {name, ext} = path.parse(image);
+    const absolutePath = `${__dirname}/src/images/${image}`;
 
     const imageData = {
       name,
@@ -29,10 +29,10 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
     };
     actions.createNode(imageNode);
     const node = {
-      id: createNodeId(`Pokemon-${name}`),
+      id: createNodeId(`Project-${name}`),
       name: projectName,
       description,
-      imageSrc: imageNode,
+      image: imageNode,
       links,
       tags,
       internal: {

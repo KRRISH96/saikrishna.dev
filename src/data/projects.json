@@ -2,7 +2,7 @@
   {
     "name": "Mentor",
     "description": "A Multi-tenant customer retention platform. Mentor has everything you need to keep customers happy and coming back",
-    "imageSrc": "mentor_mega.png",
+    "image": "mentor_mega.png",
     "links": {
       "live": "https://www.mentorhq.com",
       "github": null
@@ -12,7 +12,7 @@
   {
     "name": "Render Smooth Image React",
     "description": "An Open-source lightweight and zero dependency image component for enhanced image rendering in React applications",
-    "imageSrc": "smooth_image.png",
+    "image": "smooth_image.png",
     "links": {
       "live": "https://www.npmjs.com/package/render-smooth-image-react",
       "github": "https://github.com/KRRISH96/render-smooth-image-react"
@@ -22,7 +22,7 @@
   {
     "name": "TV Show Tracker",
     "description": "A MERN full-stack application to allow customers to search TV shows from all over the world. Created an auto-updating backend to show a list of trending shows on the landing page",
-    "imageSrc": "tv_show_tracker.png",
+    "image": "tv_show_tracker.png",
     "links": {
       "live": "https://tvshowtracker.herokuapp.com",
       "github": null
@@ -32,7 +32,7 @@
   {
     "name": "COVID 19 India",
     "description": "React SPA showing stats for COVID-19 cases in India by the district. Data is displayed in a tabular and graphical representation using React Chartkick, a React chart components library for chart.js",
-    "imageSrc": "covid_india.png",
+    "image": "covid_india.png",
     "links": {
       "live": "https://covid19indianstates.netlify.com",
       "github": "https://github.com/KRRISH96/covid19-india"
@@ -42,7 +42,7 @@
   {
     "name": "React Lite UI",
     "description": "An Open-source customizable and themeable React UI component library with 25+ light-weight components",
-    "imageSrc": "react_lite_ui.png",
+    "image": "react_lite_ui.png",
     "links": {
       "live": "https://react-lite-ui.netlify.app",
       "github": "https://github.com/Codebrahma/react-lite-ui"
