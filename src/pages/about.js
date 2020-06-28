@@ -52,7 +52,7 @@ const AboutPage = () => {
         <ul>
           <li>
             <span role="img" aria-label="contact">
-             👋🏼&nbsp;
+              👋🏼&nbsp;
             </span>
             <Link to={APP_ROUTES.contact}>Say Hello!</Link>
           </li>
