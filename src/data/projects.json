@@ -1,7 +1,7 @@
 [
   {
     "name": "Mentor",
-    "description": "A Multiple Service Platform. Mentor has everything you need to keep customers happy and coming back",
+    "description": "A Multi-tenant customer retention platform. Mentor has everything you need to keep customers happy and coming back",
     "imageSrc": "",
     "links": {
       "live": "https://www.mentorhq.com",
@@ -11,7 +11,7 @@
   },
   {
     "name": "Render Smooth Image React",
-    "description": "An open-sourced React component to render images smoothly",
+    "description": "An Open-source lightweight and zero dependency image component for enhanced image rendering in React applications",
     "imageSrc": "",
     "links": {
       "live": "https://www.npmjs.com/package/render-smooth-image-react",
@@ -21,12 +21,32 @@
   },
   {
     "name": "TV Show Tracker",
-    "description": "One stop app for all your favourite TV shows.",
+    "description": "A MERN full-stack application to allow customers to search TV shows from all over the world. Created an auto-updating backend to show a list of trending shows on the landing page",
     "imageSrc": "",
     "links": {
-      "live": "https://tvshowtracker.herokuapp.com/",
+      "live": "https://tvshowtracker.herokuapp.com",
       "github": null
     },
     "tags": ["react", "typescript", "node", "sass"]
+  },
+  {
+    "name": "COVID 19 India",
+    "description": "React SPA showing stats for COVID-19 cases in India by the district. Data is displayed in a tabular and graphical representation using React Chartkick, a React chart components library for chart.js",
+    "imageSrc": "",
+    "links": {
+      "live": "https://covid19indianstates.netlify.com",
+      "github": "https://github.com/KRRISH96/covid19-india"
+    },
+    "tags": ["react", "javascript", "chart.js", "sass"]
+  },
+  {
+    "name": "React Lite UI",
+    "description": "An Open-source customizable and themeable React UI component library with 25+ light-weight components",
+    "imageSrc": "",
+    "links": {
+      "live": "https://react-lite-ui.netlify.app",
+      "github": "https://github.com/Codebrahma/react-lite-ui"
+    },
+    "tags": ["react", "npm", "javascript", "sass"]
   }
 ]
