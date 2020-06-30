@@ -262,3 +262,13 @@ footer {
     line-height: 1.75rem;
   }
 }
+
+.projects-page {
+  .projects-container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, 20rem);;
+    grid-gap: var(--s-2);
+    justify-content: center;
+  }
+}

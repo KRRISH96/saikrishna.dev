@@ -1,6 +1,7 @@
 import React from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import "./styles.scss";
 
 const ProjectCard = ({
   project: { id, name, description, links, tags, image },
@@ -13,16 +14,20 @@ const ProjectCard = ({
     />
     <div className="project-card__details">
       <h4 className="project-card__title">
-        {name}
-        {!!links.live && (
+        {!!links.live ? (
           <a
             href={links.live}
             target="_blank"
             rel="noopener noreferer"
             className="project-card__link-live"
           >
-            EXT
+            {name}
+            <span className="icon">
+              <FaExternalLinkAlt />
+            </span>
           </a>
+        ) : (
+          name
         )}
       </h4>
       {!!links.github && (
@@ -32,13 +37,15 @@ const ProjectCard = ({
           rel="noopener noreferer"
           className="project-card__link-github"
         >
-          GIT
+          <FaGithub />
         </a>
       )}
       <p className="project-card__description">{description}</p>
       <ul className="project-card__tags">
         {tags.map(tag => (
-          <li key={tag} className={`tag-${tag}`}>{tag}</li>
+          <li key={tag} className={`tag-${tag}`}>
+            {tag}
+          </li>
         ))}
       </ul>
     </div>
