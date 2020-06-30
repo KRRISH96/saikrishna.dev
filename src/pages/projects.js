@@ -3,9 +3,12 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import ProjectCard from "../components/projects/ProjectCard";
 
-const ProjectsPage = ({data}) => {
-  const projects = useStaticQuery(graphql`
+const ProjectsPage = () => {
+  const {
+    allProject: { nodes: projectsList },
+  } = useStaticQuery(graphql`
     query {
       allProject {
         nodes {
@@ -28,14 +31,17 @@ const ProjectsPage = ({data}) => {
       }
     }
   `);
-  
+
   return (
     <Layout>
       <SEO title="Projects" />
-      <div className="about-page">
-        <h1 className="page-title">
-          Projects
-        </h1>
+      <div className="projects-page">
+        <h1 className="page-title">Projects</h1>
+        <div className="projects-container">
+          {projectsList.map(project => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
       </div>
     </Layout>
   );
