@@ -4,6 +4,12 @@ $github-icon-size: 3rem;
   background-color: var(--bg-secondary);
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: var(--shadow);
+  transform: scale(0.95);
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1);
+  }
   &__details {
     padding: 2rem 1rem;
     position: relative;
@@ -26,6 +32,7 @@ $github-icon-size: 3rem;
     height: $github-icon-size;
     background: var(--bg-invert);
     border-radius: 50%;
+    box-shadow: var(--shadow);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -3,6 +3,7 @@
   --dark: #0D1219;
   --dark-secondary: #1B293C;
   --dark-blue: #084177;
+  --bluish: #EEF;
   --skyblue: #06CDFF;
   --orange: #FF9000;
   --white: #FFF;
@@ -16,8 +17,9 @@
   --violet: #323EDD;
   --moon: rgba(196, 196, 196, 0.7);
   --moon-shadow: rgba(255, 255, 255, 0.75);
-  --sun: rgba(255, 191, 0, 0.5);
+  --sun: #F0DB4F;
   --sun-shadow: rgba(255, 193, 7, 1);
+  --shadow: 0 0 1rem var(--dark-secondary);
 
   // Theme defaults - defauted to dark theme
   --bg: var(--dark);
@@ -71,9 +73,10 @@
 // Themes
 // Dark specific styles aren't necessary as theme is defaulted to dark
 @mixin light-theme {
-  --bg: var(--white);
+  --bg: linear-gradient(var(--skyblue), var(--white) 50%);
   --bg-invert: var(--dark);
-  --bg-secondary: var(--white-secondary);
+  --bg-secondary: var(--white);
+  --shadow: 0 0 1rem var(--white-secondary);
   --color: var(--dark);
   --color-invert: var(--white);
   --color-secondary: var(--dark-secondary);
@@ -97,7 +100,7 @@
 }
 
 body {
-  background-color: var(--bg);
+  background: var(--bg);
   color: var(--color) !important;
   transition: background-color 0.2s linear;
   a {
@@ -126,6 +129,7 @@ body {
   right: 0.5rem;
   top: 10rem;
   overflow: hidden;
+  box-shadow: var(--shadow);
   .theme-icon {
     cursor: pointer;
     padding: var(--s-0_75);

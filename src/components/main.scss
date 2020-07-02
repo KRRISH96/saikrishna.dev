@@ -301,7 +301,8 @@ footer {
 
 .page-title {
   margin-top: var(--s-2);
-  @extend %flex-ai-c-jc-c;
+  display: flex;
+  align-items: center;
 }
 
 .banner {
@@ -310,7 +311,8 @@ footer {
   border-left: 0.3rem solid var(--link-active);
   border-radius: 0.3rem;
   padding: var(--s-1_5) var(--s-1);
-  margin: var(--s-2) var(--s-1_5);
+  margin: var(--s-2) 0;
+  box-shadow: var(--shadow);
   p {
     margin-bottom: var(--s-0_5);
   }
@@ -340,7 +342,6 @@ footer {
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, 22rem);;
     grid-gap: var(--s-2);
-    justify-content: center;
     margin-bottom: var(--s-5);
   }
 }
