@@ -4,17 +4,13 @@ $github-icon-size: 3rem;
   background-color: var(--bg-secondary);
   border-radius: 0.5rem;
   overflow: hidden;
-  &__image {
-    width: 100%;
-    height: 12rem;
-    object-fit: contain;
-  }
   &__details {
     padding: 2rem 1rem;
     position: relative;
   }
   &__title {
     text-transform: capitalize;
+    margin-bottom: var(--s-0_75);
     .icon {
       margin-left: 0.5rem;
     }

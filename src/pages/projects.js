@@ -22,8 +22,8 @@ const ProjectsPage = () => {
           tags
           image {
             childImageSharp {
-              fluid(maxWidth: 384) {
-                ...GatsbyImageSharpFluid
+              fixed(width: 352, height: 176) {
+                ...GatsbyImageSharpFixed
               }
             }
           }

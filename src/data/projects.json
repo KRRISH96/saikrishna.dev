@@ -7,7 +7,7 @@
       "live": "https://www.mentorhq.com",
       "github": null
     },
-    "tags": ["react", "ruby on rails", "javascript", "sass"]
+    "tags": ["react", "ruby", "javascript", "sass"]
   },
   {
     "name": "Render Smooth Image React",
@@ -37,7 +37,7 @@
       "live": "https://covid19indianstates.netlify.com",
       "github": "https://github.com/KRRISH96/covid19-india"
     },
-    "tags": ["react", "javascript", "chart.js", "sass"]
+    "tags": ["react", "javascript", "chartjs", "sass"]
   },
   {
     "name": "React Lite UI",

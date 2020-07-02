@@ -4,6 +4,15 @@ $planet-size-small: 8.5rem;
 $planet-size-tablet: 8rem;
 $planet-size-tablet-small: 6rem;
 
+$react: #61DBFB;
+$sass: #CC6699;
+$javascript: #F0DB4F;
+$ruby: #D3114F;
+$typescript: #007ACD;
+$npm: #CD3534;
+$node: #669D63;
+$chartjs: #FFCE56;
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -205,6 +214,53 @@ footer {
   }
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-bottom: var(--s-1);
+  .tag {
+    padding: var(--s-0_25);
+    margin: var(--s-0_25);
+    font-size: var(--font-12);
+    border: 0.1rem solid;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    &_react {
+      border-color: $react;
+      background: rgba($react, 0.2);
+    }
+    &_javascript {
+      border-color: $javascript;
+      background: rgba($javascript, 0.2);
+    }
+    &_sass {
+      border-color: $sass;
+      background: rgba($sass, 0.2);
+    }
+    &_ruby {
+      border-color: $ruby;
+      background: rgba($ruby, 0.2);
+    }
+    &_typescript {
+      border-color: $typescript;
+      background: rgba($typescript, 0.2);
+    }
+    &_npm {
+      border-color: $npm;
+      background: rgba($npm, 0.2);
+    }
+    &_node {
+      border-color: $node;
+      background: rgba($node, 0.2);
+    }
+    &_chartjs {
+      border-color: $chartjs;
+      background: rgba($chartjs, 0.2);
+    }
+  }
+}
+
 .home-page {
   @extend %flex-ai-c-jc-c;
   flex-direction: column;
@@ -267,7 +323,7 @@ footer {
   .projects-container {
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: repeat(auto-fit, 20rem);;
+    grid-template-columns: repeat(auto-fit, 22rem);;
     grid-gap: var(--s-2);
     justify-content: center;
   }

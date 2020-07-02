@@ -8,7 +8,7 @@ const ProjectCard = ({
 }) => (
   <div key={id} className="project-card">
     <Img
-      fluid={image.childImageSharp.fluid}
+      fixed={image.childImageSharp.fixed}
       alt={`${name} Project Image`}
       className="project-card__image"
     />
@@ -40,14 +40,14 @@ const ProjectCard = ({
           <FaGithub />
         </a>
       )}
-      <p className="project-card__description">{description}</p>
-      <ul className="project-card__tags">
+      <ul className="tags">
         {tags.map(tag => (
-          <li key={tag} className={`tag-${tag}`}>
+          <li key={tag} className={`tag tag_${tag}`}>
             {tag}
           </li>
         ))}
       </ul>
+      <p className="project-card__description">{description}</p>
     </div>
   </div>
 );
