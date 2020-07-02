@@ -42,6 +42,37 @@ const ProjectsPage = () => {
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
+        <div className="banner">
+          <p>
+            More on&nbsp;
+            <a
+              href="https://github.com/KRRISH96"
+              target="_blank"
+              rel="noopener noreferer"
+            >
+              GitHub
+            </a>
+            . Also, I do enjoy writing tiny bits and pieces of code when bored.
+          </p>
+          <p>
+            Check them out on&nbsp;
+            <a
+              href="https://codepen.io/saikrrish"
+              target="_blank"
+              rel="noopener noreferer"
+            >
+              Codepen
+            </a>
+            &nbsp;and&nbsp;
+            <a
+              href="https://repl.it/@KRRISH96"
+              target="_blank"
+              rel="noopener noreferer"
+            >
+              Repl.it
+            </a>
+          </p>
+        </div>
       </div>
     </Layout>
   );
