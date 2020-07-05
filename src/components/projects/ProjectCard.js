@@ -18,7 +18,7 @@ const ProjectCard = ({
           <a
             href={links.live}
             target="_blank"
-            rel="noopener noreferer"
+            rel="noopener noreferrer"
             className="project-card__link-live"
           >
             {name}
@@ -34,7 +34,7 @@ const ProjectCard = ({
         <a
           href={links.github}
           target="_blank"
-          rel="noopener noreferer"
+          rel="noopener noreferrer"
           className="project-card__link-github"
         >
           <FaGithub />

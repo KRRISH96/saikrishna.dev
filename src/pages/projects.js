@@ -1,6 +1,5 @@
 import React from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ProjectCard from "../components/projects/ProjectCard";
@@ -48,7 +47,7 @@ const ProjectsPage = () => {
             <a
               href="https://github.com/KRRISH96"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               GitHub
             </a>
@@ -59,7 +58,7 @@ const ProjectsPage = () => {
             <a
               href="https://codepen.io/saikrrish"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               Codepen
             </a>
@@ -67,7 +66,7 @@ const ProjectsPage = () => {
             <a
               href="https://repl.it/@KRRISH96"
               target="_blank"
-              rel="noopener noreferer"
+              rel="noopener noreferrer"
             >
               Repl.it
             </a>
