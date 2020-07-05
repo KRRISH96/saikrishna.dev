@@ -303,6 +303,9 @@ footer {
   margin-top: var(--s-2);
   display: flex;
   align-items: center;
+  @include break-point-down(tablet-portrait) {
+    justify-content: center;
+  }
 }
 
 .banner {
@@ -343,5 +346,8 @@ footer {
     grid-template-columns: repeat(auto-fit, 22rem);;
     grid-gap: var(--s-2);
     margin-bottom: var(--s-5);
+    @include break-point-down(tablet-portrait) {
+      justify-content: center;
+    }
   }
 }
