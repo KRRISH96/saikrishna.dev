@@ -1,7 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import "./styles.scss";
+import "./index.scss";
 
 const ProjectCard = ({
   project: { id, name, description, links, tags, image },
@@ -51,4 +51,5 @@ const ProjectCard = ({
     </div>
   </div>
 );
+
 export default ProjectCard;

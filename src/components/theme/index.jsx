@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaSun, FaMoon, FaCog, FaRegClock } from "react-icons/fa";
-import { THEME_PREFERENCE_KEY, THEMES } from "../helpers/constants";
-import { isDayTime, isWindowAvailable } from "../helpers/utils";
+import { THEME_PREFERENCE_KEY, THEMES } from "../../helpers/constants";
+import { isDayTime, isWindowAvailable } from "../../helpers/utils";
 
 function Theme() {
   const defaultTheme =

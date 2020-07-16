@@ -8,11 +8,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Theme from "./theme";
-import Navigation from "./navigation";
-import "./layout.scss";
+import Theme from "../theme";
+import Navigation from "../navigation";
 import { FaRocket } from "react-icons/fa";
 import { Link } from "gatsby";
+import "./index.scss";
 
 const Layout = ({ children, isHomePage }) => (
   <>
