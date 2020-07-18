@@ -4,13 +4,13 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 const path = require("path");
-const projects = require("./src/data/projects.json");
+const projects = require("./content/projects/projects.json");
 
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
   projects.forEach(project => {
     const { name: projectName, description, image, links, tags } = project;
     const { name, ext } = path.parse(image);
-    const absolutePath = `${__dirname}/src/images/${image}`;
+    const absolutePath = `${__dirname}/static/${image}`;
 
     const imageData = {
       name,
