@@ -8,9 +8,7 @@ const BlogsPage = () => {
       <SEO title="Blogs" />
       <div className="blogs-page">
         <h1 className="page-title">Blogs</h1>
-        <div className="blogs-container">
-          BLOGS LIST HERE
-        </div>
+        <div className="blogs-container">BLOGS LIST HERE</div>
       </div>
     </Layout>
   );
