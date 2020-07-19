@@ -9,11 +9,11 @@ const BlogCard = ({ blog: { id, frontmatter, fields } }) => (
     </h3>
     <p className="blog-card__meta">
       <span role="img" aria-label="clock">
-        ⏱&nbsp;
+        {"⏱ "}
       </span>
       {fields.readingTime.text}
       <span role="img" aria-label="calender">
-        &nbsp;🗓&nbsp;
+        {" 🗓 "}
       </span>
       {frontmatter.date}
     </p>

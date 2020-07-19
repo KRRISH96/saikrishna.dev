@@ -52,19 +52,19 @@ const AboutPage = () => {
         <ul>
           <li>
             <span role="img" aria-label="contact">
-              👋🏼&nbsp;
+              {"👋🏼 "}
             </span>
             <Link to={APP_ROUTES.contact}>Say Hello!</Link>
           </li>
           <li>
             <span role="img" aria-label="blog posts">
-              📝&nbsp;
+              {"📝 "}
             </span>
             <Link to={APP_ROUTES.blogs}>Blogs</Link>
           </li>
           <li>
             <span role="img" aria-label="projects">
-              💻&nbsp;
+              {"💻 "}
             </span>
             <Link to={APP_ROUTES.projects}>Projects</Link>
           </li>

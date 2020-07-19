@@ -41,7 +41,7 @@ const Layout = ({ children, isHomePage }) => (
     <footer>
       © {new Date().getFullYear()}, Made with
       <span role="img" aria-label="heart">
-        &nbsp;❤️&nbsp;
+        {" ❤️ "}
       </span>
       by Sai Krishna Prasad Kandula.
     </footer>
