@@ -10,7 +10,7 @@ keywords:
   - smooth-image
   - ux
 coverImage: ./images/smooth_image_rendering_cover.png
-path: /how-to-smoothly-render-images-in-react-app
+path: /blogs/how-to-smoothly-render-images-in-react-app
 tags:
   - react
   - scss
