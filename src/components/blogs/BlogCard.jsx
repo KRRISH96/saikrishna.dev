@@ -8,14 +8,14 @@ const BlogCard = ({ blog: { id, frontmatter, fields } }) => (
       <Link to={frontmatter.path}>{frontmatter.title}</Link>
     </h3>
     <p className="blog-card__meta">
-      <span role="img" aria-label="calender">
-        🗓&nbsp;
-      </span>
-      {frontmatter.date}
       <span role="img" aria-label="clock">
-        &nbsp;⏱&nbsp;
+        ⏱&nbsp;
       </span>
       {fields.readingTime.text}
+      <span role="img" aria-label="calender">
+        &nbsp;🗓&nbsp;
+      </span>
+      {frontmatter.date}
     </p>
     <p className="blog-card__description">{frontmatter.description}</p>
     <ul className="tags">
