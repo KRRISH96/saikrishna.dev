@@ -6,7 +6,7 @@ import "./index.scss";
 const ProjectCard = ({
   project: { id, name, description, links, tags, image },
 }) => (
-  <div key={id} className="project-card">
+  <div key={id} className="card project-card">
     <Img
       fixed={image.childImageSharp.fixed}
       alt={`${name} Project Image`}

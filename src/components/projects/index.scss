@@ -1,10 +1,6 @@
 $github-icon-size: 3rem;
 
 .project-card {
-  background-color: var(--bg-secondary);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: var(--shadow);
   transform: scale(0.95);
   transition: transform 0.2s;
   &:hover {

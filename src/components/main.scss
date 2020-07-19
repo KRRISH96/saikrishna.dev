@@ -324,6 +324,13 @@ footer {
   }
 }
 
+.card {
+  background-color: var(--bg-secondary);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
 .about-page {
   .profile-image-container {
     @extend %flex-ai-c-jc-c;
@@ -349,5 +356,11 @@ footer {
     @include break-point-down(tablet-landscape) {
       justify-content: center;
     }
+  }
+}
+
+.blogs-page {
+  .blogs-container {
+    margin-bottom: var(--s-5);
   }
 }

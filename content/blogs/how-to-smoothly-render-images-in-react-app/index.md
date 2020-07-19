@@ -13,7 +13,7 @@ coverImage: ./images/smooth_image_rendering_cover.png
 path: /blogs/how-to-smoothly-render-images-in-react-app
 tags:
   - react
-  - scss
+  - sass
   - ux
   - image-rendering
 ---

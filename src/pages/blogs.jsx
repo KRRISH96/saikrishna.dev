@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import BlogCard from "../components/blogs/BlogCard";
 
 const BlogsPage = ({
   data: {
@@ -14,20 +15,9 @@ const BlogsPage = ({
       <div className="blogs-page">
         <h1 className="page-title">Blogs</h1>
         <div className="blogs-container">
-          {blogs.map(({node: blog}) => (
-            <div className={blog.id}>
-            <h1>
-              {blog.frontmatter.title} ({blog.frontmatter.date})
-              -
-              {blog.fields.readingTime.text}
-            </h1>
-            <p>{blog.frontmatter.description}</p>
-            or this
-            <p>{blog.excerpt}</p>
-            <Link to={blog.frontmatter.path}>Read</Link>
-            </div>
-          )
-          )}
+          {blogs.map(({ node: blog }) => (
+            <BlogCard key={blog.id} blog={blog} />
+          ))}
         </div>
       </div>
     </Layout>
@@ -48,6 +38,7 @@ export const pageQuery = graphql`
             title
             path
             description
+            tags
           }
           fields {
             slug
