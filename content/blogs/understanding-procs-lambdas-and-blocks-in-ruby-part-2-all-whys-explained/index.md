@@ -32,9 +32,9 @@ Let’s get started…
 
 ## **Why Blocks?**
 
-> **Recap**: *A block is a piece of a code that is either enclosed within curly braces `{}` or a `do..end`. It is similar to a method but neither belongs to any object nor it has a name.*
+> **Recap**: _A block is a piece of a code that is either enclosed within curly braces `{}` or a `do..end`. It is similar to a method but neither belongs to any object nor it has a name._
 
-To answer why blocks? and to understand the necessity of using them, we should answer one more question — Can the *identifier/reference* of the ruby method be used as a *first-class* value or passed with no additional action?
+To answer why blocks? and to understand the necessity of using them, we should answer one more question — Can the _identifier/reference_ of the ruby method be used as a _first-class_ value or passed with no additional action?
 
 **No**. Ruby methods are not [First-Class Functions](https://en.wikipedia.org/wiki/First-class_function) unlike in few other languages, say Javascript.
 
@@ -100,7 +100,7 @@ Usually, in our controller, we implement as below
 ```ruby
   class TicketsController < ApplicationController
     .....
-      
+
     def mark_open
       if @ticket.update(status: "open")
         # request response logic
@@ -136,7 +136,7 @@ By using blocks we can abstract the request-response and error handling to a new
 ```ruby
   class TicketsController < ApplicationController
     .....
-      
+
     def mark_open
       status_manager do
         @ticket.update(status: "open")
@@ -183,9 +183,9 @@ For instance, consider a few array methods [Array#each](https://apidock.com/ruby
 
 We can do the same with a for loop or a while loop, literally any iterator. But, that’s a lot of code — In other terms, it is imperative programming. You can learn more about imperative, declarative and other programming paradigms [here](https://en.wikipedia.org/wiki/Comparison_of_programming_paradigms).
 
-I suppose, by now we have our answer to “*Why Blocks?*”.
+I suppose, by now we have our answer to “_Why Blocks?_”.
 
-There is one limitation with blocks though. We can’t assign a `block` to a variable. Let’s say we want to implement similar functionality in more than one method. We have to send the block to each of the methods individually — this leads us to the next section “*Why Lambdas?*”.
+There is one limitation with blocks though. We can’t assign a `block` to a variable. Let’s say we want to implement similar functionality in more than one method. We have to send the block to each of the methods individually — this leads us to the next section “_Why Lambdas?_”.
 
 <hr></hr>
 
@@ -211,7 +211,7 @@ Let’s consider the Ticketing System again, this time will update our blocks to
 ```ruby
   class TicketsController < ApplicationController
     ......
-      
+
     def mark_open
       status_manager("open")
     end
@@ -230,7 +230,7 @@ Let’s consider the Ticketing System again, this time will update our blocks to
 
     def status_manager(status)
       is_status_changed = status_updater.call(@ticket, status)
-        
+
       .....
     end
 
@@ -247,7 +247,7 @@ This time we assume a gem for API service and we have a method called callback t
 
   class SomeAPIServiceController
     .....
-     
+
     def callback(on_success: on_failure:)
       if success
         on_success.call(res)
@@ -274,7 +274,7 @@ Wait for it, Wait for it, lambdas lambdas yessss, lambdas to the rescue.
   )
 ```
 
-With that we are left with the final question in our Blocks, Lambdas and Procs Exploration — *Why Procs?*
+With that we are left with the final question in our Blocks, Lambdas and Procs Exploration — _Why Procs?_
 
 With no further delay, let’s unravel the procs.
 
@@ -282,13 +282,13 @@ With no further delay, let’s unravel the procs.
 
 ## **Why Procs?**
 
-> **Recap**: *Procs, the shorthand for Procedure, is a very similar concept to lambdas. Procs are instances of ruby `Proc` class.*
+> **Recap**: _Procs, the shorthand for Procedure, is a very similar concept to lambdas. Procs are instances of ruby `Proc` class._
 
-Lambdas are a special case of Procs and are a `proc` object. There is no dedicated `Lambda` class. If you have understood the **why Lambdas?** section, we already have our answer to *why Procs?*
+Lambdas are a special case of Procs and are a `proc` object. There is no dedicated `Lambda` class. If you have understood the **why Lambdas?** section, we already have our answer to _why Procs?_
 
 Also, we can use Procs instead of lambdas in every possible use-case, but lambdas and procs have their differences which I explained in [Part1: All’s What?s Answered.](/blogs/understanding-procs-lambdas-and-blocks-in-ruby-part-1-all-whats-answered)
 
-> *Procs are full-fledged Objects and have all the abilities that an object does, while blocks on the other hand does not.*
+> _Procs are full-fledged Objects and have all the abilities that an object does, while blocks on the other hand does not._
 
 Since lambdas and procs are objects we can do all the crazy stuff that an object can do.
 
@@ -310,30 +310,29 @@ Well, that concludes our journey.
 
 Let’s do a quick summary and play with our cute little 🐶 buddy….
 
-* A method can neither be passed as argument nor be returned from another method (methods in ruby are not first-class functions).
+- A method can neither be passed as argument nor be returned from another method (methods in ruby are not first-class functions).
 
-* Blocks are useless without method calls and have to be rewritten every time.
+- Blocks are useless without method calls and have to be rewritten every time.
 
-* Blocks give back control to the programmer.
+- Blocks give back control to the programmer.
 
-* Procs are full-fledged Objects.
+- Procs are full-fledged Objects.
 
-* Lambdas are a special case of procs.
+- Lambdas are a special case of procs.
 
-* Lambdas are more flexible than methods.
+- Lambdas are more flexible than methods.
 
-* Using blocks, lambdas, and procs. One method can be made to work in different aspects by injecting some custom code within the method from outside.
+- Using blocks, lambdas, and procs. One method can be made to work in different aspects by injecting some custom code within the method from outside.
 
 ### **References**
 
-* [Any difference between First Class Function and High Order Function](https://stackoverflow.com/questions/10141124/any-difference-between-first-class-function-and-high-order-function)
+- [Any difference between First Class Function and High Order Function](https://stackoverflow.com/questions/10141124/any-difference-between-first-class-function-and-high-order-function)
 
-* [Mastering Ruby Blocks in Less Than 5 Minutes](https://mixandgo.com/learn/mastering-ruby-blocks-in-less-than-5-minutes)
+- [Mastering Ruby Blocks in Less Than 5 Minutes](https://mixandgo.com/learn/mastering-ruby-blocks-in-less-than-5-minutes)
 
-* [The Ultimate Guide to Blocks, Procs & Lambdas](https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/)
+- [The Ultimate Guide to Blocks, Procs & Lambdas](https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/)
 
-* And a lot of bits and pieces from mother google.
-
+- And a lot of bits and pieces from mother google.
 
 I am a beginner to ruby, so please let me know if I have missed or misunderstood something above. I look forward to your suggestions and feedback in the comments section below.
 

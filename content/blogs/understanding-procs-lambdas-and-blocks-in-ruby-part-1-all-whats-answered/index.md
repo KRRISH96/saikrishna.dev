@@ -22,7 +22,6 @@ tags:
 
 I recently started learning ruby as part of my journey to be a full stack developer. I am using [rubymonk.com](https://rubymonk.com) which is a really good source for an absolute beginner. After a few smooth moving lessons and problems, I landed on the Procs and Lambdas section. I had a hard time understanding procs, lambdas, and blocks.
 
-
 After spending a good amount of time with them, I finally have some clarity on how procs and lambdas work. Now I want to share my knowledge so that others will have an easier time understanding them.
 
 I would like to explain procs and lambdas with two W questions, What? and Why? Let’s start with a few what?’s.
@@ -34,7 +33,6 @@ I would like to explain procs and lambdas with two W questions, What? and Why? L
 Before jumping into procs and lambdas, let’s get a clear picture of what blocks are.
 
 A block is a piece of a code that is either enclosed within curly braces `{}` or a `do..end`. It is similar to a method but neither belongs to any object nor it has a name. Syntactically `{}` is used for **one-liner** blocks and `do..end` for **multi-line** blocks. Let’s take a look at the following snippet to see the difference.
-
 
 ```ruby
   concepts = ['blocks', 'lambdas', 'procs']
@@ -58,7 +56,7 @@ A block is a piece of a code that is either enclosed within curly braces `{}` or
 
 Blocks are also called closures in other languages. Blocks can be passed to a method either implicitly or explicitly. Only one block can be passed to a method.
 
-***Implicit blocks*** are nameless and not necessarily we list them in the method arguments.
+**_Implicit blocks_** are nameless and not necessarily we list them in the method arguments.
 
 ```ruby
   def implicit_block_method
@@ -85,7 +83,7 @@ One thing to note here is that yield is just a keyword that invokes the block as
 
 ### **The Explicit Block and its name everything syndrome**
 
-***Explicit blocks*** are named and should be included in the arguments list.
+**_Explicit blocks_** are named and should be included in the arguments list.
 
 The block should be the last argument that a method accepts. Explicit Blocks can be invoked by using the .call method on the block name.
 
@@ -168,14 +166,13 @@ To fix this we just need to check if the block is given or not, using `block_giv
 
 <hr></hr>
 
-
 ## **What are Lambdas?**
 
 Now that we have some knowledge on blocks let’s move on to lambdas. Understanding blocks makes understanding lambdas much easier.
 
 Lambda is the eleventh letter in the Greek alphabets…. Whaaaat? Oh, Shoot!! We are not talking about this(`λ`) lambda. Let’s get to know the lambdas in ruby then.
 
-> A Lambda is very similar to a block and is also called an anonymous function. But, unlike blocks ***lambdas are objects*** and can be assigned to variables with a special syntax.
+> A Lambda is very similar to a block and is also called an anonymous function. But, unlike blocks **_lambdas are objects_** and can be assigned to variables with a special syntax.
 
 We can create lambda by using the keyword `lambda` or the `->` stab operator. The lambdas created with `->` stab operator are also called a stabby lambda.
 
@@ -250,7 +247,7 @@ Lambdas can be stored in a variable and can be passed to any method as an argume
 
 Did you notice the `&`(ampersand) symbol appended to double_it?. That’s a short form for calling the methodto_proc on the variable we stored. Also, `&` is the one responsible for converting a lambda / proc to block. Usually, [Array#map](https://apidock.com/ruby/Array/map) expects a block, not a lambda / proc.
 
-***`&double_it` is equivalent to `double_it.to_proc.call`***
+**_`&double_it` is equivalent to `double_it.to_proc.call`_**
 
 That’s all we need to know about lambdas for now. Let’s move on to procs.
 
@@ -258,7 +255,7 @@ That’s all we need to know about lambdas for now. Let’s move on to procs.
 
 ## **What are Procs?**
 
-Proc, the shorthand for Procedure, is a very similar concept to lambdas. Lambdas are a subpart of Procs. As we have already seen, the `class` for `lambda` is a `Proc`. Like lambdas, ***Procs are objects of ruby Proc class***. Though lambdas and procs are similar, they also have their differences. But we will get to that in a bit.
+Proc, the shorthand for Procedure, is a very similar concept to lambdas. Lambdas are a subpart of Procs. As we have already seen, the `class` for `lambda` is a `Proc`. Like lambdas, **_Procs are objects of ruby Proc class_**. Though lambdas and procs are similar, they also have their differences. But we will get to that in a bit.
 
 We can create a proc with a new instance of the Proc class `Proc.new` or with the keyword `proc` which is again the same as `Proc.new` and is just syntactical sugar. Let's create some procs…
 
@@ -294,7 +291,7 @@ Also to show that lambdas and procs are objects, call `superclass` method on the
 
 There are a couple of important differences between **procs** and **lambdas** specifically Arguments Handling and Return statement behavior.
 
-***Arguments Handling***, We have a very strict officer here. Guess Who? Yeah, you guessed it right. It’s officer Lambda.
+**_Arguments Handling_**, We have a very strict officer here. Guess Who? Yeah, you guessed it right. It’s officer Lambda.
 
 Lambdas throw an exception (`ArgumentError`) when an incorrect number of arguments are passed.
 
@@ -342,7 +339,7 @@ Just to be on the safer side, always set default values to arguments. If default
   # returns 2
 ```
 
-***Return statement Behavior***, lambdas, and procs behave in a very different manner when comes to return statements.
+**_Return statement Behavior_**, lambdas, and procs behave in a very different manner when comes to return statements.
 
 Lambdas will return from the executing block/lambda and the further execution will continue as usual.
 
@@ -396,35 +393,35 @@ Aaannnddddd!!! We are done.
 
 **Blocks**
 
-* Block is a piece of code enclosed between `{}` or `do..end`.
+- Block is a piece of code enclosed between `{}` or `do..end`.
 
-* Block neither belongs to any object nor it has a name.
+- Block neither belongs to any object nor it has a name.
 
-* Blocks can return just like methods.
+- Blocks can return just like methods.
 
 **Lambdas**
 
-* Lambdas are objects, unlike blocks. Also, lambdas have a name and can be assigned to a variable for later use.
+- Lambdas are objects, unlike blocks. Also, lambdas have a name and can be assigned to a variable for later use.
 
-* Lambda can be created either with the `lambda` keyword or with the `->` stab operator.
+- Lambda can be created either with the `lambda` keyword or with the `->` stab operator.
 
-* Lambdas are strict in terms of arguments.
+- Lambdas are strict in terms of arguments.
 
-* Lambdas are a part of the `Proc` class.
+- Lambdas are a part of the `Proc` class.
 
-* Lambda returns from current lambda/block.
+- Lambda returns from current lambda/block.
 
 **Procs**
 
-* Procs are also objects and have a name.
+- Procs are also objects and have a name.
 
-* Proc can be created by `Proc.new` or with keyword `proc`.
+- Proc can be created by `Proc.new` or with keyword `proc`.
 
-* Procs aren’t worried about the number of arguments passed.
+- Procs aren’t worried about the number of arguments passed.
 
-* Proc returns from a method/current context.
+- Proc returns from a method/current context.
 
-* Blocks, Lambdas, and Procs are all Closures.
+- Blocks, Lambdas, and Procs are all Closures.
 
 Well well, well!!! We made it! Now we have answers to most whats on Procs, Lambdas, and Blocks.
 

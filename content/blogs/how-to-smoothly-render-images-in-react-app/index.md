@@ -147,7 +147,6 @@ To fix this we can display custom `alt` text.
 
 ```css
 /** styles.css */
-......
 .smooth-no-image {
   background-image: linear-gradient(90deg, #ccc, #999, #ccc);
   color: #fff;
