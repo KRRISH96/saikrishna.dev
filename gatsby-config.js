@@ -29,7 +29,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
+              classPrefix: "language-",
               inlineCodeMarker: null,
               noInlineHighlight: true,
             },
@@ -61,6 +61,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-force-trailing-slashes`
+    `gatsby-plugin-force-trailing-slashes`,
   ],
 };
