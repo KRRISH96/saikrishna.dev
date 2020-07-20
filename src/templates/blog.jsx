@@ -2,7 +2,8 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Tags from '../components/tags';
+import Tags from "../components/presentational/tags";
+import BlogPostMeta from "../components/presentational/blogPostMeta";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
@@ -15,15 +16,19 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <div className="blog-post-page">
-        <h1 className="page-title">Blogs</h1>
         <article className="blog-post-container">
           <header className="blog-post__header">
             <h1>{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
-            <p>{post.fields.readingTime.text}</p>
+            <BlogPostMeta
+              readingTime={post.fields.readingTime}
+              date={post.frontmatter.date}
+            />
             <Tags tags={post.frontmatter.tags} />
           </header>
-          <section className="blog-post__body" dangerouslySetInnerHTML={{ __html: post.html }} />
+          <section
+            className="blog-post__body"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
           <hr />
         </article>
 

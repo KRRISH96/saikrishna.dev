@@ -309,6 +309,11 @@ footer {
   }
 }
 
+.blog-post__meta {
+  font-size: var(--font-14);
+  margin-bottom: var(--s-1);
+}
+
 .blog-post-page {
   .other-blog-posts {
     padding: var(--s-2);

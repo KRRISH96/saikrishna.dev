@@ -1,6 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
-import Tags from "../tags";
+import Tags from "../presentational/tags";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import "./index.scss";
 
