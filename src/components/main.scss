@@ -15,7 +15,7 @@ $planet-size-tablet-small: 6rem;
   justify-content: center;
 }
 
-header, footer {
+header:not(.blog-post__header), footer {
   height: 5rem;
 }
 
