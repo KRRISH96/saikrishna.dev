@@ -1,5 +1,6 @@
 import React from "react";
 import Img from "gatsby-image";
+import Tags from "../tags";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import "./index.scss";
 
@@ -40,13 +41,7 @@ const ProjectCard = ({
           <FaGithub />
         </a>
       )}
-      <ul className="tags">
-        {tags.map(tag => (
-          <li key={tag} className={`tag tag_${tag}`}>
-            {tag}
-          </li>
-        ))}
-      </ul>
+      <Tags tags={tags} />
       <p className="project-card__description">{description}</p>
     </div>
   </div>

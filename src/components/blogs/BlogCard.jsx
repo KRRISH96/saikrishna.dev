@@ -1,4 +1,5 @@
 import React from "react";
+import Tags from "../tags";
 import { Link } from "gatsby";
 import "./index.scss";
 
@@ -18,13 +19,7 @@ const BlogCard = ({ blog: { id, frontmatter, fields } }) => (
       {frontmatter.date}
     </p>
     <p className="blog-card__description">{frontmatter.description}</p>
-    <ul className="tags">
-      {frontmatter.tags.map(tag => (
-        <li key={tag} className={`tag tag_${tag}`}>
-          {tag}
-        </li>
-      ))}
-    </ul>
+    <Tags tags={frontmatter.tags} />
   </div>
 );
 

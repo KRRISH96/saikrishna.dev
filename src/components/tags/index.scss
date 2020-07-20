@@ -1,0 +1,85 @@
+// Tech Tags
+$react: #61DBFB;
+$sass: #CC6699;
+$javascript: #F0DB4F;
+$ruby: #D3114F;
+$typescript: #007ACD;
+$npm: #CD3534;
+$node: #669D63;
+$chartjs: #FFCE56;
+$rails: #CD2003;
+
+// General Tags
+$ux: #0A97B0;
+$webdev: #1B6CA8;
+$beginners: #F1E7B6;
+$image-rendering: #F76A8C;
+
+$tag-bg-alpha: 0.2;
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-bottom: var(--s-1);
+  .tag {
+    padding: var(--s-0_25);
+    margin: var(--s-0_25);
+    font-size: var(--font-12);
+    border: 0.1rem solid;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    &_react {
+      border-color: $react;
+      background: rgba($react, $tag-bg-alpha);
+    }
+    &_javascript {
+      border-color: $javascript;
+      background: rgba($javascript, $tag-bg-alpha);
+    }
+    &_sass {
+      border-color: $sass;
+      background: rgba($sass, $tag-bg-alpha);
+    }
+    &_ruby {
+      border-color: $ruby;
+      background: rgba($ruby, $tag-bg-alpha);
+    }
+    &_typescript {
+      border-color: $typescript;
+      background: rgba($typescript, $tag-bg-alpha);
+    }
+    &_npm {
+      border-color: $npm;
+      background: rgba($npm, $tag-bg-alpha);
+    }
+    &_node {
+      border-color: $node;
+      background: rgba($node, $tag-bg-alpha);
+    }
+    &_chartjs {
+      border-color: $chartjs;
+      background: rgba($chartjs, $tag-bg-alpha);
+    }
+    &_rails {
+      border-color: $rails;
+      background: rgba($rails, $tag-bg-alpha);
+    }
+    &_ux {
+      border-color: $ux;
+      background: rgba($ux, $tag-bg-alpha);
+    }
+    &_webdev {
+      border-color: $webdev;
+      background: rgba($webdev, $tag-bg-alpha);
+    }
+    &_beginners {
+      border-color: $beginners;
+      background: rgba($beginners, $tag-bg-alpha);
+    }
+    &_image-rendering {
+      border-color: $image-rendering;
+      background: rgba($image-rendering, $tag-bg-alpha);
+    }
+  }
+}
