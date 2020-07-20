@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <div className="blog-post-page">
         <article className="blog-post-container">
           <header className="blog-post__header">
-            <h1 className="page-title">
+            <h1 className="page-title blog-post__title">
               {post.frontmatter.title}
             </h1>
             <BlogPostMeta

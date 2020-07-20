@@ -24,20 +24,18 @@ const Layout = ({ children, isHomePage }) => (
         <Navigation />
       </header>
     )}
-    <div className="container">
-      <main>
-        <div className={`planet ${!isHomePage ? "small" : ""}`}></div>
-        <div className="stars">
-          {Array(10)
-            .fill()
-            .map((_e, i) => (
-              <span className="star" key={`star-${i}`}></span>
-            ))}
-        </div>
-        {children}
-        <Theme />
-      </main>
-    </div>
+    <main className="container">
+      <div className={`planet ${!isHomePage ? "small" : ""}`}></div>
+      <div className="stars">
+        {Array(10)
+          .fill()
+          .map((_e, i) => (
+            <span className="star" key={`star-${i}`}></span>
+          ))}
+      </div>
+      {children}
+      <Theme />
+    </main>
     <footer>
       © {new Date().getFullYear()}, Made with
       <span role="img" aria-label="heart">
