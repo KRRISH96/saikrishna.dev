@@ -4,6 +4,7 @@ $planet-size-small: 8.5rem;
 $planet-size-tablet: 8rem;
 $planet-size-tablet-small: 6rem;
 
+// Tech Tags
 $react: #61DBFB;
 $sass: #CC6699;
 $javascript: #F0DB4F;
@@ -12,6 +13,15 @@ $typescript: #007ACD;
 $npm: #CD3534;
 $node: #669D63;
 $chartjs: #FFCE56;
+$rails: #CD2003;
+
+// General Tags
+$ux: #0A97B0;
+$webdev: #1B6CA8;
+$beginners: #F1E7B6;
+$image-rendering: #F76A8C;
+
+$tag-bg-alpha: 0.2;
 
 .container {
   margin: 0 auto;
@@ -228,35 +238,55 @@ footer {
     font-weight: bold;
     &_react {
       border-color: $react;
-      background: rgba($react, 0.2);
+      background: rgba($react, $tag-bg-alpha);
     }
     &_javascript {
       border-color: $javascript;
-      background: rgba($javascript, 0.2);
+      background: rgba($javascript, $tag-bg-alpha);
     }
     &_sass {
       border-color: $sass;
-      background: rgba($sass, 0.2);
+      background: rgba($sass, $tag-bg-alpha);
     }
     &_ruby {
       border-color: $ruby;
-      background: rgba($ruby, 0.2);
+      background: rgba($ruby, $tag-bg-alpha);
     }
     &_typescript {
       border-color: $typescript;
-      background: rgba($typescript, 0.2);
+      background: rgba($typescript, $tag-bg-alpha);
     }
     &_npm {
       border-color: $npm;
-      background: rgba($npm, 0.2);
+      background: rgba($npm, $tag-bg-alpha);
     }
     &_node {
       border-color: $node;
-      background: rgba($node, 0.2);
+      background: rgba($node, $tag-bg-alpha);
     }
     &_chartjs {
       border-color: $chartjs;
-      background: rgba($chartjs, 0.2);
+      background: rgba($chartjs, $tag-bg-alpha);
+    }
+    &_rails {
+      border-color: $rails;
+      background: rgba($rails, $tag-bg-alpha);
+    }
+    &_ux {
+      border-color: $ux;
+      background: rgba($ux, $tag-bg-alpha);
+    }
+    &_webdev {
+      border-color: $webdev;
+      background: rgba($webdev, $tag-bg-alpha);
+    }
+    &_beginners {
+      border-color: $beginners;
+      background: rgba($beginners, $tag-bg-alpha);
+    }
+    &_image-rendering {
+      border-color: $image-rendering;
+      background: rgba($image-rendering, $tag-bg-alpha);
     }
   }
 }
