@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './index.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import "./index.scss";
 
 const Tags = ({ tags }) => (
   <ul className="tags">
@@ -13,7 +13,7 @@ const Tags = ({ tags }) => (
 );
 
 Tags.propTypes = {
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired
-}
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+};
 
 export default Tags;
