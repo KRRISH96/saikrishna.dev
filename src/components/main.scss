@@ -308,3 +308,12 @@ footer {
     margin-bottom: var(--s-5);
   }
 }
+
+.blog-post-page {
+  .other-blog-posts {
+    padding: var(--s-2);
+    ul {
+      margin: var(--s-1) 0 0;
+    }
+  }
+}
