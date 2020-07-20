@@ -18,8 +18,6 @@ tags:
   - webdev
 ---
 
-![Understanding Procs, Lambdas, and Blocks in Ruby - Part 1](./images/ruby-blog-cover-image-1.png)
-
 I recently started learning ruby as part of my journey to be a full stack developer. I am using [rubymonk.com](https://rubymonk.com) which is a really good source for an absolute beginner. After a few smooth moving lessons and problems, I landed on the Procs and Lambdas section. I had a hard time understanding procs, lambdas, and blocks.
 
 After spending a good amount of time with them, I finally have some clarity on how procs and lambdas work. Now I want to share my knowledge so that others will have an easier time understanding them.

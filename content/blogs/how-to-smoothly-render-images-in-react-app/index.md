@@ -9,7 +9,6 @@ keywords:
   - scss
   - smooth-image
   - ux
-coverImage: ./images/smooth_image_rendering_cover.png
 path: /blogs/how-to-smoothly-render-images-in-react-app
 tags:
   - react
@@ -17,8 +16,6 @@ tags:
   - ux
   - image-rendering
 ---
-
-![Smooth Image Rendering](./images/smooth_image_rendering_cover.png)
 
 Improve your web apps UX by enhancing image render with React's `onLoad` event and simple SCSS.
 

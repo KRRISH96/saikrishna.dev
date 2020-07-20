@@ -18,8 +18,6 @@ tags:
   - webdev
 ---
 
-![Understanding Procs, Lambdas, and Blocks in Ruby - Part 2](./images/ruby-blog-cover-image-2.png)
-
 In the first part of this article, We learned about what Procs, Lambdas, and Blocks are? If you haven’t read it, I strongly recommend you to read [Part 1: All what?s Answered](/blogs/understanding-procs-lambdas-and-blocks-in-ruby-part-1-all-whats-answered), before continuing.
 
 ![Spiderman Meme - Cool story. But, What's your point?](./images/spiderman-meme.jpeg)
