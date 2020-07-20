@@ -2,7 +2,6 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Tags from "../components/presentational/tags";
 import BlogPostMeta from "../components/presentational/blogPostMeta";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -18,12 +17,13 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <div className="blog-post-page">
         <article className="blog-post-container">
           <header className="blog-post__header">
-            <h1>{post.frontmatter.title}</h1>
+            <h1 className="page-title">
+              {post.frontmatter.title}
+            </h1>
             <BlogPostMeta
               readingTime={post.fields.readingTime}
               date={post.frontmatter.date}
             />
-            <Tags tags={post.frontmatter.tags} />
           </header>
           <section
             className="blog-post__body"
