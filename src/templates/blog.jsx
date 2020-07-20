@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BlogPostMeta from "../components/presentational/blogPostMeta";
+import Emoji from "../components/presentational/emoji";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
@@ -38,9 +39,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <li>
               {previous && (
                 <Link to={previous.frontmatter.path} rel="prev">
-                  <span role="img" aria-label="hand-with-pen">
-                    {"✍🏻 "}
-                  </span>
+                  <Emoji label="hand-with-pen" emoji={"✍🏻 "} />
                   {previous.frontmatter.title}
                 </Link>
               )}
@@ -48,9 +47,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <li>
               {next && (
                 <Link to={next.frontmatter.path} rel="next">
-                  <span role="img" aria-label="hand-with-pen">
-                    {"✍🏻 "}
-                  </span>
+                  <Emoji label="hand-with-pen" emoji={"✍🏻 "} />
                   {next.frontmatter.title}
                 </Link>
               )}

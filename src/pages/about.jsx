@@ -4,6 +4,7 @@ import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { APP_ROUTES } from "../helpers/constants";
+import Emoji from "../components/presentational/emoji";
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -22,10 +23,8 @@ const AboutPage = () => {
       <SEO title="About" />
       <div className="about-page">
         <h1 className="page-title">
-          Namaste
-          <span role="img" aria-label="hello">
-            &nbsp;🙏🏼&nbsp;
-          </span>
+          Hey There
+          <Emoji label="Waving Hand" emoji={"👋🏻"} />
         </h1>
         <div className="profile-image-container">
           <Img
@@ -51,21 +50,15 @@ const AboutPage = () => {
         <br />
         <ul>
           <li>
-            <span role="img" aria-label="contact">
-              {"👋🏼 "}
-            </span>
+            <Emoji label="Waving Hand" emoji={" 👋🏻 "} />
             <Link to={APP_ROUTES.contact}>Say Hello!</Link>
           </li>
           <li>
-            <span role="img" aria-label="blog posts">
-              {"📝 "}
-            </span>
+            <Emoji label="Writing Hand" emoji={" ✍🏻 "} />
             <Link to={APP_ROUTES.blogs}>Blogs</Link>
           </li>
           <li>
-            <span role="img" aria-label="projects">
-              {"💻 "}
-            </span>
+            <Emoji label="Laptop" emoji={" 💻 "} />
             <Link to={APP_ROUTES.projects}>Projects</Link>
           </li>
         </ul>

@@ -13,6 +13,7 @@ import Navigation from "../navigation";
 import { FaRocket } from "react-icons/fa";
 import { Link } from "gatsby";
 import "./index.scss";
+import Emoji from "../presentational/emoji";
 
 const Layout = ({ children, isHomePage }) => (
   <>
@@ -38,9 +39,7 @@ const Layout = ({ children, isHomePage }) => (
     </main>
     <footer>
       © {new Date().getFullYear()}, Made with
-      <span role="img" aria-label="heart">
-        {" ❤️ "}
-      </span>
+      <Emoji label="heart" emoji={" ❤️ "} />
       by Sai Krishna Prasad Kandula.
     </footer>
   </>

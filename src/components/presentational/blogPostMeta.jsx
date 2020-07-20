@@ -1,15 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Emoji from "./emoji";
 
 const BlogPostMeta = ({ readingTime, date }) => (
   <p className="blog-post__meta">
-    <span role="img" aria-label="clock">
-      {"⏱ "}
-    </span>
+    <Emoji label="clock" emoji={"⏱ "} />
     {readingTime.text}
-    <span role="img" aria-label="calender">
-      {" 🗓 "}
-    </span>
+    <Emoji label="calender" emoji={" 🗓 "} />
     {date}
   </p>
 );

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ProjectCard from "../components/projects/ProjectCard";
+import Emoji from "../components/presentational/emoji";
 
 const ProjectsPage = () => {
   const {
@@ -35,7 +36,10 @@ const ProjectsPage = () => {
     <Layout>
       <SEO title="Projects" />
       <div className="projects-page">
-        <h1 className="page-title">Projects</h1>
+        <h1 className="page-title">
+          Projects
+          <Emoji label="Laptop" emoji={" 💻 "} />
+        </h1>
         <div className="projects-container">
           {projectsList.map(project => (
             <ProjectCard key={project.id} project={project} />
