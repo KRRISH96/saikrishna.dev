@@ -35,20 +35,20 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <nav className="card other-blog-posts">
           Other Blog Posts
           <ul className="other-blog-posts__list">
-            <li>
-              {previous && (
+            {previous && (
+              <li>
                 <Link to={previous.frontmatter.path} rel="prev">
                   {previous.frontmatter.title}
                 </Link>
-              )}
-            </li>
-            <li>
-              {next && (
+              </li>
+            )}
+            {next && (
+              <li>
                 <Link to={next.frontmatter.path} rel="next">
                   {next.frontmatter.title}
                 </Link>
-              )}
-            </li>
+              </li>
+            )}
           </ul>
         </nav>
       </div>
