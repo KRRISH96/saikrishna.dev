@@ -254,13 +254,13 @@ footer {
   }
 }
 
-.banner {
+blockquote, .banner {
   background-color: var(--bg-secondary);
   font-weight: bold;
   border-left: 0.3rem solid var(--link-active);
   border-radius: 0.3rem;
-  padding: var(--s-1_5) var(--s-1);
-  margin: var(--s-2) 0;
+  padding: var(--s-1_5) var(--s-1) !important;
+  margin: var(--s-2) 0 !important;
   box-shadow: var(--shadow);
   p {
     margin-bottom: var(--s-0_5);
