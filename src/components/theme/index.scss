@@ -76,7 +76,7 @@
 // Dark specific styles aren't necessary as theme is defaulted to dark
 @mixin light-theme {
   --code-bg: #e0dede;
-  --bg: linear-gradient(var(--skyblue), var(--white) 50%);
+  --bg: linear-gradient(var(--skyblue), var(--white) 20%);
   --bg-invert: var(--dark);
   --bg-secondary: var(--white);
   --shadow: 0 0 1rem var(--white-secondary);
@@ -104,6 +104,7 @@
 
 body {
   background: var(--bg);
+  background-attachment: fixed;
   color: var(--color) !important;
   transition: background-color 0.2s linear;
   a {
