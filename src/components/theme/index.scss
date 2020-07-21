@@ -20,6 +20,7 @@
   --sun: #F0DB4F;
   --sun-shadow: rgba(255, 193, 7, 1);
   --shadow: 0 0 1rem var(--dark-secondary);
+  --code-bg: rgba(15, 76, 117, 0.5);
 
   // Theme defaults - defauted to dark theme
   --bg: var(--dark);
@@ -74,6 +75,7 @@
 // Themes
 // Dark specific styles aren't necessary as theme is defaulted to dark
 @mixin light-theme {
+  --code-bg: #e0dede;
   --bg: linear-gradient(var(--skyblue), var(--white) 50%);
   --bg-invert: var(--dark);
   --bg-secondary: var(--white);
