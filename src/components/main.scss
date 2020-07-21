@@ -320,10 +320,22 @@ footer {
   .blog-post__header {
     margin-bottom: var(--s-4);
   }
+  ul {
+    list-style-type: "🎯";
+    li {
+      padding-left: var(--s-0_75);
+    }
+  }
   .other-blog-posts {
     padding: var(--s-2);
-    ul {
-      margin: var(--s-1) 0 0;
+    margin: var(--s-4) 0;
+    &__list {
+      margin-top: var(--s-1);
+      margin-bottom: 0;
+      list-style-type: "✍️";
+      li {
+        padding-left: var(--s-0_75);
+      }
     }
   }
 }
