@@ -19,7 +19,7 @@
   --moon-shadow: rgba(255, 255, 255, 0.75);
   --sun: #F0DB4F;
   --sun-shadow: rgba(255, 193, 7, 1);
-  --shadow: 0 0 1rem var(--dark-secondary);
+  --shadow: 0 0 1rem 0.2rem  var(--dark-secondary);
   --code-bg: rgba(15, 76, 117, 0.5);
 
   // Theme defaults - defauted to dark theme
@@ -79,7 +79,7 @@
   --bg: linear-gradient(var(--skyblue), var(--white) 20%);
   --bg-invert: var(--dark);
   --bg-secondary: var(--white);
-  --shadow: 0 0 1rem var(--white-secondary);
+  --shadow: 0 0 1rem 0.2rem var(--white-secondary);
   --color: var(--dark);
   --color-invert: var(--white);
   --color-secondary: var(--dark-secondary);
