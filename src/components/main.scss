@@ -343,3 +343,19 @@ blockquote, .banner {
     }
   }
 }
+
+.contact-page {
+  .profile-links {
+    margin: var(--s-2) 0;
+    a {
+      margin: var(--s-0_75);
+      font-size: var(--font-28);
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
