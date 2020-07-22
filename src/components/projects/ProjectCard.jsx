@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
 import Tags from "../presentational/tags";
+import ExternalLink from "../presentational/externalLink";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import "./index.scss";
 
@@ -16,7 +17,7 @@ const ProjectCard = ({
     <div className="project-card__details">
       <h4 className="project-card__title">
         {!!links.live ? (
-          <a
+          <ExternalLink
             href={links.live}
             target="_blank"
             rel="noopener noreferrer"
@@ -26,20 +27,15 @@ const ProjectCard = ({
             <span className="icon">
               <FaExternalLinkAlt />
             </span>
-          </a>
+          </ExternalLink>
         ) : (
           name
         )}
       </h4>
       {!!links.github && (
-        <a
-          href={links.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-card__link-github"
-        >
+        <ExternalLink href={links.github} className="project-card__link-github">
           <FaGithub />
-        </a>
+        </ExternalLink>
       )}
       <Tags tags={tags} />
       <p className="project-card__description">{description}</p>
