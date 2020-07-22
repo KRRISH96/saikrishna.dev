@@ -30,5 +30,5 @@ export const PROFILE_LINKS = Object.freeze({
   linkedin: "https://www.linkedin.com/in/krrish96/",
   dev: "https://dev.to/krrish96",
   medium: "https://medium.com/@krrish96",
-  stackoverflow: "https://stackoverflow.com/users/10208226/krrish96"
+  stackoverflow: "https://stackoverflow.com/users/10208226/krrish96",
 });

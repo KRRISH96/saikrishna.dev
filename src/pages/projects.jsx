@@ -50,20 +50,14 @@ const ProjectsPage = () => {
         <div className="banner">
           <p>
             More on&nbsp;
-            <ExternalLink href={PROFILE_LINKS.github}>
-              GitHub
-            </ExternalLink>
-            . Also, I do enjoy writing tiny bits and pieces of code when bored.
+            <ExternalLink href={PROFILE_LINKS.github}>GitHub</ExternalLink>.
+            Also, I do enjoy writing tiny bits and pieces of code when bored.
           </p>
           <p>
             Check them out on&nbsp;
-            <ExternalLink href={PROFILE_LINKS.codepen}>
-              Codepen
-            </ExternalLink>
+            <ExternalLink href={PROFILE_LINKS.codepen}>Codepen</ExternalLink>
             &nbsp;and&nbsp;
-            <ExternalLink href={PROFILE_LINKS.repl}>
-              Repl.it
-            </ExternalLink>
+            <ExternalLink href={PROFILE_LINKS.repl}>Repl.it</ExternalLink>
           </p>
         </div>
       </div>
