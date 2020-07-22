@@ -5,6 +5,7 @@ import SEO from "../components/seo";
 import ProjectCard from "../components/projects/ProjectCard";
 import Emoji from "../components/presentational/emoji";
 import ExternalLink from "../components/presentational/externalLink";
+import { PROFILE_LINKS } from "../helpers/constants";
 
 const ProjectsPage = () => {
   const {
@@ -49,18 +50,18 @@ const ProjectsPage = () => {
         <div className="banner">
           <p>
             More on&nbsp;
-            <ExternalLink href="https://github.com/KRRISH96">
+            <ExternalLink href={PROFILE_LINKS.github}>
               GitHub
             </ExternalLink>
             . Also, I do enjoy writing tiny bits and pieces of code when bored.
           </p>
           <p>
             Check them out on&nbsp;
-            <ExternalLink href="https://codepen.io/saikrrish">
+            <ExternalLink href={PROFILE_LINKS.codepen}>
               Codepen
             </ExternalLink>
             &nbsp;and&nbsp;
-            <ExternalLink href="https://repl.it/@KRRISH96">
+            <ExternalLink href={PROFILE_LINKS.repl}>
               Repl.it
             </ExternalLink>
           </p>

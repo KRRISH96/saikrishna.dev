@@ -21,3 +21,14 @@ export const APP_ROUTES = Object.freeze({
   blogs: "/blogs",
   contact: "/contact",
 });
+
+export const PROFILE_LINKS = Object.freeze({
+  codepen: "https://codepen.io/sai_krrishhh",
+  repl: "https://repl.it/@KRRISH96",
+  github: "https://github.com/KRRISH96",
+  twitter: "https://twitter.com/sai_krrishhh",
+  linkedin: "https://www.linkedin.com/in/krrish96/",
+  dev: "https://dev.to/krrish96",
+  medium: "https://medium.com/@krrish96",
+  stackoverflow: "https://stackoverflow.com/users/10208226/krrish96"
+});
