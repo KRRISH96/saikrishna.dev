@@ -345,6 +345,11 @@ blockquote, .banner {
 }
 
 .contact-page {
+  display: flex;
+  flex-direction: column;
+  @include break-point-down(tablet-landscape) {
+    align-items: center;
+  }
   .profile-links {
     margin: var(--s-2) 0;
     a {

@@ -1,0 +1,22 @@
+@import '../mixins';
+
+.contact-form {
+  .form-elements-container {
+    display: flex;
+    flex-direction: column;
+    @include break-point-down(tablet-landscape) {
+      align-items: center;
+    }
+  }
+  margin: var(--s-3) 0;
+  .form-label {
+    margin: var(--s-1) 0;
+  }
+  .form-input {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--color);
+    border-radius: 0.3rem;
+    width: 100%;
+    max-width: 25rem;
+  }
+}
