@@ -11,6 +11,7 @@ const ContactForm = () => (
     method="POST"
     action="/thank-you"
   >
+    <input type="hidden" name="form-name" value="contact" />
     <label>
       <input type="hidden" name="bot-field" />
     </label>
