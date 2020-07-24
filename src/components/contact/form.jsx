@@ -3,22 +3,51 @@ import "./index.scss";
 
 const ContactForm = () => {
   return (
-    <form className="contact-form">
-      <div className="form-elements-container">
-        <label htmlFor="name" className="form-label">
-          <span>Name</span>
-        </label>
-        <input id="name" className="form-input" />
-
-        <label htmlFor="email" className="form-label">
-          <span>Email</span>
-        </label>
-        <input id="email" className="form-input" />
-        <label htmlFor="comment" className="form-label">
-          <span>Whats Up?</span>
-        </label>
-        <textarea id="comment" className="form-input" />
-      </div>
+    <form
+      name="contact"
+      className="contact-form"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      action="/projects"
+      data-netlify-recaptcha="true"
+    >
+      <label style={{ display: "none" }}>
+        <input name="bot-field" />
+      </label>
+      <label htmlFor="name" className="form-label">
+        <p>Name</p>
+        <input
+          id="name"
+          type="text"
+          className="form-input"
+          placeholder="John Doe"
+          required
+        />
+      </label>
+      <label htmlFor="email" className="form-label">
+        <p>Email</p>
+        <input
+          id="email"
+          type="email"
+          className="form-input"
+          placeholder="john_doe@example.com"
+          required
+        />
+      </label>
+      <label htmlFor="comment" className="form-label">
+        <p>Message</p>
+        <textarea
+          id="comment"
+          rows="7"
+          className="form-input"
+          placeholder="What's Up?"
+          required
+        />
+      </label>
+      <div data-netlify-recaptcha="true"></div>
+      <button type="submit" className="submit-button">
+        Send
+      </button>
     </form>
   );
 };
