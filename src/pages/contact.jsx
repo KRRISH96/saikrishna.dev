@@ -19,10 +19,10 @@ const ContactPage = () => (
     <SEO title="Contact" />
     <div className="contact-page">
       <h1 className="page-title">
-        Let's Talk
-        <Emoji label="Speech Balloon" emoji={" 💬 "} />
-      </h1>
-      <div className="contact-container">
+        <span>
+          Let's Talk
+          <Emoji label="Speech Balloon" emoji={" 💬 "} />
+        </span>
         <div className="profile-links">
           <ExternalLink href={PROFILE_LINKS.twitter}>
             <FaTwitter />
@@ -43,8 +43,8 @@ const ContactPage = () => (
             <FaStackOverflow />
           </ExternalLink>
         </div>
-        <ContactForm />
-      </div>
+      </h1>
+      <ContactForm />
     </div>
   </Layout>
 );

@@ -347,8 +347,9 @@ blockquote, .banner {
 .contact-page {
   display: flex;
   flex-direction: column;
-  @include break-point-down(tablet-landscape) {
-    align-items: center;
+  align-items: center;
+  .page-title {
+    flex-direction: column;
   }
   .profile-links {
     margin: var(--s-2) 0;
