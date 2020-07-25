@@ -10,6 +10,7 @@
     "gatsby-plugin-force-trailing-slashes": "^1.0.4",
     "gatsby-plugin-google-gtag": "^2.1.10",
     "gatsby-plugin-manifest": "^2.4.9",
+    "gatsby-plugin-nprogress": "^2.3.10",
     "gatsby-plugin-offline": "^3.2.7",
     "gatsby-plugin-react-helmet": "^3.3.2",
     "gatsby-plugin-recaptcha": "^1.0.5",
