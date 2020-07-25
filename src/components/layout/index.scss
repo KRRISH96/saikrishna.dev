@@ -591,8 +591,8 @@ td:last-child {
   padding-right: 0;
 }
 tt,
-code {
-  background-color: var(--code-bg);
+code:not([class*=language-]) {
+  background-color: var(--code-bg) !important;
   border-radius: 3px;
   font-family: "SFMono-Regular", Consolas, "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;

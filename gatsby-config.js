@@ -89,10 +89,10 @@ module.exports = {
         fonts: [
           {
             family: `Roboto`,
-            variants: [`400`]
+            variants: [`400`],
           },
         ],
       },
-    }
+    },
   ],
 };
