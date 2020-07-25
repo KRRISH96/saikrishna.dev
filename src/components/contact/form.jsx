@@ -4,15 +4,11 @@ import "./index.scss";
 const ContactForm = () => (
   <form
     name="contact"
-    action="/thank-you"
+    action="https://formspree.io/xqkywygr"
     method="POST"
-    netlify-honeypot="bot-field"
-    data-netlify-recaptcha="true"
     className="contact-form"
-    netlify
   >
-    <input type="hidden" name="bot-field" />
-    <input type="hidden" name="form-name" value="contact" />
+    <input type="hidden" name="_gotcha" />
     <label htmlFor="name" className="form-label">
       Name
       <br />
@@ -31,7 +27,7 @@ const ContactForm = () => (
       <input
         id="email"
         type="email"
-        name="email"
+        name="_replyto"
         className="form-input"
         placeholder="john_doe@example.com"
         required
@@ -49,7 +45,10 @@ const ContactForm = () => (
         required
       />
     </label>
-    <div data-netlify-recaptcha="true"></div>
+    <div
+      className="g-recaptcha"
+      data-sitekey={process.env.SITE_RECAPTCHA_KEY}
+    ></div>
     <button type="submit" className="submit-button">
       Send
     </button>
