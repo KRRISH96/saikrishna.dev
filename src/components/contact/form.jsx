@@ -6,10 +6,10 @@ const ContactForm = () => (
     name="contact"
     action="/thank-you"
     method="POST"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
+    netlify-honeypot="bot-field"
     data-netlify-recaptcha="true"
     className="contact-form"
+    netlify
   >
     <input type="hidden" name="bot-field" />
     <input type="hidden" name="form-name" value="contact" />
