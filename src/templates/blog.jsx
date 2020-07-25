@@ -19,7 +19,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     },
     {
       name: `twitter:data1`,
-      content: fields.readingTime,
+      content: fields.readingTime.text,
     },
     {
       name: `article:published_time`,
