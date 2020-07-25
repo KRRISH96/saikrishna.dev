@@ -1,50 +1,19 @@
 import React from "react";
-import { navigate } from "gatsby";
 import "./index.scss";
 
-function encode(data) {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
-
-
-const ContactForm = () => {
-  const [formData, setFormData] = React.useState({})
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...formData,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch((error) => alert(error))
-  }
-
-  return (
+const ContactForm = () => (
   <form
     name="contact"
-    className="contact-form"
-    data-netlify-honeypot="bot-field"
-    data-netlify="true"
+    method="POST"
     data-netlify-recaptcha="true"
+    netlify-honeypot="bot-field"
     action="/thank-you/"
-    method="post"
-    onSubmit={handleSubmit}
+    className="contact-form"
+    data-netlify="true"
   >
     <input type="hidden" name="form-name" value="contact" />
-    <label>
-      <input type="hidden" name="bot-field" />
+    <label style={{ display: "none" }}>
+      <input name="bot-field" />
     </label>
     <label htmlFor="name" className="form-label">
       <p>Name</p>
@@ -54,7 +23,6 @@ const ContactForm = () => {
         name="name"
         className="form-input"
         placeholder="John Doe"
-        onChange={handleChange}
         required
       />
     </label>
@@ -66,7 +34,6 @@ const ContactForm = () => {
         name="email"
         className="form-input"
         placeholder="john_doe@example.com"
-        onChange={handleChange}
         required
       />
     </label>
@@ -78,7 +45,6 @@ const ContactForm = () => {
         name="message"
         className="form-input"
         placeholder="What's Up?"
-        onChange={handleChange}
         required
       />
     </label>
@@ -88,5 +54,5 @@ const ContactForm = () => {
     </button>
   </form>
 );
-  }
+
 export default ContactForm;
