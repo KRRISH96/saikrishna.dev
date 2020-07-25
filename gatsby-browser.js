@@ -4,5 +4,9 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
+
 require("prismjs/themes/prism-tomorrow.css");
+
+// Reload on service worker updates
+// Ref: https://github.com/gatsbyjs/gatsby/issues/9087#issuecomment-459105021
+export const onServiceWorkerUpdateReady = () => window.location.reload(true)
