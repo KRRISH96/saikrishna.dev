@@ -4,19 +4,18 @@ import "./index.scss";
 const ContactForm = () => (
   <form
     name="contact"
-    method="POST"
-    data-netlify-recaptcha="true"
-    netlify-honeypot="bot-field"
     action="/thank-you/"
-    className="contact-form"
+    method="post"
     data-netlify="true"
+    data-netlify-honeypot="bot-field"
+    data-netlify-recaptcha="true"
+    className="contact-form"
   >
+    <input type="hidden" name="bot-field" />
     <input type="hidden" name="form-name" value="contact" />
-    <label style={{ display: "none" }}>
-      <input name="bot-field" />
-    </label>
     <label htmlFor="name" className="form-label">
-      <p>Name</p>
+      Name
+      <br />
       <input
         id="name"
         type="text"
@@ -27,7 +26,8 @@ const ContactForm = () => (
       />
     </label>
     <label htmlFor="email" className="form-label">
-      <p>Email</p>
+      Email
+      <br />
       <input
         id="email"
         type="email"
@@ -38,7 +38,8 @@ const ContactForm = () => (
       />
     </label>
     <label htmlFor="message" className="form-label">
-      <p>Message</p>
+      Message
+      <br />
       <textarea
         id="message"
         rows="7"
