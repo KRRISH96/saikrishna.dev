@@ -5,7 +5,7 @@ const ExternalLink = ({ href, children, ...props }) => (
   <OutboundLink
     href={href}
     target="_blank"
-    rel="noopener noreferrer"
+    rel="nofollow noopener noreferrer"
     {...props}
   >
     {children}
