@@ -23,6 +23,9 @@ header:not(.blog-post__header), footer {
 
 p {
   color: var(--text);
+  line-height: 1.75;
+  font-size: 1rem;
+  letter-spacing: 1px;
 }
 
 ul {
@@ -285,9 +288,6 @@ blockquote, .banner {
      border-radius: 50%;
      border: 0.1rem solid var(--color-secondary);
    }
-  }
-  p {
-    line-height: 1.75rem;
   }
 }
 
