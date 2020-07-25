@@ -5,6 +5,7 @@
  */
 
 require("prismjs/themes/prism-tomorrow.css");
+require("./src/components/layout/index.scss");
 
 // Reload on service worker updates
 // Ref: https://github.com/gatsbyjs/gatsby/issues/9087#issuecomment-459105021

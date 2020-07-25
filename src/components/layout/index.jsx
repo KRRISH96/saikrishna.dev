@@ -12,7 +12,6 @@ import Theme from "../theme";
 import Navigation from "../navigation";
 import { FaRocket } from "react-icons/fa";
 import { Link } from "gatsby";
-import "./index.scss";
 import Emoji from "../presentational/emoji";
 
 const Layout = ({ children, isHomePage }) => (
