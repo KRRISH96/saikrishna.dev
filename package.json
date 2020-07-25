@@ -13,7 +13,6 @@
     "gatsby-plugin-nprogress": "^2.3.10",
     "gatsby-plugin-offline": "^3.2.7",
     "gatsby-plugin-react-helmet": "^3.3.2",
-    "gatsby-plugin-recaptcha": "^1.0.5",
     "gatsby-plugin-sass": "^2.3.4",
     "gatsby-plugin-sharp": "^2.6.9",
     "gatsby-remark-copy-linked-files": "^2.3.11",
