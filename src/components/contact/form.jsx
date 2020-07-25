@@ -1,8 +1,7 @@
 import React from "react";
 import "./index.scss";
 
-const ContactForm = () => {
-  return (
+const ContactForm = () => (
     <form
       name="contact"
       action="https://formspree.io/xqkywygr"
@@ -52,5 +51,5 @@ const ContactForm = () => {
       </button>
     </form>
   );
-};
+
 export default ContactForm;
