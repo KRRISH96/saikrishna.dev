@@ -6377,6 +6377,14 @@ gatsby-plugin-force-trailing-slashes@^1.0.4:
   dependencies:
     "@babel/runtime" "7.0.0-beta.51"
 
+gatsby-plugin-google-gtag@^2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.1.10.tgz#0aee201d54da81af1d2566d4c0b393a8387bd625"
+  integrity sha512-VS49tyfB3NPu4S26ftBa/lMw09dN9dsLsNm0LTAuwVXZwtmiCm6UP47ZWBm3u//b+YLkw44Pnl2kLe5iXIyF8Q==
+  dependencies:
+    "@babel/runtime" "^7.10.3"
+    minimatch "^3.0.4"
+
 gatsby-plugin-manifest@^2.4.9:
   version "2.4.14"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.4.14.tgz#9d82fbf81fc568860b1b3cc8cc0bf6cd8513b229"

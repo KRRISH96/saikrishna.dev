@@ -1,9 +1,15 @@
 import React from "react";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const ExternalLink = ({ href, children, ...props }) => (
-  <a href={href} target="_blank" rel="noopener noreferrer" {...props}>
+  <OutboundLink
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    {...props}
+  >
     {children}
-  </a>
+  </OutboundLink>
 );
 
 export default ExternalLink;
