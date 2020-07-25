@@ -9,6 +9,7 @@ const ContactForm = () => {
       method="POST"
       className="contact-form"
     >
+      <input type="hidden" name="_gotcha" />
       <label htmlFor="name" className="form-label">
         Name
         <br />
@@ -45,6 +46,7 @@ const ContactForm = () => {
           required
         />
       </label>
+      <div className="g-recaptcha" data-sitekey={process.env.SITE_RECAPTCHA_KEY}></div>
       <button type="submit" className="submit-button">
         Send
       </button>
