@@ -19,6 +19,7 @@ function encode(data) {
 
 const ContactForm = () => {
   const [formData, setFormData] = React.useState({});
+  const [recaptchaValue, setRecaptchaValue] = React.useState("");
   const recaptchaRef = React.createRef();
 
   const handleChange = e => {
@@ -28,7 +29,6 @@ const ContactForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
-    const recaptchaValue = recaptchaRef.current.getValue();
     fetch("/contact?no-cache=1", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -94,7 +94,11 @@ const ContactForm = () => {
           required
         />
       </label>
-      <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
+      <Recaptcha
+        ref={recaptchaRef}
+        sitekey={RECAPTCHA_KEY}
+        onChange={value => setRecaptchaValue(value)}
+      />
       <button type="submit" className="submit-button">
         Send
       </button>
