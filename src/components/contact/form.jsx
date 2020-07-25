@@ -4,8 +4,8 @@ import "./index.scss";
 const ContactForm = () => (
   <form
     name="contact"
-    action="/thank-you/"
-    method="post"
+    action="/thank-you"
+    method="POST"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
     data-netlify-recaptcha="true"
