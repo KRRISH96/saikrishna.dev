@@ -62,6 +62,13 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-force-trailing-slashes`,
-    `gatsby-plugin-recaptcha`,
+    {
+      resolve: `gatsby-plugin-recaptcha`,
+      options: {
+         async: false,
+         defer: false,
+         args: `?onload=onloadCallback&render=explicit`,
+      },
+   },
   ],
 };
