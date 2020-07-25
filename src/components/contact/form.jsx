@@ -1,15 +1,6 @@
 import React from "react";
-import Recaptcha from "react-google-recaptcha";
 import { navigateTo } from "gatsby";
 import "./index.scss";
-
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
-if (typeof RECAPTCHA_KEY === "undefined") {
-  throw new Error(`
-  Env var SITE_RECAPTCHA_KEY is undefined! 
-  You probably forget to set it in your Netlify build environment variables.
-  `);
-}
 
 function encode(data) {
   return Object.keys(data)
@@ -19,8 +10,6 @@ function encode(data) {
 
 const ContactForm = () => {
   const [formData, setFormData] = React.useState({});
-  const [recaptchaValue, setRecaptchaValue] = React.useState("");
-  const recaptchaRef = React.createRef();
 
   const handleChange = e => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -34,7 +23,6 @@ const ContactForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        "g-recaptcha-response": recaptchaValue,
         ...formData,
       }),
     })
@@ -94,11 +82,6 @@ const ContactForm = () => {
           required
         />
       </label>
-      <Recaptcha
-        ref={recaptchaRef}
-        sitekey={RECAPTCHA_KEY}
-        onChange={value => setRecaptchaValue(value)}
-      />
       <button type="submit" className="submit-button">
         Send
       </button>
