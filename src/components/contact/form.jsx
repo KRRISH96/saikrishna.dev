@@ -47,7 +47,7 @@ const ContactForm = () => (
     </label>
     <div
       className="g-recaptcha"
-      data-sitekey={process.env.SITE_RECAPTCHA_KEY}
+      data-sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
     ></div>
     <button type="submit" className="submit-button">
       Send
