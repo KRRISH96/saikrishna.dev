@@ -91,10 +91,6 @@ module.exports = {
             family: `Roboto`,
             variants: [`400`]
           },
-          {
-            family: `Open Sans`,
-            variants: [`400`]
-          },
         ],
       },
     }

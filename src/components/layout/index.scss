@@ -2,7 +2,7 @@
 @import '../main';
 
 html {
-  font-family:  'Roboto', 'Open Sans', monospace, sans-serif;
+  font-family:  'Roboto', monospace, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -188,7 +188,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 16px 'Roboto', 'Open Sans', sans-serif, monospace, georgia, serif;
+  font: 16px 'Roboto', sans-serif, monospace, georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -203,7 +203,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Roboto', 'Open Sans', sans-serif, monospace, georgia, serif;
+  font-family: 'Roboto', sans-serif, monospace, georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -594,7 +594,7 @@ tt,
 code {
   background-color: var(--code-bg);
   border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Open Sans", "Droid Sans Mono",
+  font-family: "SFMono-Regular", Consolas, "Droid Sans Mono",
     "Liberation Mono", Menlo, Courier, monospace;
   padding: 0.1rem 0.2rem;
 }
