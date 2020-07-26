@@ -23,7 +23,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     },
     {
       name: `twitter:image`,
-      content: frontmatter.coverImage.childImageSharp.fluid.src,
+      content: frontmatter.coverImage,
     },
     {
       name: `twitter:image:alt`,
@@ -97,13 +97,7 @@ export const pageQuery = graphql`
         description
         keywords
         tags
-        coverImage {
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
-        }
+        coverImage
       }
       fields {
         slug

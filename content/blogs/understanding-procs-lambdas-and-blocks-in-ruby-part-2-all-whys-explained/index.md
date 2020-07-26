@@ -15,7 +15,7 @@ tags:
   - rails
   - beginners
   - webdev
-coverImage: ./images/cover_image.png
+coverImage: "content/blogs/understanding-procs-lambdas-and-blocks-in-ruby-part-2-all-whys-explained/images/cover_image.png"
 ---
 
 In the first part of this article, We learned about what Procs, Lambdas, and Blocks are? If you haven’t read it, I strongly recommend you to read [Part 1: All what?s Answered](/blogs/understanding-procs-lambdas-and-blocks-in-ruby-part-1-all-whats-answered), before continuing.
