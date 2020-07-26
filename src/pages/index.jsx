@@ -7,7 +7,7 @@ import Navigation from "../components/navigation";
 
 const IndexPage = () => (
   <Layout isHomePage>
-    <SEO title="Home" />
+    <SEO title="Portfolio" />
     <div className="home-page">
       <p className="greeting">{grretByTimeOfDay()}</p>
       <h1 className="intro">I'm Sai</h1>
