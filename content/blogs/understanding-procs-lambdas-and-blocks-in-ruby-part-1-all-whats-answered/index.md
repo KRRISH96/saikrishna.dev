@@ -24,7 +24,7 @@ After spending a good amount of time with them, I finally have some clarity on h
 
 I would like to explain procs and lambdas with two W questions, What? and Why? Let’s start with a few what?’s.
 
-<hr></hr>
+<hr>
 
 ## **What are the Blocks?**
 
@@ -162,7 +162,7 @@ To fix this we just need to check if the block is given or not, using `block_giv
   # I am hurt :-/, I thought you would give me a block!
 ```
 
-<hr></hr>
+<hr>
 
 ## **What are Lambdas?**
 
@@ -249,7 +249,7 @@ Did you notice the `&`(ampersand) symbol appended to double_it?. That’s a shor
 
 That’s all we need to know about lambdas for now. Let’s move on to procs.
 
-<hr></hr>
+<hr>
 
 ## **What are Procs?**
 
@@ -385,7 +385,7 @@ There is one thing that we must know while handling returns with `proc`. As I me
 
 Aaannnddddd!!! We are done.
 
-<hr></hr>
+<hr>
 
 ## **In Nutshell**
 
