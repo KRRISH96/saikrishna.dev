@@ -34,12 +34,14 @@ const Layout = ({ children, isHomePage }) => (
           ))}
       </div>
       {children}
-      <Theme />
     </main>
     <footer>
-      © {new Date().getFullYear()}, Made with
-      <Emoji label="heart" emoji={" ❤️ "} />
-      by Sai Krishna Prasad Kandula.
+      <span className="copyright">
+        © {new Date().getFullYear()}, Made with
+        <Emoji label="heart" emoji={" ❤️ "} />
+        by Sai Krishna Prasad Kandula.
+      </span>
+      <Theme />
     </footer>
   </>
 );

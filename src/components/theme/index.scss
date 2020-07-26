@@ -120,23 +120,19 @@ body {
 }
 
 .theme-switch-wrapper {
-  margin: var(--s-0_25);
-  font-size: var(--font-20);
+  margin: 0 var(--s-1);
+  font-size: var(--font-16);
   background-color: var(--bg-secondary);
   display: inline-flex;
   border: 1px solid var(--color);
   border-radius: 1rem;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  position: fixed;
-  right: 0.5rem;
-  top: 10rem;
   overflow: hidden;
   box-shadow: var(--shadow);
   .theme-icon {
     cursor: pointer;
-    padding: var(--s-0_75);
+    padding: var(--s-0_25) var(--s-0_75);
     &.active {
       background-color: var(--bg-invert);
       color: var(--color-invert)
