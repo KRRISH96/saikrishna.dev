@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sai Krishna Prasad Kandula`,
-    description: `Self-Taught and Passionate Frontend Developer skilled in ReactJS, JavaScript, Ruby, Ruby on Rails, HTML5, CSS3, SASS, GIT.`,
+    description: `Self-Taught and Passionate FullStack Web Developer skilled in ReactJS, JavaScript, Ruby, Ruby on Rails, HTML5, CSS3, SASS, GIT.`,
     author: `@sai_krrishhh`,
   },
   plugins: [
