@@ -9,13 +9,13 @@ keywords:
   - lambdas
   - procs
   - closures
-coverImage: ""
 path: /blogs/understanding-procs-lambdas-and-blocks-in-ruby-part-2-all-whys-explained
 tags:
   - ruby
   - rails
   - beginners
   - webdev
+coverImage: ./images/cover_image.png
 ---
 
 In the first part of this article, We learned about what Procs, Lambdas, and Blocks are? If you haven’t read it, I strongly recommend you to read [Part 1: All what?s Answered](/blogs/understanding-procs-lambdas-and-blocks-in-ruby-part-1-all-whats-answered), before continuing.
@@ -26,7 +26,7 @@ In this part, let’s explore why we need Procs, Lambdas, and Blocks in the firs
 
 Let’s get started…
 
-<hr></hr>
+<hr>
 
 ## **Why Blocks?**
 
@@ -185,7 +185,7 @@ I suppose, by now we have our answer to “_Why Blocks?_”.
 
 There is one limitation with blocks though. We can’t assign a `block` to a variable. Let’s say we want to implement similar functionality in more than one method. We have to send the block to each of the methods individually — this leads us to the next section “_Why Lambdas?_”.
 
-<hr></hr>
+<hr>
 
 ## **Why Lambdas?**
 
@@ -276,7 +276,7 @@ With that we are left with the final question in our Blocks, Lambdas and Procs E
 
 With no further delay, let’s unravel the procs.
 
-<hr></hr>
+<hr>
 
 ## **Why Procs?**
 
@@ -300,7 +300,7 @@ Since lambdas and procs are objects we can do all the crazy stuff that an object
 
 Well, that concludes our journey.
 
-<hr></hr>
+<hr>
 
 ## **That’s too much man** 🤓
 

@@ -15,6 +15,7 @@ tags:
   - sass
   - ux
   - image-rendering
+coverImage: ./images/cover_image.png
 ---
 
 Improve your web apps UX by enhancing image render with React's `onLoad` event and simple SCSS.

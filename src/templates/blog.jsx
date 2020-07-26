@@ -22,6 +22,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       content: fields.readingTime.text,
     },
     {
+      name: `twitter:image`,
+      content: frontmatter.coverImage.childImageSharp.fluid.src,
+    },
+    {
+      name: `twitter:image:alt`,
+      content: "Blog Cover Image",
+    },
+    {
       name: `article:published_time`,
       content: frontmatter.date,
     },
@@ -33,6 +41,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={frontmatter.title}
         description={frontmatter.description || excerpt}
         meta={metaData}
+        isLargeSummary
       />
       <div className="blog-post-page">
         <article className="blog-post-container">
@@ -88,6 +97,13 @@ export const pageQuery = graphql`
         description
         keywords
         tags
+        coverImage {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
       }
       fields {
         slug
