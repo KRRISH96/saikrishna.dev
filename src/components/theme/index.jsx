@@ -27,33 +27,33 @@ function Theme() {
       localStorage.setItem(THEME_PREFERENCE_KEY, themePreference);
   };
 
-  const ThemeIcon = ({ children, themePreference, ...props }) => (
-    <span
-      className={`theme-icon ${theme === themePreference ? "active" : ""}`}
+  const ThemeButton = ({ children, themePreference, ...props }) => (
+    <button
+      className={`theme-btn ${theme === themePreference ? "active" : ""}`}
       onClick={() => setTheme(themePreference)}
       {...props}
     >
       {children}
-    </span>
+    </button>
   );
 
   return (
     <div className="theme-switch-wrapper">
-      <ThemeIcon themePreference={THEMES.light} title="Light Theme">
+      <ThemeButton themePreference={THEMES.light} title="Light Theme">
         <FaSun />
-      </ThemeIcon>
-      <ThemeIcon themePreference={THEMES.dark} title="Dark Theme">
+      </ThemeButton>
+      <ThemeButton themePreference={THEMES.dark} title="Dark Theme">
         <FaMoon />
-      </ThemeIcon>
-      <ThemeIcon themePreference={THEMES.system} title="System Default Theme">
+      </ThemeButton>
+      <ThemeButton themePreference={THEMES.system} title="System Default Theme">
         <FaCog />
-      </ThemeIcon>
-      <ThemeIcon
+      </ThemeButton>
+      <ThemeButton
         themePreference={THEMES.auto}
         title="Light during Day(7am-7pm) and Dark during Night"
       >
         <FaRegClock />
-      </ThemeIcon>
+      </ThemeButton>
     </div>
   );
 }
