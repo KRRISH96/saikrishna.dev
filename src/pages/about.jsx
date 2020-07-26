@@ -9,7 +9,7 @@ import Emoji from "../components/presentational/emoji";
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      profileImage: file(relativePath: { eq: "profile_picture.jpg" }) {
+      profileImage: file(relativePath: { eq: "profile_picture.png" }) {
         childImageSharp {
           fixed(width: 200, height: 200) {
             ...GatsbyImageSharpFixed
