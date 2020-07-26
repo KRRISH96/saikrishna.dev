@@ -53,11 +53,11 @@ const AboutPage = () => {
           </li>
           <li>
             <Emoji label="Writing Hand" emoji={" ✍🏻 "} />
-            <Link to={APP_ROUTES.blogs}>Blogs</Link>
+            <Link to={APP_ROUTES.blogs}>Read My Blogs!</Link>
           </li>
           <li>
             <Emoji label="Laptop" emoji={" 💻 "} />
-            <Link to={APP_ROUTES.projects}>Projects</Link>
+            <Link to={APP_ROUTES.projects}>Some of My Work!</Link>
           </li>
         </ul>
       </div>
