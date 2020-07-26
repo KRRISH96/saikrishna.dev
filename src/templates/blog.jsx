@@ -26,6 +26,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       content: frontmatter.coverImage,
     },
     {
+      name: `twitter:image:width`,
+      content: "800",
+    },
+    {
+      name: `twitter:image:height`,
+      content: "420",
+    },
+    {
       name: `twitter:image:alt`,
       content: "Blog Cover Image",
     },
