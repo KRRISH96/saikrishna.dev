@@ -33,7 +33,7 @@ const Layout = ({ children, isHomePage }) => (
             <span className="star" key={`star-${i}`}></span>
           ))}
       </div>
-      {children}
+      <div className="page">{children}</div>
     </main>
     <footer>
       <span className="copyright">
