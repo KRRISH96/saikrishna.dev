@@ -11,7 +11,9 @@ const IndexPage = () => (
     <div className="home-page">
       <p className="greeting">{grretByTimeOfDay()}</p>
       <h1 className="intro">I'm Sai</h1>
-      <p className="tagline">A Self-Taught and Passionate Frontend Engineer</p>
+      <p className="tagline">
+        A Self-Taught and Passionate FullStack Web Developer
+      </p>
       <Navigation isHomePage />
     </div>
   </Layout>

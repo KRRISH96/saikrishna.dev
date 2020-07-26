@@ -33,20 +33,18 @@ const AboutPage = () => {
             className="profile-image"
           />
         </div>
+        <p>I'm Sai Krishna Prasad, FullStack Web Developer from India.</p>
         <p>
-          I'm Sai Krishna Prasad, Frontend Engineer from India. I started
-          programming back in February 2018 to come out of a month-long
-          depression I was in, due to a failed attempt in pursuing my childhood
-          dream. Since then I didn't look back. If I can do it, you can too!
+          I architect and develop full stack web applications using React,
+          JavaScript, and Ruby on Rails. I love converting mockups into pixel
+          perfect technical implementations. I also like to stay on top of the
+          latest trends and techniques by consuming podcasts, articles, videos,
+          and mother google!
         </p>
         <p>
-          I architect and develop Web Applications using ReactJs, JavaScript,
-          Ruby on Rails, HTML, CSS, SASS and various other add-on tools and
-          libraries. Pixel perfect technical implementations is what fuels me.
-          My knowledge resources include documentaries, podcasts, articles and
-          mother google!
+          When I’m not coding you can catch me cycling around Bangalore or
+          cooking up some yummy Indian food!
         </p>
-        <p>Cycling and cooking are my best friends while not coding.</p>
         <br />
         <ul>
           <li>
