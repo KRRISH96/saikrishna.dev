@@ -16,6 +16,7 @@ tags:
   - ux
   - image-rendering
 coverImage: "content/blogs/how-to-smoothly-render-images-in-react-app/images/cover_image.png"
+canonicalUrl: "https://codebrahma.com/how-to-smoothly-render-images-in-react-app"
 ---
 
 Improve your web apps UX by enhancing image render with React's `onLoad` event and simple SCSS.

@@ -49,6 +49,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={frontmatter.title}
         description={frontmatter.description || excerpt}
         meta={metaData}
+        canonicalUrl={frontmatter.canonicalUrl || null}
         isLargeSummary
       />
       <div className="blog-post-page">
@@ -106,6 +107,7 @@ export const pageQuery = graphql`
         keywords
         tags
         coverImage
+        canonicalUrl
       }
       fields {
         slug

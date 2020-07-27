@@ -3,6 +3,7 @@ module.exports = {
     title: `Sai Krishna Prasad Kandula`,
     description: `Self-Taught and Passionate FullStack Web Developer skilled in ReactJS, JavaScript, Ruby, Ruby on Rails, HTML5, CSS3, SASS, GIT.`,
     author: `@sai_krrishhh`,
+    siteUrl: `https://saikrishna.dev/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
