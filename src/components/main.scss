@@ -262,12 +262,12 @@ footer {
 }
 
 .page-title {
-  margin-top: var(--s-2);
+  margin-top: var(--s-2_5);
   margin-bottom: var(--s-1);
   display: flex;
   align-items: center;
   @include break-point-down(tablet-landscape) {
-    margin-top: var(--s-2_5);
+    margin-top: var(--s-2_75);
     &:not(.blog-post__title) {
       justify-content: center;
     }
