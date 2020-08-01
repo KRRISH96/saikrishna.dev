@@ -10,7 +10,14 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ description, lang, meta, title, canonicalUrl, isLargeSummary = false }) {
+function SEO({
+  description,
+  lang,
+  meta,
+  title,
+  canonicalUrl,
+  isLargeSummary = false,
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -27,14 +34,16 @@ function SEO({ description, lang, meta, title, canonicalUrl, isLargeSummary = fa
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const linkProps = canonicalUrl ? {
-    link: [
-      {
-        rel: "canonical",
-        href: `${canonicalUrl}`
+  const linkProps = canonicalUrl
+    ? {
+        link: [
+          {
+            rel: "canonical",
+            href: `${canonicalUrl}`,
+          },
+        ],
       }
-    ]
-  } : {}
+    : {};
 
   return (
     <Helmet
