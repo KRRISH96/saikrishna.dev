@@ -2,12 +2,16 @@ import React from "react";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { APP_ROUTES } from "../helpers/constants";
+import { Link } from "gatsby";
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <SEO title="Uh Oh! Looks like you are Lost in Space" />
+    <h1>Uh Oh! Looks Like You are Lost in Space</h1>
+    <p>
+      Let's get you back to <Link to="/">Home</Link> Planet
+    </p>
   </Layout>
 );
 
