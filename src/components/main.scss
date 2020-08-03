@@ -3,6 +3,7 @@ $planet-size: 12rem;
 $planet-size-small: 6rem;
 $planet-size-tablet: 8rem;
 $planet-size-tablet-small: 4rem;
+$not-found-illustration-size: 25vmin;
 
 %flex-ai-c-jc-c {
   display: flex !important;
@@ -377,6 +378,24 @@ blockquote, .banner {
       }
       &:last-child {
         margin-right: 0;
+      }
+    }
+  }
+}
+
+.not-found-page {
+  @extend %flex-ai-c-jc-c;
+  flex-direction: column;
+  .four-o-four {
+    margin: var(--s-3) 0;
+    @extend %flex-ai-c-jc-c;
+    font-size: $not-found-illustration-size;
+    .illustration {
+      display: inherit;
+      margin-left: var(--s-2);
+      svg {
+        width: $not-found-illustration-size;
+        height: $not-found-illustration-size;
       }
     }
   }
