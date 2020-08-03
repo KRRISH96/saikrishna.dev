@@ -41,6 +41,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       name: `article:published_time`,
       content: frontmatter.date,
     },
+    {
+      name: "monetization",
+      content: "$ilp.uphold.com/k2RRDxGXJdiX"
+    }
   ];
 
   return (
