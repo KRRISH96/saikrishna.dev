@@ -7,24 +7,12 @@ import BlogPostMeta from "../components/presentational/blogPostMeta";
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { frontmatter, fields, excerpt, html } = data.markdownRemark;
   const { previous, next } = pageContext;
-  const coverImagePath = frontmatter.coverImage.childImageSharp.fixed.src
+  const coverImagePath = frontmatter.coverImage.childImageSharp.fixed.src;
 
   const metaData = [
     {
       name: `keywords`,
       content: frontmatter.keywords,
-    },
-    {
-      name: `og:image`,
-      content: coverImagePath,
-    },
-    {
-      name: `og:image:width`,
-      content: "800",
-    },
-    {
-      name: `og:image:height`,
-      content: "420",
     },
     {
       name: `og:image:alt`,
@@ -39,18 +27,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       content: fields.readingTime.text,
     },
     {
-      name: `twitter:image`,
-      content: coverImagePath,
-    },
-    {
-      name: `twitter:image:width`,
-      content: "800",
-    },
-    {
-      name: `twitter:image:height`,
-      content: "420",
-    },
-    {
       name: `twitter:image:alt`,
       content: "Blog Cover Image",
     },
@@ -60,8 +36,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     },
     {
       name: "monetization",
-      content: "$ilp.uphold.com/k2RRDxGXJdiX"
-    }
+      content: "$ilp.uphold.com/k2RRDxGXJdiX",
+    },
   ];
 
   return (
@@ -71,6 +47,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={frontmatter.description || excerpt}
         meta={metaData}
         canonicalUrl={frontmatter.canonicalUrl || null}
+        image={coverImagePath}
         isLargeSummary
       />
       <div className="blog-post-page">

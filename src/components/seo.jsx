@@ -17,8 +17,9 @@ function SEO({
   title,
   canonicalUrl,
   isLargeSummary = false,
+  image,
 }) {
-  const { site } = useStaticQuery(
+  const { site, profileImage } = useStaticQuery(
     graphql`
       query {
         site {
@@ -27,6 +28,13 @@ function SEO({
             description
             author
             siteUrl
+          }
+        }
+        profileImage: file(relativePath: { eq: "profile_picture.png" }) {
+          childImageSharp {
+            fixed {
+              src
+            }
           }
         }
       }
@@ -44,6 +52,10 @@ function SEO({
         ],
       }
     : {};
+
+  const imagePath = `${site.siteMetadata.siteUrl}${
+    image || profileImage.childImageSharp.fixed.src
+  }`;
 
   return (
     <Helmet
@@ -71,6 +83,28 @@ function SEO({
           content: `website`,
         },
         {
+          name: `og:image`,
+          content: imagePath,
+        },
+        ...(isLargeSummary ? [
+          {
+            name: `og:image:width`,
+            content: "800",
+          },
+          {
+            name: `og:image:height`,
+            content: "420",
+          },
+          {
+            name: `twitter:image:width`,
+            content: "800",
+          },
+          {
+            name: `twitter:image:height`,
+            content: "420",
+          },
+        ] : []),
+        {
           name: `twitter:card`,
           content: isLargeSummary ? `summary_large_image` : `summary`,
         },
@@ -85,6 +119,10 @@ function SEO({
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: imagePath,
         },
       ].concat(meta)}
     />
