@@ -7,11 +7,16 @@ import BlogPostMeta from "../components/presentational/blogPostMeta";
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { frontmatter, fields, excerpt, html } = data.markdownRemark;
   const { previous, next } = pageContext;
+  const coverImagePath = frontmatter.coverImage.childImageSharp.fixed.src;
 
   const metaData = [
     {
       name: `keywords`,
       content: frontmatter.keywords,
+    },
+    {
+      name: `og:image:alt`,
+      content: "Blog Cover Image",
     },
     {
       name: `twitter:label1`,
@@ -20,18 +25,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     {
       name: `twitter:data1`,
       content: fields.readingTime.text,
-    },
-    {
-      name: `twitter:image`,
-      content: frontmatter.coverImage,
-    },
-    {
-      name: `twitter:image:width`,
-      content: "800",
-    },
-    {
-      name: `twitter:image:height`,
-      content: "420",
     },
     {
       name: `twitter:image:alt`,
@@ -43,8 +36,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     },
     {
       name: "monetization",
-      content: "$ilp.uphold.com/k2RRDxGXJdiX"
-    }
+      content: "$ilp.uphold.com/k2RRDxGXJdiX",
+    },
   ];
 
   return (
@@ -54,6 +47,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={frontmatter.description || excerpt}
         meta={metaData}
         canonicalUrl={frontmatter.canonicalUrl || null}
+        image={coverImagePath}
         isLargeSummary
       />
       <div className="blog-post-page">
@@ -110,7 +104,13 @@ export const pageQuery = graphql`
         description
         keywords
         tags
-        coverImage
+        coverImage {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
         canonicalUrl
       }
       fields {
