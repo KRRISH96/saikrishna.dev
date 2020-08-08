@@ -15,7 +15,7 @@ tags:
   - sass
   - ux
   - image-rendering
-coverImage: "content/blogs/how-to-smoothly-render-images-in-react-app/images/cover_image.png"
+coverImage: "./images/cover_image.png"
 canonicalUrl: "https://codebrahma.com/how-to-smoothly-render-images-in-react-app"
 ---
 

@@ -15,7 +15,7 @@ tags:
   - rails
   - beginners
   - webdev
-coverImage: "content/blogs/understanding-procs-lambdas-and-blocks-in-ruby-part-1-all-whats-answered/images/cover_image.png"
+coverImage: "./images/cover_image.png"
 ---
 
 I recently started learning ruby as part of my journey to be a full stack developer. I am using [rubymonk.com](https://rubymonk.com) which is a really good source for an absolute beginner. After a few smooth moving lessons and problems, I landed on the Procs and Lambdas section. I had a hard time understanding procs, lambdas, and blocks.

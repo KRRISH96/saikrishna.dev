@@ -7,11 +7,28 @@ import BlogPostMeta from "../components/presentational/blogPostMeta";
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { frontmatter, fields, excerpt, html } = data.markdownRemark;
   const { previous, next } = pageContext;
+  const coverImagePath = frontmatter.coverImage.childImageSharp.fixed.src
 
   const metaData = [
     {
       name: `keywords`,
       content: frontmatter.keywords,
+    },
+    {
+      name: `og:image`,
+      content: coverImagePath,
+    },
+    {
+      name: `og:image:width`,
+      content: "800",
+    },
+    {
+      name: `og:image:height`,
+      content: "420",
+    },
+    {
+      name: `og:image:alt`,
+      content: "Blog Cover Image",
     },
     {
       name: `twitter:label1`,
@@ -23,7 +40,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     },
     {
       name: `twitter:image`,
-      content: frontmatter.coverImage,
+      content: coverImagePath,
     },
     {
       name: `twitter:image:width`,
@@ -110,7 +127,13 @@ export const pageQuery = graphql`
         description
         keywords
         tags
-        coverImage
+        coverImage {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
         canonicalUrl
       }
       fields {
