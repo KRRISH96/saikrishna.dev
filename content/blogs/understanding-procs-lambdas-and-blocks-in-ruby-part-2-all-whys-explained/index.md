@@ -1,5 +1,5 @@
 ---
-title: "Understanding Procs, Lambdas, and Blocks in Ruby - Part 2"
+title: Understanding Procs, Lambdas, and Blocks in Ruby - Part 2
 date: 2020-02-24
 description: >-
   All Why?s Explained. With Blocks, Lambdas, and Procs — one method can be made to work in different aspects. Methods aren’t First-Class Functions unlike in few other languages, say Javascript.
@@ -15,7 +15,7 @@ tags:
   - rails
   - beginners
   - webdev
-coverImage: "./images/cover_image.png"
+coverImage: ./images/cover_image.png
 ---
 
 In the first part of this article, We learned about what Procs, Lambdas, and Blocks are? If you haven’t read it, I strongly recommend you to read [Part 1: All what?s Answered](/blogs/understanding-procs-lambdas-and-blocks-in-ruby-part-1-all-whats-answered), before continuing.

@@ -1,5 +1,5 @@
 ---
-title: "Understanding Procs, Lambdas, and Blocks in Ruby - Part 1"
+title: Understanding Procs, Lambdas, and Blocks in Ruby - Part 1
 date: 2020-02-23
 description: >-
   All What?s Answered. Blocks, Lambdas, and Procs are Closures… Procs and Lambdas are objects.. Argument Handling, Return Statement Behaviour.
@@ -15,7 +15,7 @@ tags:
   - rails
   - beginners
   - webdev
-coverImage: "./images/cover_image.png"
+coverImage: ./images/cover_image.png
 ---
 
 I recently started learning ruby as part of my journey to be a full stack developer. I am using [rubymonk.com](https://rubymonk.com) which is a really good source for an absolute beginner. After a few smooth moving lessons and problems, I landed on the Procs and Lambdas section. I had a hard time understanding procs, lambdas, and blocks.

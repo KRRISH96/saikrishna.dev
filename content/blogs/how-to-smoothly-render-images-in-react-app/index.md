@@ -1,5 +1,5 @@
 ---
-title: "How to Smoothly Render Images in React App?"
+title: How to Smoothly Render Images in React App?
 date: 2020-03-09
 description: >-
   Improve your web apps UX by enhancing image render with React's onLoad event and simple SCSS
@@ -15,8 +15,8 @@ tags:
   - sass
   - ux
   - image-rendering
-coverImage: "./images/cover_image.png"
-canonicalUrl: "https://codebrahma.com/how-to-smoothly-render-images-in-react-app"
+coverImage: ./images/cover_image.png
+canonicalUrl: https://codebrahma.com/how-to-smoothly-render-images-in-react-app
 ---
 
 Improve your web apps UX by enhancing image render with React's `onLoad` event and simple SCSS.
