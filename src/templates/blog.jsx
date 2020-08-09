@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BlogPostMeta from "../components/presentational/blogPostMeta";
+import ExternalLink from "../components/presentational/externalLink";
 import { APP_ROUTES } from "../helpers/constants";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -41,6 +42,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     },
   ];
 
+  const gitHubEditUrl = `https://github.com/KRRISH96/saikrishna.dev/edit/master/content/blogs${fields.slug}index.md`;
+
   return (
     <Layout location={location} title={"Blogs"}>
       <SEO
@@ -66,6 +69,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           />
           <hr />
         </article>
+
+        <ul>
+          <li>
+            <ExternalLink href={gitHubEditUrl}>Edit on GitHub</ExternalLink>
+          </li>
+        </ul>
 
         <nav className="card other-blog-posts">
           Other Blog Posts
