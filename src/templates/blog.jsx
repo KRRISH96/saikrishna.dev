@@ -43,6 +43,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   ];
 
   const gitHubEditUrl = `https://github.com/KRRISH96/saikrishna.dev/edit/master/content/blogs${fields.slug}index.md`;
+  const twitterShareUrl = `https://twitter.com/share/?text=${encodeURIComponent(
+    frontmatter.title + " by @sai_krrishhh "
+  )}&url=${location.href}`;
 
   return (
     <Layout location={location} title={"Blogs"}>
@@ -70,7 +73,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <hr />
         </article>
 
-        <ul>
+        <ul className="blog-post__actions">
+          <li>
+            <ExternalLink href={twitterShareUrl}>Share on Twitter</ExternalLink>
+          </li>
           <li>
             <ExternalLink href={gitHubEditUrl}>Edit on GitHub</ExternalLink>
           </li>

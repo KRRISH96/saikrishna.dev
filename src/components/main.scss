@@ -347,6 +347,18 @@ blockquote, .banner {
     }
   }
 
+  .blog-post__actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    list-style-type: disc;
+    li {
+      margin: var(--s-0_25) var(--s-1);
+    }
+  }
+
   .other-blog-posts {
     padding: var(--s-2);
     margin: var(--s-4) 0;
