@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BlogPostMeta from "../components/presentational/blogPostMeta";
+import { APP_ROUTES } from "../helpers/constants";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { frontmatter, fields, excerpt, html } = data.markdownRemark;
@@ -83,6 +84,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 </Link>
               </li>
             )}
+            <li>
+              <Link to={APP_ROUTES.blogs} rel="all">
+                View All
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
