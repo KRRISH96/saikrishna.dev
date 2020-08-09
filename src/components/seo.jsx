@@ -86,24 +86,26 @@ function SEO({
           name: `og:image`,
           content: imagePath,
         },
-        ...(isLargeSummary ? [
-          {
-            name: `og:image:width`,
-            content: "800",
-          },
-          {
-            name: `og:image:height`,
-            content: "420",
-          },
-          {
-            name: `twitter:image:width`,
-            content: "800",
-          },
-          {
-            name: `twitter:image:height`,
-            content: "420",
-          },
-        ] : []),
+        ...(isLargeSummary
+          ? [
+              {
+                name: `og:image:width`,
+                content: "800",
+              },
+              {
+                name: `og:image:height`,
+                content: "420",
+              },
+              {
+                name: `twitter:image:width`,
+                content: "800",
+              },
+              {
+                name: `twitter:image:height`,
+                content: "420",
+              },
+            ]
+          : []),
         {
           name: `twitter:card`,
           content: isLargeSummary ? `summary_large_image` : `summary`,
