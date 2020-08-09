@@ -3,6 +3,8 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import BlogPostMeta from "../components/presentational/blogPostMeta";
+import ExternalLink from "../components/presentational/externalLink";
+import { APP_ROUTES } from "../helpers/constants";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { frontmatter, fields, excerpt, html } = data.markdownRemark;
@@ -40,6 +42,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
     },
   ];
 
+  const gitHubEditUrl = `https://github.com/KRRISH96/saikrishna.dev/edit/master/content/blogs${fields.slug}index.md`;
+  const twitterShareUrl = `https://twitter.com/share/?text=${encodeURIComponent(
+    frontmatter.title + " by @sai_krrishhh "
+  )}&url=${location.href}`;
+
   return (
     <Layout location={location} title={"Blogs"}>
       <SEO
@@ -66,6 +73,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <hr />
         </article>
 
+        <ul className="blog-post__actions">
+          <li>
+            <ExternalLink href={twitterShareUrl}>Share on Twitter</ExternalLink>
+          </li>
+          <li>
+            <ExternalLink href={gitHubEditUrl}>Edit on GitHub</ExternalLink>
+          </li>
+        </ul>
+
         <nav className="card other-blog-posts">
           Other Blog Posts
           <ul className="other-blog-posts__list">
@@ -83,6 +99,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 </Link>
               </li>
             )}
+            <li>
+              <Link to={APP_ROUTES.blogs} rel="all">
+                View All
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
