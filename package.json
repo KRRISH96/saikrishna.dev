@@ -33,7 +33,11 @@
     "react-icons": "^3.10.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
+    "@testing-library/cypress": "^6.0.0",
+    "cypress": "^4.12.1",
+    "gatsby-cypress": "^0.4.10",
+    "prettier": "2.0.5",
+    "start-server-and-test": "^1.11.3"
   },
   "keywords": [
     "gatsby"
@@ -43,10 +47,12 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "yarn test:e2e",
+    "cy:open": "cypress open",
+    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open"
   },
   "repository": {
     "type": "git",
