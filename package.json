@@ -48,11 +48,11 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "yarn develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby build && gatsby serve",
     "clean": "gatsby clean",
-    "test": "yarn test:e2e",
+    "develop:cy": "CYPRESS_SUPPORT=y yarn develop",
     "cy:open": "cypress open",
-    "test:e2e": "start-server-and-test develop http://localhost:8000 cy:open"
+    "test:cy:dev": "start-server-and-test develop:cy :8000 cy:open"
   },
   "repository": {
     "type": "git",
