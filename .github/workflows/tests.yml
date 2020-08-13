@@ -5,13 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       # https://github.com/cypress-io/github-action
       - name: Cypress Run
         uses: cypress-io/github-action@v1.16.1
 
         with:
           record: true
+          command: yarn test:cy
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
