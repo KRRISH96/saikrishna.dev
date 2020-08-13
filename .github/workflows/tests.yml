@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
       # https://github.com/cypress-io/github-action
       - name: Cypress Run
-        run: yarn test:cy
+        run: yarn run test:cy
 
         env:
           # pass the Dashboard record key as an environment variable
