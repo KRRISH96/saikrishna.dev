@@ -8,7 +8,7 @@ const Navigation = ({ isHomePage }) => (
     <ul className={`navigation ${!isHomePage ? "top-nav" : ""}`}>
       {Object.keys(APP_ROUTES).map(route => (
         <li key={route}>
-          <Link to={APP_ROUTES[route]} activeClassName="active">
+          <Link to={APP_ROUTES[route]} activeClassName="active" data-cy={route}>
             {route}
           </Link>
         </li>
