@@ -54,7 +54,7 @@
     "serve:cy": "CYPRESS_SUPPORT=y yarn run serve",
     "cy:verify": "cypress verify",
     "cy:open": "cypress open",
-    "cy:run": "CYPRESS_baseUrl=http://localhost:9000 cypress run",
+    "cy:run": "CYPRESS_baseUrl=http://localhost:9000 cypress run --record",
     "test:cy": "start-server-and-test serve:cy :9000 cy:run",
     "test:cy:dev": "start-server-and-test develop:cy :8000 cy:open"
   },
