@@ -2,7 +2,10 @@ name: tests
 on:
   push:
     branches:
-      - 'master'
+      - master
+  pull_request:
+    branches:
+      - master
 
 jobs:
   cypress-run:
@@ -15,6 +18,8 @@ jobs:
         uses: cypress-io/github-action@v1.16.1
 
         with:
+          start: yarn develop
+          wait-on: 'http://localhost:8000/'
           record: true
           command: yarn test:cy
         env:
