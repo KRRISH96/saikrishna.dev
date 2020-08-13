@@ -1,7 +1,6 @@
 describe("Home Page", () => {
   beforeEach(() => {
-    cy.visit("/");
-    cy.waitForRouteChange();
+    cy.visit("/").waitForRouteChange();
   });
 
   it("Can do About Page Navigation", () => {

@@ -51,7 +51,11 @@
     "serve": "gatsby build && gatsby serve",
     "clean": "gatsby clean",
     "develop:cy": "CYPRESS_SUPPORT=y yarn develop",
+    "serve:cy": "CYPRESS_SUPPORT=y yarn serve",
+    "cy:verify": "cypress verify",
     "cy:open": "cypress open",
+    "cy:run": "CYPRESS_baseUrl=http://localhost:9000 cypress run",
+    "test:cy": "start-server-and-test serve:cy :9000 cy:run",
     "test:cy:dev": "start-server-and-test develop:cy :8000 cy:open"
   },
   "repository": {
