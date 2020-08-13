@@ -14,6 +14,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       # https://github.com/cypress-io/github-action
+      - name: Install Dependencies
+        run: yarn install
       - name: Cypress Run
         run: yarn run test:cy
 
