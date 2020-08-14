@@ -1,5 +1,6 @@
 {
   "baseUrl": "http://localhost:8000",
   "chromeWebSecurity": false,
-  "projectId": "g31wiz"
+  "projectId": "g31wiz",
+  "videoUploadOnPasses": false
 }
