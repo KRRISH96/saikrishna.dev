@@ -36,6 +36,7 @@
     "@testing-library/cypress": "^6.0.0",
     "cypress": "^4.12.1",
     "gatsby-cypress": "^0.4.10",
+    "husky": "^4.2.5",
     "prettier": "2.0.5",
     "start-server-and-test": "^1.11.3"
   },
@@ -54,9 +55,19 @@
     "serve:cy": "CYPRESS_SUPPORT=y yarn run serve",
     "cy:verify": "cypress verify",
     "cy:open": "cypress open",
-    "cy:run": "CYPRESS_baseUrl=http://localhost:9000 cypress run --record",
-    "test:cy": "start-server-and-test serve:cy :9000 cy:run",
+    "set-server-baseurl": "CYPRESS_baseUrl=http://localhost:9000",
+    "cy:run:norecord": "yarn set-server-baseurl cypress run",
+    "cy:run": "yarn set-server-baseurl cypress run --record",
+    "serve-and-test": "start-server-and-test serve:cy :9000",
+    "test:cy": "yarn serve-and-test cy:run",
+    "test:cy:norecord": "yarn serve-and-test cy:run:norecord",
     "test:cy:dev": "start-server-and-test develop:cy :8000 cy:open"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format",
+      "pre-push": "yarn test:cy:norecord"
+    }
   },
   "repository": {
     "type": "git",
