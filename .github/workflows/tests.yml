@@ -17,7 +17,7 @@ jobs:
       - name: Install Dependencies
         run: yarn install
       - name: Cypress Run
-        run: yarn run test:cy
+        run: yarn run test:cy:record
 
         env:
           # pass the Dashboard record key as an environment variable
