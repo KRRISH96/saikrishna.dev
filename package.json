@@ -1,7 +1,7 @@
 {
   "name": "sai-krishna-prasad-k-portfolio",
   "private": true,
-  "description": "My Portfolio Site",
+  "description": "Sai Krishna Prasad Kandua's Personal Website and Blog",
   "version": "0.1.0",
   "author": "Sai Krishna Prasad K",
   "dependencies": {
@@ -71,9 +71,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/KRRISH96/saikrishna.dev"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/KRRISH96/saikrishna.dev/issues"
   }
 }
