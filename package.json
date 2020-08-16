@@ -37,6 +37,7 @@
     "cypress": "^4.12.1",
     "gatsby-cypress": "^0.4.10",
     "husky": "^4.2.5",
+    "lighthouse-badges": "^1.0.33",
     "prettier": "2.0.5",
     "start-server-and-test": "^1.11.3"
   },
@@ -61,7 +62,9 @@
     "serve-and-test": "start-server-and-test serve:cy :9000",
     "test:cy": "yarn serve-and-test cy:run",
     "test:cy:record": "yarn serve-and-test cy:run:record",
-    "test:cy:dev": "start-server-and-test develop:cy :8000 cy:open"
+    "test:cy:dev": "start-server-and-test develop:cy :8000 cy:open",
+    "generate:lh:badges": "lighthouse-badges --urls http://localhost:9000 -o lighthouse_badges -b flat-square",
+    "lh:badges": "start-server-and-test serve :9000 generate:lh:badges"
   },
   "husky": {
     "hooks": {

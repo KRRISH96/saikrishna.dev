@@ -19,6 +19,9 @@ jobs:
       - name: Cypress Run
         run: yarn run test:cy:record
 
+      - name: Generate LightHouse Badges
+        run: yarn lh:badges
+
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
