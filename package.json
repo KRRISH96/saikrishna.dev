@@ -1,7 +1,7 @@
 {
   "name": "sai-krishna-prasad-k-portfolio",
   "private": true,
-  "description": "My Portfolio Site",
+  "description": "Sai Krishna Prasad Kandua's Personal Website and Blog",
   "version": "0.1.0",
   "author": "Sai Krishna Prasad K",
   "dependencies": {
@@ -34,9 +34,14 @@
   },
   "devDependencies": {
     "@testing-library/cypress": "^6.0.0",
+    "chai": "^4.2.0",
+    "chrome-launcher": "^0.13.4",
     "cypress": "^4.12.1",
     "gatsby-cypress": "^0.4.10",
     "husky": "^4.2.5",
+    "lighthouse": "^6.2.0",
+    "lighthouse-badges": "^1.0.33",
+    "mocha": "^8.1.1",
     "prettier": "2.0.5",
     "start-server-and-test": "^1.11.3"
   },
@@ -61,19 +66,24 @@
     "serve-and-test": "start-server-and-test serve:cy :9000",
     "test:cy": "yarn serve-and-test cy:run",
     "test:cy:record": "yarn serve-and-test cy:run:record",
-    "test:cy:dev": "start-server-and-test develop:cy :8000 cy:open"
+    "test:cy:dev": "start-server-and-test develop:cy :8000 cy:open",
+    "serve:lh": "start-server-and-test serve :9000",
+    "generate:lh:badges": "lighthouse-badges --urls http://localhost:9000 -o lighthouse_badges -b flat-square",
+    "lh:badges": "yarn serve:lh generate:lh:badges",
+    "test:lh": "mocha lighthouse_tests/*.spec.js",
+    "lh:serve:test": "yarn serve:lh test:lh"
   },
   "husky": {
     "hooks": {
       "pre-commit": "yarn format",
-      "pre-push": "yarn test:cy"
+      "pre-push": "yarn test:cy && yarn lh:serve:test"
     }
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/KRRISH96/saikrishna.dev"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/KRRISH96/saikrishna.dev/issues"
   }
 }

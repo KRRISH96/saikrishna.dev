@@ -8,7 +8,7 @@ on:
       - master
 
 jobs:
-  cypress-run:
+  cypress-and-lighthouse:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,9 +16,14 @@ jobs:
       # https://github.com/cypress-io/github-action
       - name: Install Dependencies
         run: yarn install
+
       - name: Cypress Run
         run: yarn run test:cy:record
-
         env:
-          # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+
+      - name: Perform LightHouse Audit Tests
+        run: yarn lh:serve:test
+
+      - name: Generate LightHouse Badges
+        run: yarn lh:badges
