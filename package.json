@@ -62,7 +62,7 @@
     "cy:open": "cypress open",
     "set-server-baseurl": "CYPRESS_baseUrl=http://localhost:9000",
     "cy:run": "yarn set-server-baseurl cypress run",
-    "cy:run:record": "yarn set-server-baseurl cypress run --record",
+    "cy:run:record": "yarn set-server-baseurl cypress run --record --parallel",
     "serve-and-test": "start-server-and-test serve:cy :9000",
     "test:cy": "yarn serve-and-test cy:run",
     "test:cy:record": "yarn serve-and-test cy:run:record",
