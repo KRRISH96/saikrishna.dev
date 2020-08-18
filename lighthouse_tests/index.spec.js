@@ -23,7 +23,7 @@ const launchChromeAndRunLighthouse = async () => {
 
 describe("Lighthouse PWA Testing", function () {
   // Should complete tests within 10s else considered fail
-  this.timeout(10000);
+  this.timeout(30000);
   let results;
   before("run base test", done => {
     launchChromeAndRunLighthouse().then(({ categories }) => {
