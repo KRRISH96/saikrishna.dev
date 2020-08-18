@@ -22,5 +22,8 @@ jobs:
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
+      - name: Perform LightHouse Audit Tests
+        run: yarn lh:serve:test
+
       - name: Generate LightHouse Badges
         run: yarn lh:badges
