@@ -8,7 +8,7 @@ on:
       - master
 
 jobs:
-  cypress-run:
+  cypress-and-lighthouse:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
