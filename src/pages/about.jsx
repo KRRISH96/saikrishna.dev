@@ -49,15 +49,21 @@ const AboutPage = () => {
         <ul>
           <li>
             <Emoji label="Waving Hand" emoji={" 👋🏻 "} />
-            <Link to={APP_ROUTES.contact}>Say Hello!</Link>
+            <Link to={APP_ROUTES.contact} data-cy={APP_ROUTES.contact}>
+              Say Hello!
+            </Link>
           </li>
           <li>
             <Emoji label="Writing Hand" emoji={" ✍🏻 "} />
-            <Link to={APP_ROUTES.blogs}>Read My Blogs!</Link>
+            <Link to={APP_ROUTES.blogs} data-cy={APP_ROUTES.blogs}>
+              Read My Blogs!
+            </Link>
           </li>
           <li>
             <Emoji label="Laptop" emoji={" 💻 "} />
-            <Link to={APP_ROUTES.projects}>Some of My Work!</Link>
+            <Link to={APP_ROUTES.projects} data-cy={APP_ROUTES.projects}>
+              Some of My Work!
+            </Link>
           </li>
         </ul>
       </div>

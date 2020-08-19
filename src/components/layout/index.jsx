@@ -18,7 +18,7 @@ const Layout = ({ children, isHomePage }) => (
   <>
     {!isHomePage && (
       <header>
-        <Link to="/" className="rocket">
+        <Link to="/" className="rocket" data-cy="rocket">
           <FaRocket />
         </Link>
         <Navigation />
