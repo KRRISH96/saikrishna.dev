@@ -32,6 +32,7 @@ function Theme() {
       className={`theme-btn ${theme === themePreference ? "active" : ""}`}
       onClick={() => setTheme(themePreference)}
       {...props}
+      data-cy={themePreference}
     >
       {children}
     </button>
