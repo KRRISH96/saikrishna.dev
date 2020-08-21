@@ -305,6 +305,10 @@ blockquote, .banner {
      border: 0.1rem solid var(--color-secondary);
    }
   }
+  .external-link-icon {
+    margin-left: var(--s-0_5);
+    font-size: var(--font-12);
+  }
 }
 
 .projects-page {

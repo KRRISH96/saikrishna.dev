@@ -18,9 +18,10 @@ export const HOUR_FROM_TIME_OF_DAY = Object.freeze({
 export const APP_ROUTES = Object.freeze({
   about: "/about",
   projects: "/projects",
-  blogs: "/blogs",
   contact: "/contact",
 });
+
+export const BLOG_SITE = "https://blog.saikrishna.dev";
 
 export const PROFILE_LINKS = Object.freeze({
   codepen: "https://codepen.io/sai_krrishhh",
