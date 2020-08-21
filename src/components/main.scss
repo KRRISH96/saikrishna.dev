@@ -296,6 +296,11 @@ blockquote, .banner {
   box-shadow: var(--shadow);
 }
 
+.external-link-icon {
+  margin: 0 var(--s-0_5);
+  font-size: var(--font-12);
+}
+
 .about-page {
   .profile-image-container {
     @extend %flex-ai-c-jc-c;
@@ -304,10 +309,6 @@ blockquote, .banner {
      border-radius: 50%;
      border: 0.1rem solid var(--color-secondary);
    }
-  }
-  .external-link-icon {
-    margin-left: var(--s-0_5);
-    font-size: var(--font-12);
   }
 }
 
