@@ -3,8 +3,10 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { APP_ROUTES } from "../helpers/constants";
+import { APP_ROUTES, BLOG_SITE } from "../helpers/constants";
 import Emoji from "../components/presentational/emoji";
+import ExternalLink from "../components/presentational/externalLink";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -55,9 +57,10 @@ const AboutPage = () => {
           </li>
           <li>
             <Emoji label="Writing Hand" emoji={" ✍🏻 "} />
-            <Link to={APP_ROUTES.blogs} data-cy={APP_ROUTES.blogs}>
-              Read My Blogs!
-            </Link>
+            <ExternalLink href={BLOG_SITE}>Read My Blogs</ExternalLink>
+            <small className="external-link-icon">
+              <FaExternalLinkAlt />
+            </small>
           </li>
           <li>
             <Emoji label="Laptop" emoji={" 💻 "} />

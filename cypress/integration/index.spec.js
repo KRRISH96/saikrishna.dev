@@ -13,11 +13,6 @@ describe("Home Page", () => {
     cy.url().should("equal", `${window.location.origin}/projects`);
   });
 
-  it("Can do Blogs Page Navigation", () => {
-    cy.get("[data-cy=blogs]").click().waitForRouteChange();
-    cy.url().should("equal", `${window.location.origin}/blogs`);
-  });
-
   it("Can do Contact Page Navigation", () => {
     cy.get("[data-cy=contact]").click().waitForRouteChange();
     cy.url().should("equal", `${window.location.origin}/contact`);

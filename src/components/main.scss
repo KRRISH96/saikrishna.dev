@@ -11,7 +11,7 @@ $not-found-illustration-size: 25vmin;
   justify-content: center;
 }
 
-header:not(.blog-post__header) {
+header {
   height: 5rem;
 }
 
@@ -269,9 +269,7 @@ footer {
   align-items: center;
   @include break-point-down(tablet-landscape) {
     margin-top: var(--s-2_75);
-    &:not(.blog-post__title) {
-      justify-content: center;
-    }
+    justify-content: center;
   }
 }
 
@@ -298,6 +296,11 @@ blockquote, .banner {
   box-shadow: var(--shadow);
 }
 
+.external-link-icon {
+  margin: 0 var(--s-0_5);
+  font-size: var(--font-12);
+}
+
 .about-page {
   .profile-image-container {
     @extend %flex-ai-c-jc-c;
@@ -318,57 +321,6 @@ blockquote, .banner {
     margin-bottom: var(--s-5);
     @include break-point-down(tablet-landscape) {
       justify-content: center;
-    }
-  }
-}
-
-.blogs-page {
-  .blogs-container {
-    margin-bottom: var(--s-5);
-  }
-}
-
-.blog-post__meta {
-  font-size: var(--font-14);
-  margin-bottom: var(--s-1);
-}
-
-.blog-post-page {
-  .blog-post__header {
-    margin-bottom: var(--s-4);
-  }
-
-  .blog-post__body {
-    ul {
-      list-style-type: "🎯";
-      li {
-        padding-left: var(--s-0_75);
-      }
-    }
-  }
-
-  .blog-post__actions {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-    list-style-type: disc;
-    li {
-      margin: var(--s-0_25) var(--s-1);
-    }
-  }
-
-  .other-blog-posts {
-    padding: var(--s-2);
-    margin: var(--s-4) 0;
-    &__list {
-      margin-top: var(--s-1);
-      margin-bottom: 0;
-      list-style-type: "✍️";
-      li {
-        padding-left: var(--s-0_75);
-      }
     }
   }
 }

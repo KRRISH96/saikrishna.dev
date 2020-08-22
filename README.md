@@ -9,4 +9,4 @@
 ![LightHouse SEO](./lighthouse_badges/lighthouse_seo.svg)
 ![LightHouse PWA](./lighthouse_badges/lighthouse_pwa.svg)
 
-My Personal Website and Blog. Built with Gatsby
+My Personal Website. Built with Gatsby
