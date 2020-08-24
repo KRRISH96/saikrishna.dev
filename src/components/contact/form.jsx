@@ -18,6 +18,7 @@ const ContactForm = () => (
         name="name"
         className="form-input"
         placeholder="John Doe"
+        data-cy="name"
         required
       />
     </label>
@@ -30,6 +31,7 @@ const ContactForm = () => (
         name="_replyto"
         className="form-input"
         placeholder="john_doe@example.com"
+        data-cy="email"
         required
       />
     </label>
@@ -42,6 +44,7 @@ const ContactForm = () => (
         name="message"
         className="form-input"
         placeholder="What's Up?"
+        data-cy="message"
         required
       />
     </label>
