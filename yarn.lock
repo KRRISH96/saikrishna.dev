@@ -2550,7 +2550,7 @@ are-we-there-yet@~1.1.2:
     delegates "^1.0.0"
     readable-stream "^2.0.6"
 
-argparse@^1.0.10, argparse@^1.0.7:
+argparse@1.0.10, argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
   integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
@@ -9508,15 +9508,15 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lighthouse-badges@^1.0.33:
-  version "1.0.33"
-  resolved "https://registry.yarnpkg.com/lighthouse-badges/-/lighthouse-badges-1.0.33.tgz#b59f95d9c0eedda98a71c6e84605e76df8b4fea0"
-  integrity sha512-D5E5MKJE9edHi55ET+NMwGxo/hoXTH+1phav9j/Kyvc1+JW1DSkw58Atj+SSJT88RtKdRmXOhRwLa6Push4Aug==
+lighthouse-badges@^1.0.34:
+  version "1.0.34"
+  resolved "https://registry.yarnpkg.com/lighthouse-badges/-/lighthouse-badges-1.0.34.tgz#24c4911899a36d5228aee2a505508fd21499ba11"
+  integrity sha512-TnBxjkXcsjIGMMDJhqGyFTQYRhBlhaxFzHIp8K+45fStqJMIYE6C9Plpdmq3IKBhlE1/apX8T8wA+kq9Z1Lpqw==
   dependencies:
-    argparse "^1.0.10"
+    argparse "1.0.10"
     badge-maker "^3.2.0"
     clui "^0.3.6"
-    lighthouse "^6.2.0"
+    lighthouse "^6.3.0"
     ramda "^0.27.0"
 
 lighthouse-logger@^1.0.0, lighthouse-logger@^1.2.0:
@@ -9527,7 +9527,7 @@ lighthouse-logger@^1.0.0, lighthouse-logger@^1.2.0:
     debug "^2.6.8"
     marky "^1.2.0"
 
-lighthouse@^6.2.0, lighthouse@^6.3.0:
+lighthouse@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/lighthouse/-/lighthouse-6.3.0.tgz#7a8af15435ed7f175b6c7d30821a6a3fa9094163"
   integrity sha512-ZiU6e6S5haKfHPIxCrmMXg9ZIyt4XrzOdbSIMPvKSCfFttUYYm4jdtA3nO4hox7lm+/eo7dE6JBSO0QAfA9bBg==
