@@ -18,9 +18,7 @@ jobs:
         run: yarn install
 
       - name: Cypress Run
-        run: yarn run test:cy:record
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+        run: yarn run test:cy
 
       - name: Perform LightHouse Audit Tests
         run: yarn lh:serve:test
