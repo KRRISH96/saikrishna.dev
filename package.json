@@ -13,7 +13,7 @@
     "gatsby-plugin-nprogress": "^2.3.13",
     "gatsby-plugin-offline": "^3.2.27",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
-    "gatsby-plugin-react-helmet": "^3.3.2",
+    "gatsby-plugin-react-helmet": "^3.6.0",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "^2.6.34",
     "gatsby-source-filesystem": "^2.3.29",
