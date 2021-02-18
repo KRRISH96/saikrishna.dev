@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Sai Krishna Prasad K",
   "dependencies": {
-    "gatsby": "^2.24.51",
+    "gatsby": "^2.32.4",
     "gatsby-image": "^2.4.21",
     "gatsby-plugin-force-trailing-slashes": "^1.0.4",
     "gatsby-plugin-google-gtag": "^2.1.10",
