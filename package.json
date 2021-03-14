@@ -12,7 +12,6 @@
     "gatsby-plugin-manifest": "^2.4.28",
     "gatsby-plugin-nprogress": "^2.3.13",
     "gatsby-plugin-offline": "^3.2.27",
-    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.10.0",
     "gatsby-plugin-sass": "^2.8.0",
     "gatsby-plugin-sharp": "^2.6.34",
