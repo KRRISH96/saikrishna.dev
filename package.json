@@ -9,7 +9,7 @@
     "gatsby-image": "^3.0.0",
     "gatsby-plugin-force-trailing-slashes": "^1.0.4",
     "gatsby-plugin-google-gtag": "^2.1.10",
-    "gatsby-plugin-manifest": "^2.4.28",
+    "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-nprogress": "^2.3.13",
     "gatsby-plugin-offline": "^3.10.2",
     "gatsby-plugin-preload-fonts": "^2.0.0",
