@@ -1,0 +1,24 @@
+{
+  "timestamp": 1615708664907,
+  "hash": "8fe2a94f0c87c473a6dd25a021eb714b",
+  "assets": {
+    "/dev-404-page/": {
+      "https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2": true
+    },
+    "/about/": {
+      "https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2": true
+    },
+    "/contact/": {
+      "https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2": true
+    },
+    "/": {
+      "https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2": true
+    },
+    "/projects/": {
+      "https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2": true
+    },
+    "/404.html": {
+      "https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2": true
+    }
+  }
+}

@@ -33,6 +33,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-force-trailing-slashes`,
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -51,17 +52,6 @@ module.exports = {
         color: `#FF9000`,
         showSpinner: false,
         minimum: 0.2,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Roboto`,
-            variants: [`400`],
-          },
-        ],
       },
     },
   ],
