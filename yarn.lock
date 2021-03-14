@@ -6945,7 +6945,7 @@ gatsby-cli@^2.12.89:
     yargs "^15.3.1"
     yurnalist "^1.1.2"
 
-gatsby-core-utils@^1.10.1, gatsby-core-utils@^1.3.17, gatsby-core-utils@^1.3.19, gatsby-core-utils@^1.4.0:
+gatsby-core-utils@^1.10.1, gatsby-core-utils@^1.3.17, gatsby-core-utils@^1.4.0:
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.10.1.tgz#97bed40df3fa79800e7ce0c0491680f0aadd6ce7"
   integrity sha512-4P3feGCJckg+DRWWl2beFk7N9c63zmCryEGPaU1OHCp+ZT2bO0ihCBuXywDWuuEp6SYP9PZ1fs0YJ/Rt6q6lag==
@@ -7078,12 +7078,12 @@ gatsby-plugin-manifest@^2.6.1:
     semver "^7.3.2"
     sharp "^0.25.4"
 
-gatsby-plugin-nprogress@^2.3.13:
-  version "2.3.13"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.3.13.tgz#f1e8ccd8d60c1d73ef65fcb06a7aa5607dbcc5c7"
-  integrity sha512-5B6IZJpAIS5DyUbjACVeZkc2u0jgjq/lonoqaLRnMQMFdGDNNaFFR495vZbGD2dB0bQkqp9iCXbWtle/0sD11Q==
+gatsby-plugin-nprogress@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.10.0.tgz#93c3413bf23fda7db16bd84d1550c16438f0bd5e"
+  integrity sha512-V2sJ3qcE59ui0IFvkXnMRdp5PmF6vYAtaE/8v4as9i+lLCmeroP25pCZCdiSNFY8avbX1JLIFAshOw4Iw9y6vg==
   dependencies:
-    "@babel/runtime" "^7.11.2"
+    "@babel/runtime" "^7.12.5"
     nprogress "^0.2.0"
 
 gatsby-plugin-offline@^3.10.2:
