@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
-  font-family:  'Roboto', monospace, sans-serif;
+  font-family: "Roboto", monospace, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -189,7 +189,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 16px 'Roboto', sans-serif, monospace, georgia, serif;
+  font: 16px "Roboto", sans-serif, monospace, georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -204,7 +204,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Roboto', sans-serif, monospace, georgia, serif;
+  font-family: "Roboto", sans-serif, monospace, georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -592,11 +592,11 @@ td:last-child {
   padding-right: 0;
 }
 tt,
-code:not([class*=language-]) {
+code:not([class*="language-"]) {
   background-color: var(--code-bg) !important;
   border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
+  font-family: "SFMono-Regular", Consolas, "Droid Sans Mono", "Liberation Mono",
+    Menlo, Courier, monospace;
   padding: 0.1rem 0.2rem;
 }
 pre code {
@@ -620,4 +620,3 @@ pre tt:after {
     font-size: 14px;
   }
 }
-

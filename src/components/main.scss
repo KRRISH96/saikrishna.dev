@@ -1,4 +1,4 @@
-@import 'mixins';
+@import "mixins";
 $planet-size: 12rem;
 $planet-size-small: 6rem;
 $planet-size-tablet: 8rem;
@@ -113,14 +113,20 @@ footer {
   .star {
     position: absolute;
     display: inline-block;
-    background: linear-gradient(-45deg, var(--planet-bg), rgba(0,0,255, 0));
-    &::before, &::after {
+    background: linear-gradient(-45deg, var(--planet-bg), rgba(0, 0, 255, 0));
+    &::before,
+    &::after {
       position: absolute;
-      content: '';
+      content: "";
       top: calc(50% - 1px);
       right: 0;
       height: 1px;
-      background: linear-gradient(-45deg, rgba(0, 0, 255, 0), var(--color), rgba(0, 0, 255, 0));
+      background: linear-gradient(
+        -45deg,
+        rgba(0, 0, 255, 0),
+        var(--color),
+        rgba(0, 0, 255, 0)
+      );
       border-radius: 100%;
       transform: translateX(50%) rotateZ(45deg);
       animation: shine 3s ease-in-out infinite;
@@ -136,7 +142,8 @@ footer {
       top: 90%;
       left: 10%;
       animation-delay: 2.5s;
-      &::before, &::after {
+      &::before,
+      &::after {
         animation-delay: 2.5s;
       }
     }
@@ -144,7 +151,8 @@ footer {
       top: 90%;
       right: 30%;
       animation-delay: 1s;
-      &::before, &::after {
+      &::before,
+      &::after {
         animation-delay: 1s;
       }
     }
@@ -152,7 +160,8 @@ footer {
       top: 50%;
       left: 50%;
       animation-delay: 3s;
-      &::before, &::after {
+      &::before,
+      &::after {
         animation-delay: 3s;
       }
     }
@@ -160,7 +169,8 @@ footer {
       bottom: 30%;
       right: 10%;
       animation-delay: 5s;
-      &::before, &::after {
+      &::before,
+      &::after {
         animation-delay: 5s;
       }
     }
@@ -168,7 +178,8 @@ footer {
       top: 76%;
       right: 56%;
       animation-delay: 4s;
-      &::before, &::after {
+      &::before,
+      &::after {
         animation-delay: 4s;
       }
     }
@@ -176,7 +187,8 @@ footer {
       bottom: 70%;
       right: 95%;
       animation-delay: 4.5s;
-      &::before, &::after {
+      &::before,
+      &::after {
         animation-delay: 4.5s;
       }
     }
@@ -184,7 +196,8 @@ footer {
       top: 5%;
       right: 5%;
       animation-delay: 2s;
-      &::before, &::after {
+      &::before,
+      &::after {
         animation-delay: 2s;
       }
     }
@@ -192,7 +205,8 @@ footer {
       top: 35%;
       right: 23%;
       animation-delay: 5.5s;
-      &::before, &::after {
+      &::before,
+      &::after {
         animation-delay: 5.5s;
       }
     }
@@ -200,12 +214,12 @@ footer {
       top: 15%;
       left: 45%;
       animation-delay: 6s;
-      &::before, &::after {
+      &::before,
+      &::after {
         animation-delay: 6s;
       }
     }
   }
-
 }
 
 @keyframes shine {
@@ -227,7 +241,9 @@ footer {
 .home-page {
   @extend %flex-ai-c-jc-c;
   flex-direction: column;
-  height: calc(100vh - 7.5rem); // 2*1.25 top/bottom main padding + 5rem footer height
+  height: calc(
+    100vh - 7.5rem
+  ); // 2*1.25 top/bottom main padding + 5rem footer height
   text-align: center;
   .greeting {
     color: var(--link-active);
@@ -273,7 +289,8 @@ footer {
   }
 }
 
-blockquote, .banner {
+blockquote,
+.banner {
   background-color: var(--bg-secondary);
   font-weight: bold;
   border-left: 0.3rem solid var(--link-active);
@@ -305,10 +322,10 @@ blockquote, .banner {
   .profile-image-container {
     @extend %flex-ai-c-jc-c;
     margin: var(--s-2) var(--s-1);
-   .profile-image {
-     border-radius: 50%;
-     border: 0.1rem solid var(--color-secondary);
-   }
+    .profile-image {
+      border-radius: 50%;
+      border: 0.1rem solid var(--color-secondary);
+    }
   }
 }
 
@@ -316,7 +333,7 @@ blockquote, .banner {
   .projects-container {
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: repeat(auto-fit, 22rem);;
+    grid-template-columns: repeat(auto-fit, 22rem);
     grid-gap: var(--s-2);
     margin-bottom: var(--s-5);
     @include break-point-down(tablet-landscape) {
@@ -364,7 +381,6 @@ blockquote, .banner {
     }
   }
 }
-
 
 @keyframes fade-in {
   from {
