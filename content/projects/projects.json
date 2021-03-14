@@ -1,15 +1,5 @@
 [
   {
-    "name": "Mentor",
-    "description": "A Multi-tenant customer retention platform. Mentor has everything you need to keep customers happy and coming back",
-    "image": "mentor_mega.png",
-    "links": {
-      "live": "https://www.mentorhq.com",
-      "github": null
-    },
-    "tags": ["react", "ruby", "javascript", "sass"]
-  },
-  {
     "name": "Render Smooth Image React",
     "description": "An Open-source lightweight and zero dependency image component for enhanced image rendering in React applications",
     "image": "smooth_image.png",
@@ -30,6 +20,16 @@
     "tags": ["react", "typescript", "node", "sass"]
   },
   {
+    "name": "BlogsHolder",
+    "description": "A Frontend only Blog Platform Mock using JSON Placeholder API](https://jsonplaceholder.typicode.com)",
+    "image": "blogsholder.png",
+    "links": {
+      "live": "https://blogsholder.netlify.app",
+      "github": "https://github.com/KRRISH96/blogsholder"
+    },
+    "tags": ["react", "typescript", "sass"]
+  },
+  {
     "name": "COVID 19 India",
     "description": "React SPA showing stats for COVID-19 cases in India by the district. Data is displayed in a tabular and graphical representation using React Chartkick, a React chart components library for chart.js",
     "image": "covid_india.png",
@@ -38,6 +38,16 @@
       "github": "https://github.com/KRRISH96/covid19-india"
     },
     "tags": ["react", "javascript", "chartjs", "sass"]
+  },
+  {
+    "name": "Mentor",
+    "description": "A Multi-tenant customer retention platform. Mentor has everything you need to keep customers happy and coming back",
+    "image": "mentor_mega.png",
+    "links": {
+      "live": "https://www.mentorhq.com",
+      "github": null
+    },
+    "tags": ["react", "ruby", "javascript", "sass"]
   },
   {
     "name": "React Lite UI",
