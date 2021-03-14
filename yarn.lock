@@ -7059,12 +7059,12 @@ gatsby-plugin-force-trailing-slashes@^1.0.4:
   dependencies:
     "@babel/runtime" "7.0.0-beta.51"
 
-gatsby-plugin-google-gtag@^2.1.10:
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.1.10.tgz#0aee201d54da81af1d2566d4c0b393a8387bd625"
-  integrity sha512-VS49tyfB3NPu4S26ftBa/lMw09dN9dsLsNm0LTAuwVXZwtmiCm6UP47ZWBm3u//b+YLkw44Pnl2kLe5iXIyF8Q==
+gatsby-plugin-google-gtag@^2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.8.0.tgz#234dc936dd32440f861a3c0308521864ae55c5aa"
+  integrity sha512-ghvVjbcDszlt7/oaHvmx97WVceWbbMZQ7b6FSO4RY0FVUm/UkvrZldAxraioS1uEra+ndeEDyPM+MiftuDR8Aw==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.12.5"
     minimatch "^3.0.4"
 
 gatsby-plugin-manifest@^2.6.1:
