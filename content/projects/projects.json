@@ -21,7 +21,7 @@
   },
   {
     "name": "BlogsHolder",
-    "description": "A Frontend only Blog Platform Mock using JSON Placeholder API](https://jsonplaceholder.typicode.com)",
+    "description": "A Frontend only Blog Platform Mock using JSON Placeholder API",
     "image": "blogsholder.png",
     "links": {
       "live": "https://blogsholder.netlify.app",
