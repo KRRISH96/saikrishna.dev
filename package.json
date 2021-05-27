@@ -29,14 +29,14 @@
     "@testing-library/cypress": "^7.0.4",
     "chai": "^4.3.4",
     "chrome-launcher": "^0.13.4",
-    "cypress": "^6.8.0",
+    "cypress": "^6.9.1",
     "gatsby-cypress": "^0.4.12",
-    "husky": "^5.2.0",
+    "husky": "^6.0.0",
     "lighthouse": "^7.3.0",
     "lighthouse-badges": "^1.1.4",
     "mocha": "^8.3.2",
     "prettier": "2.2.1",
-    "start-server-and-test": "^1.12.1"
+    "start-server-and-test": "^1.12.3"
   },
   "keywords": [
     "gatsby"
