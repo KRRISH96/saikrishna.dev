@@ -6,7 +6,7 @@
   "author": "Sai Krishna Prasad K",
   "dependencies": {
     "gatsby": "^2.32.11",
-    "gatsby-image": "^3.1.0",
+    "gatsby-image": "^3.7.1",
     "gatsby-plugin-force-trailing-slashes": "^1.0.5",
     "gatsby-plugin-google-gtag": "^2.8.0",
     "gatsby-plugin-manifest": "^2.12.1",
