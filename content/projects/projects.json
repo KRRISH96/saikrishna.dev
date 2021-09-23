@@ -34,7 +34,7 @@
     "description": "React SPA showing stats for COVID-19 cases in India by the district. Data is displayed in a tabular and graphical representation using React Chartkick, a React chart components library for chart.js",
     "image": "covid_india.png",
     "links": {
-      "live": "https://covid19indianstates.netlify.com",
+      "live": null,
       "github": "https://github.com/KRRISH96/covid19-india"
     },
     "tags": ["react", "javascript", "chartjs", "sass"]
