@@ -29,7 +29,7 @@
     "@testing-library/cypress": "^8.0.1",
     "chai": "^4.3.4",
     "chrome-launcher": "^0.14.1",
-    "cypress": "^6.9.1",
+    "cypress": "^8.6.0",
     "gatsby-cypress": "^0.4.12",
     "husky": "^7.0.2",
     "lighthouse": "^8.5.1",
