@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Tags from "../presentational/tags";
 import ExternalLink from "../presentational/externalLink";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
@@ -9,8 +9,8 @@ const ProjectCard = ({
   project: { id, name, description, links, tags, image },
 }) => (
   <div key={id} className="card project-card">
-    <Img
-      fixed={image.childImageSharp.fixed}
+    <GatsbyImage
+      image={getImage(image)}
       alt={`${name} Project Image`}
       className="project-card__image"
     />

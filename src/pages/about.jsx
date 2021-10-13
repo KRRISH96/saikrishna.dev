@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { APP_ROUTES, BLOG_SITE } from "../helpers/constants";
@@ -11,11 +11,9 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      profileImage: file(relativePath: { eq: "profile_picture.png" }) {
+      profileImage: file(relativePath: { eq: "images/profile_picture.png" }) {
         childImageSharp {
-          fixed(width: 200, height: 200) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(layout: FIXED, width: 200, height: 200)
         }
       }
     }
@@ -29,8 +27,8 @@ const AboutPage = () => {
           <Emoji label="Waving Hand" emoji={"👋🏻"} />
         </h1>
         <div className="profile-image-container">
-          <Img
-            fixed={data.profileImage.childImageSharp.fixed}
+          <GatsbyImage
+            image={getImage(data.profileImage)}
             alt="Sai's Profile Picture"
             className="profile-image"
           />
