@@ -9,23 +9,23 @@ import { PROFILE_LINKS } from "../helpers/constants";
 
 const ProjectsPage = () => {
   const {
-    allProject: { nodes: projectsList },
+    allProjectsJson: { edges: projectsList},
   } = useStaticQuery(graphql`
     query {
-      allProject {
-        nodes {
-          id
-          name
-          description
-          links {
-            live
-            github
-          }
-          tags
-          image {
-            childImageSharp {
-              fixed(width: 352, height: 176) {
-                ...GatsbyImageSharpFixed
+      allProjectsJson {
+        edges {
+          node {
+            id
+            name
+            description
+            links {
+              live
+              github
+            }
+            tags
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FIXED, width: 352, height: 176, placeholder: BLURRED)
               }
             }
           }
@@ -43,7 +43,7 @@ const ProjectsPage = () => {
           <Emoji label="Laptop" emoji={" 💻 "} />
         </h1>
         <div className="projects-container">
-          {projectsList.map(project => (
+          {projectsList.map(({node: project}) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>

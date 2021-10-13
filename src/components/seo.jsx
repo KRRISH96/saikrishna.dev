@@ -30,7 +30,7 @@ function SEO({
             siteUrl
           }
         }
-        profileImage: file(relativePath: { eq: "profile_picture.png" }) {
+        profileImage: file(relativePath: { eq: "images/profile_picture.png" }) {
           childImageSharp {
             fixed {
               src
