@@ -13,7 +13,7 @@ const AboutPage = () => {
     query {
       profileImage: file(relativePath: { eq: "images/profile_picture.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 200, height: 200)
+          gatsbyImageData(layout: FIXED, width: 200, height: 200, placeholder: BLURRED)
         }
       }
     }
