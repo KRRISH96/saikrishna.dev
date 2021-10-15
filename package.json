@@ -35,7 +35,7 @@
     "husky": "^7.0.2",
     "lighthouse": "^8.5.1",
     "lighthouse-badges": "^1.1.13",
-    "mocha": "^9.1.2",
+    "mocha": "^9.1.3",
     "prettier": "2.4.1",
     "start-server-and-test": "^1.14.0"
   },
