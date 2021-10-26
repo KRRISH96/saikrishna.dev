@@ -9581,15 +9581,15 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lighthouse-badges@^1.1.13:
-  version "1.1.13"
-  resolved "https://registry.yarnpkg.com/lighthouse-badges/-/lighthouse-badges-1.1.13.tgz#057d860dbdf692692cab140f1c55f2a85dc3635d"
-  integrity sha512-K9ilgkJ7Jo2DrK88BzDcuIr3XcfepogBCMbuUtY46ygGp++zAN37mLW6wLY0yOXpX2m9y/MA9V/7qKozsU4DPw==
+lighthouse-badges@^1.1.14:
+  version "1.1.14"
+  resolved "https://registry.yarnpkg.com/lighthouse-badges/-/lighthouse-badges-1.1.14.tgz#7f707aad817b98624b5f4a78de9ab11d5910700c"
+  integrity sha512-ugTliK8CNu6NGHcEqp9c1AwKMexN1HsE35QrtKi8nKo8L2l35Nmr7BSO9iCkEKFBt8FPANIVAzfd7tJrpCr88w==
   dependencies:
     argparse "2.0.1"
     badge-maker "^3.3.1"
     clui "^0.3.6"
-    lighthouse "^8.3.0"
+    lighthouse "^8.6.0"
     ramda "^0.27.0"
 
 lighthouse-logger@^1.0.0, lighthouse-logger@^1.3.0:
@@ -9605,10 +9605,10 @@ lighthouse-stack-packs@^1.5.0:
   resolved "https://registry.yarnpkg.com/lighthouse-stack-packs/-/lighthouse-stack-packs-1.5.0.tgz#c191f2b94db21602254baaebfb0bb90307a00ffa"
   integrity sha512-ntVOqFsrrTQYrNf+W+sNE9GjddW+ab5QN0WrrCikjMFsUvEQ28CvT0SXcHPZXFtcsb1lMSuVaNCmEuj7oXtYGQ==
 
-lighthouse@^8.3.0, lighthouse@^8.5.1:
-  version "8.5.1"
-  resolved "https://registry.yarnpkg.com/lighthouse/-/lighthouse-8.5.1.tgz#0cf4f2d3ebf67e40cd14fcbb027c9d5fb3cfa912"
-  integrity sha512-phe3g77N5AE5pf5TARUBb9uHLvvzwpd2z/S0G+6KrC5ShEe2laSxkiiTLo/jYxsrmy5kL7qohVztdOuafy4HGQ==
+lighthouse@^8.5.1, lighthouse@^8.6.0:
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/lighthouse/-/lighthouse-8.6.0.tgz#e50ca532aca2ca7fec409caea6bddd940450041a"
+  integrity sha512-/H7aDL3//Gr0M1v8GGq6k0OTNty7nDVuU/o1cg6opYkfHRz1V3Nhydqz6aBzfXhUQx6iJRnxgRCPya+ZLA2vbg==
   dependencies:
     axe-core "4.2.3"
     chrome-launcher "^0.14.0"
