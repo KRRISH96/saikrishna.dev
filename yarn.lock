@@ -6971,6 +6971,22 @@ gatsby-core-utils@^2.14.0:
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
 
+gatsby-core-utils@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-3.1.1.tgz#ba4ac26c43c803ef7322f8825bc9b94bdf8c9003"
+  integrity sha512-Z7H0UtKct5oukYkyyBMlRi1zpJfD2hhE5+eV6fYpHQCjlzmx2aSdumgFcDuQfJeqcnCSnfhlZM1wcaJ8WxI5Jg==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    ci-info "2.0.0"
+    configstore "^5.0.1"
+    file-type "^16.5.3"
+    fs-extra "^10.0.0"
+    got "^11.8.2"
+    node-object-hash "^2.3.9"
+    proper-lockfile "^4.1.2"
+    tmp "^0.2.1"
+    xdg-basedir "^4.0.0"
+
 gatsby-cypress@^0.4.12:
   version "0.4.12"
   resolved "https://registry.yarnpkg.com/gatsby-cypress/-/gatsby-cypress-0.4.12.tgz#52878ca26147a7d482297cfdaddbb94ff9a248fa"
@@ -7095,16 +7111,16 @@ gatsby-plugin-page-creator@^2.10.2:
     globby "^11.0.2"
     lodash "^4.17.20"
 
-gatsby-plugin-preload-fonts@^2.14.0:
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preload-fonts/-/gatsby-plugin-preload-fonts-2.14.0.tgz#fae8668f3078f4e840d50ae40bce1d7e617bf1ba"
-  integrity sha512-fvp1wEUbbHt4/FGfJbZsfZayhS3I7IMhmDBJPKRTwT7A41Cn+yOacQ5iq1EedR4yji2w0U3aVL8f7jvD5QPMEQ==
+gatsby-plugin-preload-fonts@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preload-fonts/-/gatsby-plugin-preload-fonts-3.1.1.tgz#41ed4b80cbc32be86b29269afcfdade1e2608e68"
+  integrity sha512-fI2rM2xgukVEirZqKKCXnkNuo3mH+1l6qn9LgNeUB/3aTDp77HL/ZEc7OOqkpge58nGZ0YCszZvyNcyZ7vf1uA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     chalk "^4.1.2"
     date-fns "^2.23.0"
     fs-extra "^10.0.0"
-    gatsby-core-utils "^2.14.0"
+    gatsby-core-utils "^3.1.1"
     graphql-request "^1.8.2"
     progress "^2.0.3"
     puppeteer "^3.3.0"
